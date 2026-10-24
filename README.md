@@ -21,7 +21,7 @@ Customer Labs helps product builders explore who might choose their product, why
 flowchart TD
     A[Product brief: form or Markdown upload] --> B[Exa research and saved evidence]
     B --> C[LLM segment proposal and quality review]
-    C --> D[Human approves segments]
+    C --> D[Human approves segments if needed]
     D --> E[Code samples and checks customer profiles]
     E --> F[User starts customer simulation]
     F --> G[One model decision per customer]
