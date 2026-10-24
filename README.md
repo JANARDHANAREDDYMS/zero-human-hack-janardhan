@@ -139,3 +139,7 @@ Offline/mocked tests check contracts, sampling, recovery and integrations. They 
 ## Current limitations
 
 The local server binds to localhost and is a development/demo server, not production hosting. GitHub stores source code; pushing this repository does not deploy it. Production operation requires durable storage, appropriate access controls, a public HTTPS service and provider configuration. LLM output can fail validation or contradict a segment; saved state and targeted retries reduce rework but do not eliminate failures. Token ceilings are safeguards, not advance billing reservations; set account-level spending limits with your provider.
+
+
+## youtube video link:
+https://youtu.be/bQ-7I7azAAw
