@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Simulation run input v1.0",
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "product_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "variant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "customer": {
+      "$ref": "../schemas/customer.schema.json"
+    },
+    "presentation_seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_decisions": {
+      "const": 6
+    },
+    "offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "offer_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "price": {
+            "type": "object",
+            "properties": {
+              "amount": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "currency": {
+                "type": "string",
+                "minLength": 1
+              },
+              "billing_period": {
+                "enum": [
+                  "one_time",
+                  "month",
+                  "year",
+                  "document",
+                  "session",
+                  "unknown"
+                ]
+              },
+              "mandatory_upfront": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "amount",
+              "currency",
+              "billing_period",
+              "mandatory_upfront",
+              "scope"
+            ]
+          },
+          "sections": {
+            "type": "object",
+            "properties": {
+              "features": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fact_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "attribute": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "value": {},
+                    "unit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence_status": {
+                      "enum": [
+                        "provided_concept",
+                        "provider_claim",
+                        "assumed",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fact_id",
+                    "attribute",
+                    "value",
+                    "unit",
+                    "source_id",
+                    "evidence_status"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "pricing": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fact_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "attribute": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "value": {},
+                    "unit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence_status": {
+                      "enum": [
+                        "provided_concept",
+                        "provider_claim",
+                        "assumed",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fact_id",
+                    "attribute",
+                    "value",
+                    "unit",
+                    "source_id",
+                    "evidence_status"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fact_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "attribute": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "value": {},
+                    "unit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence_status": {
+                      "enum": [
+                        "provided_concept",
+                        "provider_claim",
+                        "assumed",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fact_id",
+                    "attribute",
+                    "value",
+                    "unit",
+                    "source_id",
+                    "evidence_status"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "terms": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fact_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "attribute": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "value": {},
+                    "unit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence_status": {
+                      "enum": [
+                        "provided_concept",
+                        "provider_claim",
+                        "assumed",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fact_id",
+                    "attribute",
+                    "value",
+                    "unit",
+                    "source_id",
+                    "evidence_status"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "features",
+              "pricing",
+              "evidence",
+              "terms"
+            ]
+          },
+          "sample_available": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "offer_id",
+          "name",
+          "description",
+          "price",
+          "sections",
+          "sample_available"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "current_solution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_terminal_choices": {
+      "const": [
+        "select_offer",
+        "keep_current",
+        "decline",
+        "insufficient_information"
+      ]
+    }
+  },
+  "required": [
+    "contract_version",
+    "run_id",
+    "product_id",
+    "variant_id",
+    "population_version",
+    "customer",
+    "presentation_seed",
+    "max_decisions",
+    "offers",
+    "current_solution",
+    "allowed_terminal_choices"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "product_id": "keyboard-example",
+  "sources": [],
+  "findings": [],
+  "limitations": [
+    "Manually authored offline acceptance fixture. No live research or LLM generation occurred."
+  ]
+}

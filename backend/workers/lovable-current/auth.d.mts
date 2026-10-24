@@ -1,0 +1,1 @@
+export function equalSecret(a: string, b: string): Promise<boolean>;

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "evidence v2.0",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "product_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "source_id",
+          "url",
+          "retrieved_at",
+          "title"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+          },
+          "subject": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "attribute": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+            "maxLength": 160
+          },
+          "value": {},
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "basis": {
+            "enum": [
+              "provider_claim",
+              "client_statement",
+              "assumption",
+              "unknown",
+              "observed_report"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+            },
+            "uniqueItems": true
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "track": {
+            "enum": [
+              "offers",
+              "buyer_situations",
+              "counterevidence"
+            ]
+          }
+        },
+        "required": [
+          "finding_id",
+          "subject",
+          "attribute",
+          "value",
+          "unit",
+          "basis",
+          "source_ids",
+          "note"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "product_id",
+    "sources",
+    "findings",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

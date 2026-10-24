@@ -1,0 +1,829 @@
+{
+  "schema_version": "2.0",
+  "product_id": "keyboard-example",
+  "population_version": "offline-fixture-1",
+  "seed": 42,
+  "target_count": 50,
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_provenance": {
+    "basis": "assumption",
+    "source_ids": [],
+    "finding_ids": [],
+    "note": "Hand-authored test assumption; not buyer research."
+  },
+  "allocation_basis": "scenario_coverage_not_market_share",
+  "attributes": {
+    "work_mode": {
+      "type": "string",
+      "unit": null,
+      "description": "Primary work context"
+    },
+    "bag_width_cm": {
+      "type": "integer",
+      "unit": "cm",
+      "description": "Available carrying width"
+    },
+    "operating_system": {
+      "type": "string",
+      "unit": null,
+      "description": "Required host OS"
+    },
+    "needs_quiet": {
+      "type": "boolean",
+      "unit": null,
+      "description": "Quiet-work preference"
+    },
+    "supported_os": {
+      "type": "string_array",
+      "unit": null,
+      "description": "Operating systems supported by an offer"
+    },
+    "quiet_operation": {
+      "type": "boolean",
+      "unit": null,
+      "description": "Qualified quiet-operation capability"
+    },
+    "width_cm": {
+      "type": "number",
+      "unit": "cm",
+      "description": "Keyboard width"
+    }
+  },
+  "segments": [
+    {
+      "segment_id": "shared-office",
+      "name": "Shared-desk workers",
+      "goal": "Find an input device that fits the working situation.",
+      "count": 25,
+      "rationale": {
+        "basis": "assumption",
+        "source_ids": [],
+        "finding_ids": [],
+        "note": "Hand-authored test assumption; not buyer research."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Replacing an unreliable keyboard",
+              "Setting up a new workspace",
+              "Considering an upgrade"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Working laptop keyboard",
+              "Existing external keyboard",
+              "Shared office keyboard"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.work_mode": {
+          "rule": {
+            "kind": "constant",
+            "value": "office"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.bag_width_cm": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 28,
+            "maximum": 40
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.operating_system": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Windows",
+              "macOS",
+              "Linux"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.needs_quiet": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              true,
+              false
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "conditional",
+            "when": {
+              "field": "category_context.work_mode",
+              "operator": "eq",
+              "value": "travel"
+            },
+            "then": {
+              "kind": "integer",
+              "minimum": 30,
+              "maximum": 100
+            },
+            "else": {
+              "kind": "integer",
+              "minimum": 20,
+              "maximum": 90
+            }
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One keyboard; unknown tax and shipping remain unresolved."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              7,
+              14,
+              30
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              {
+                "attribute": "price",
+                "weight": 0.4
+              },
+              {
+                "attribute": "comfort",
+                "weight": 0.35
+              },
+              {
+                "attribute": "portability",
+                "weight": 0.25
+              }
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Existing input device may be sufficient",
+              "Setup and adaptation effort"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "supported_os",
+          "operator": "contains",
+          "constraint": "hard",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.operating_system"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        {
+          "attribute": "quiet_operation",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.needs_quiet"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        }
+      ]
+    },
+    {
+      "segment_id": "travel-work",
+      "name": "Traveling workers",
+      "goal": "Find an input device that fits the working situation.",
+      "count": 25,
+      "rationale": {
+        "basis": "assumption",
+        "source_ids": [],
+        "finding_ids": [],
+        "note": "Hand-authored test assumption; not buyer research."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Replacing an unreliable keyboard",
+              "Setting up a new workspace",
+              "Considering an upgrade"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Working laptop keyboard",
+              "Existing external keyboard",
+              "Shared office keyboard"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.work_mode": {
+          "rule": {
+            "kind": "constant",
+            "value": "travel"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.bag_width_cm": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 28,
+            "maximum": 40
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.operating_system": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Windows",
+              "macOS",
+              "Linux"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "category_context.needs_quiet": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              true,
+              false
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "conditional",
+            "when": {
+              "field": "category_context.work_mode",
+              "operator": "eq",
+              "value": "travel"
+            },
+            "then": {
+              "kind": "integer",
+              "minimum": 30,
+              "maximum": 100
+            },
+            "else": {
+              "kind": "integer",
+              "minimum": 20,
+              "maximum": 90
+            }
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One keyboard; unknown tax and shipping remain unresolved."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              7,
+              14,
+              30
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              {
+                "attribute": "price",
+                "weight": 0.4
+              },
+              {
+                "attribute": "comfort",
+                "weight": 0.35
+              },
+              {
+                "attribute": "portability",
+                "weight": 0.25
+              }
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Existing input device may be sufficient",
+              "Setup and adaptation effort"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "supported_os",
+          "operator": "contains",
+          "constraint": "hard",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.operating_system"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        {
+          "attribute": "quiet_operation",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.needs_quiet"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Hand-authored test assumption; not buyer research."
+          }
+        },
+        {
+          "attribute": "width_cm",
+          "operator": "lte",
+          "constraint": "hard",
+          "value_rule": {
+            "kind": "scale",
+            "field": "category_context.bag_width_cm",
+            "factor": 1,
+            "offset": -2
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Width depends on declared carrying space, not the client product."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        }
+      ]
+    }
+  ]
+}

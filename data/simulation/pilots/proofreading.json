@@ -1,0 +1,482 @@
+{
+  "status": "synthetic_pilot",
+  "product_id": "proofreading",
+  "count": 5,
+  "customers": [
+    {
+      "customer_id": "proofreading-001",
+      "segment_id": "occasional-personal",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Correct an important short personal document without unnecessary cost.",
+      "purchase_trigger": "Important letter",
+      "current_solution": "Free grammar tool",
+      "budget": {
+        "comfortable": 15,
+        "maximum": 22,
+        "currency": "USD",
+        "billing_period": "document_bundle",
+        "scope_units": 1,
+        "upfront_maximum": 22,
+        "scope_note": "Total across documents_needed during this evaluation"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1200,
+          "unit": "words"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "clarity",
+          "weight": 0.125
+        },
+        {
+          "attribute": "price",
+          "weight": 0.3125
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.5625
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "document_words": 1200,
+        "documents_needed": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "occasional-personal"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "occasional-personal"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "proofreading-011",
+      "segment_id": "students-deadlines",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve grammar and clarity while retaining ownership of the writing.",
+      "purchase_trigger": "Project report due",
+      "current_solution": "University writing support",
+      "budget": {
+        "comfortable": 14,
+        "maximum": 23,
+        "currency": "USD",
+        "billing_period": "document_bundle",
+        "scope_units": 1,
+        "upfront_maximum": 23,
+        "scope_note": "Total across documents_needed during this evaluation"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2800,
+          "unit": "words"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "author_control",
+          "weight": 0.176471
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.294118
+        },
+        {
+          "attribute": "price",
+          "weight": 0.529411
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "document_words": 2800,
+        "documents_needed": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "students-deadlines"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "students-deadlines"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "proofreading-021",
+      "segment_id": "client-writers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present clear client-facing writing while controlling stylistic changes.",
+      "purchase_trigger": "Proposal submission",
+      "current_solution": "Self-editing",
+      "budget": {
+        "comfortable": 19,
+        "maximum": 25,
+        "currency": "USD",
+        "billing_period": "document_bundle",
+        "scope_units": 2,
+        "upfront_maximum": 25,
+        "scope_note": "Total across documents_needed during this evaluation"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 800,
+          "unit": "words"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "clarity",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "author_control",
+          "weight": 0.058824
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.470588
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "document_words": 800,
+        "documents_needed": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "client-writers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "client-writers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "proofreading-031",
+      "segment_id": "regular-office",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Reduce editing effort across recurring reports and correspondence.",
+      "purchase_trigger": "New writing responsibilities",
+      "current_solution": "Colleague review",
+      "budget": {
+        "comfortable": 58,
+        "maximum": 84,
+        "currency": "USD",
+        "billing_period": "document_bundle",
+        "scope_units": 3,
+        "upfront_maximum": 84,
+        "scope_note": "Total across documents_needed during this evaluation"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 600,
+          "unit": "words"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "clarity",
+          "weight": 0.1875
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.4375
+        },
+        {
+          "attribute": "total_cost",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "document_words": 600,
+        "documents_needed": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "regular-office"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "regular-office"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "proofreading-041",
+      "segment_id": "careful-authors",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve wording while retaining personal voice and editorial control.",
+      "purchase_trigger": "Concern about aggressive automated rewrites",
+      "current_solution": "Human editor",
+      "budget": {
+        "comfortable": 31,
+        "maximum": 43,
+        "currency": "USD",
+        "billing_period": "document_bundle",
+        "scope_units": 1,
+        "upfront_maximum": 43,
+        "scope_note": "Total across documents_needed during this evaluation"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2600,
+          "unit": "words"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "author_control",
+          "weight": 0.352941
+        },
+        {
+          "attribute": "price",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "clarity",
+          "weight": 0.176471
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "document_words": 2600,
+        "documents_needed": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "careful-authors"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "careful-authors"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ]
+}

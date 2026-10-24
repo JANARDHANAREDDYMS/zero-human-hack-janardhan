@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "customers_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "enum": [
+              "coverage",
+              "segment_distinctness",
+              "within_segment_variation",
+              "evidence_support",
+              "assumption_transparency",
+              "product_independence",
+              "simulation_fit"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pass",
+              "warning",
+              "fail",
+              "not_evaluated"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "category",
+          "status",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "customers_sha256",
+    "reviewer",
+    "checks"
+  ],
+  "additionalProperties": false
+}

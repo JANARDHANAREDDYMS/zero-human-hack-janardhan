@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "hypothetical": true,
+  "id": "codesensei",
+  "name": "CodeSensei interview preparation",
+  "type": "professional service",
+  "price": {
+    "amount": 20,
+    "currency": "USD",
+    "billing_period": "month"
+  },
+  "baseline": {
+    "practice_questions": 200,
+    "languages": [
+      "Python",
+      "C++",
+      "Java",
+      "JavaScript"
+    ],
+    "coding_environment": "Browser editor with execution and test cases",
+    "mock_interviews_per_month": 4,
+    "mock_interview_minutes": 45,
+    "feedback": [
+      "Correctness",
+      "Complexity",
+      "Communication",
+      "Hints used"
+    ],
+    "progress": [
+      "Topic completion",
+      "Session history"
+    ],
+    "preview": "One free 15-minute sample interview"
+  },
+  "standout": "Personalized follow-up drill based on actual mistakes in each mock interview.",
+  "selling_point": "Your next practice session starts where your last interview went wrong.",
+  "negative_features": [],
+  "audience": [
+    "Students",
+    "Early-career software engineers"
+  ],
+  "research_question": "How does preference compare with existing interview-preparation tools and free resources?",
+  "experiments": [
+    "Included features",
+    "Positioning",
+    "Preview/trial availability",
+    "Price"
+  ],
+  "design_notes": "Original agreed hypothetical offer; no calculated median or complete competitor research. No two deliberate disadvantages were agreed for this original concept.",
+  "status": "agreed_concept",
+  "source_refs": [
+    "earlier-product-discussion"
+  ],
+  "audience_status": "candidate_situations"
+}

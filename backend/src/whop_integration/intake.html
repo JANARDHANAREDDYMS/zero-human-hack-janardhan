@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your research brief</title>
+<style>body{font:16px/1.5 system-ui,sans-serif;color:#172b38;background:#f4f6f8;margin:0}main{max-width:720px;margin:36px auto;padding:24px}section{background:white;border:1px solid #dce2e6;border-radius:12px;padding:24px;margin:18px 0}h1{font-size:30px;margin:0 0 8px}h2{font-size:20px;margin-top:0}label{display:block;font-weight:600;margin:16px 0 5px}input,textarea,select,button{font:inherit;box-sizing:border-box}input,textarea,select{width:100%;padding:10px;border:1px solid #aab9c4;border-radius:6px}textarea{resize:vertical}button{background:#185c47;color:white;padding:11px 18px;border:0;border-radius:7px;cursor:pointer;margin:12px 8px 0 0}button:disabled{opacity:.45;cursor:default}.muted{color:#536574;font-size:14px}.notice{white-space:pre-wrap;background:#eef4f7;padding:14px;border-radius:7px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}summary{cursor:pointer}a{color:#185c47}[hidden]{display:none!important}</style></head><body><main>
+<h1>Your research brief</h1><p>Tell us what you’re considering. Unknown details can stay blank.</p>
+<p id="status" class="notice" role="status" aria-live="polite">Checking your order…</p><button id="check" type="button">Check payment again</button>
+<section id="intake" hidden><h2>Enter details or upload a brief</h2><p class="muted">Choose a Markdown file from your computer, or fill in the form. Nothing is submitted until you confirm the preview.</p>
+<label for="file">Upload a .md file (optional, up to 64 KB)</label><input id="file" type="file" accept=".md,text/markdown"><p class="muted"><a href="/intake-template.md" download="product-brief.md">Download a brief template</a>. Recognized headings: Product name, Description, Planned price, Features, Research question, Category, Audience, Market.</p>
+<form id="form"><label for="name">Product name *</label><input id="name" required maxlength="10000" autocomplete="off">
+<label for="description">Short description *</label><textarea id="description" rows="3" required maxlength="10000"></textarea>
+<details><summary>Optional details</summary>
+<label for="price">Planned price</label><input id="price" placeholder="119 USD one-time" maxlength="10000">
+<label for="category">Product type</label><input id="category" placeholder="Physical product or professional service" maxlength="10000">
+<label for="features">Features — one per line</label><textarea id="features" rows="3" maxlength="10000"></textarea>
+<label for="audience">Intended audience</label><input id="audience" maxlength="10000">
+<label for="market">Market / country</label><input id="market" maxlength="10000">
+<label for="research_question">Research question</label><textarea id="research_question" rows="3" maxlength="10000" placeholder="Leave blank for a general research question"></textarea>
+</details><button id="preview" type="button">Preview brief</button></form>
+<section id="previewBox" hidden><h2>Review before submitting</h2><p>Edit the form above and preview again if anything is wrong.</p><p id="warnings" class="notice"></p><dl id="summary"></dl><details><summary>See the structured brief</summary><pre id="json"></pre></details><button id="submit" type="button" disabled>Confirm and submit</button></section>
+</section>
+<section id="results" hidden><h2>Your research report</h2><p>Synthetic customers represent plausible situations, not real survey respondents.</p><div id="reportSummary"></div><div id="reportSegments"></div><p><a id="downloadCustomers" download="customers.json">Download detailed customer profiles</a> · <a id="downloadEvidence" download="evidence.json">Download research evidence</a></p></section>
+<script>
+const $=id=>document.getElementById(id),keys=['name','description','price','research_question','features','category','audience','market'];
+const oid=new URLSearchParams(location.search).get('order');let raw=null,filename=null,previewed=null,submitted=false;
+const validOrder=oid&&/^[a-f0-9]{32}$/.test(oid),base=validOrder?'/api/orders/'+oid:null;
+function fields(){return Object.fromEntries(keys.map(k=>[k,$(k).value]));}
+function payload(f=fields()){return {...(raw===null?{}:{markdown:raw,filename}),fields:f};}
+async function api(path,data){const r=await fetch(path,{method:data===undefined?'GET':'POST',credentials:'same-origin',headers:{'Content-Type':'application/json'},...(data===undefined?{}:{body:JSON.stringify(data)})});const d=await r.json();if(!r.ok)throw Error(d.error||'Request failed');return d;}
+function invalidate(){$('submit').disabled=true;previewed=null;}
+$('form').addEventListener('input',invalidate);$('form').addEventListener('submit',e=>e.preventDefault());
+async function preview(f){invalidate();const p=await api(base+'/intake/preview',payload(f));for(const k of keys)$(k).value=p.fields[k]||'';
+ $('warnings').textContent=[...p.warnings,...p.missing_fields.map(k=>'Please add '+k.replaceAll('_',' '))].join('\n')||'Ready to submit. Missing optional facts remain unknown.';
+ $('json').textContent=JSON.stringify(p.brief,null,2);$('summary').replaceChildren();
+ for(const [key,value] of Object.entries(p.fields)){if(!value)continue;const term=document.createElement('dt'),definition=document.createElement('dd');term.textContent=key.replaceAll('_',' ');term.style.fontWeight='600';definition.textContent=value;definition.style.whiteSpace='pre-wrap';$('summary').append(term,definition);}
+ $('previewBox').hidden=false;previewed=JSON.stringify(fields());$('submit').disabled=!p.can_submit||submitted;
+}
+$('file').addEventListener('change',async()=>{invalidate();const file=$('file').files[0];if(!file){raw=null;filename=null;return;}try{if(!/\.md$/i.test(file.name)||file.size>64000)throw Error('Choose a .md file no larger than 64 KB');const bytes=await file.arrayBuffer();raw=new TextDecoder('utf-8',{fatal:true}).decode(bytes);filename=file.name;await preview({});}catch(e){raw=null;filename=null;$('status').textContent=e.message;}});
+$('preview').onclick=async()=>{try{await preview(fields());}catch(e){$('status').textContent=e.message;}};
+$('submit').onclick=async()=>{if(previewed!==JSON.stringify(fields()))return invalidate();$('submit').disabled=true;try{const d=await api(base+'/intake/submit',payload());submitted=true;$('status').textContent='Brief saved. Job '+d.job_id+' is awaiting research.';$('intake').hidden=true;setTimeout(check,2000);}catch(e){$('status').textContent=e.message;invalidate();}};
+let polls=0;
+async function check(){if(!validOrder){$('status').textContent='Open this page from your checkout return link. Your order reference is missing.';$('check').disabled=true;return;}
+ try{const s=await api(base);if(!s.intake_unlocked){$('intake').hidden=true;$('results').hidden=true;$('status').textContent=s.payment_status==='revoked'?'Payment access was revoked. Intake is locked.':'Payment is not verified yet. This page cannot mark an order paid.';if(++polls<30&&s.payment_status!=='revoked')setTimeout(check,2000);return;}
+ const d=await api(base+'/intake');if(d.job){submitted=true;$('intake').hidden=true;$('status').textContent='Your brief is saved — '+d.job.status.replaceAll('_',' ');
+ const result=await api(base+'/results');if(result.report_ready){$('results').hidden=false;$('reportSummary').replaceChildren();$('reportSegments').replaceChildren();for(const line of result.summary){const p=document.createElement('p');p.textContent=line;$('reportSummary').append(p);}for(const segment of result.segments){const p=document.createElement('p');p.textContent=segment.name+' — '+segment.count+' customers';$('reportSegments').append(p);}$('downloadCustomers').href=base+'/results/customers';$('downloadEvidence').href=base+'/results/evidence';$('status').textContent='Research completed. Your report is ready.';}
+ else{$('results').hidden=true;if(['awaiting_research','processing'].includes(result.status)&&++polls<100)setTimeout(check,3000);}return;}
+
+ $('status').textContent='Payment verified. Fill in your brief below.';$('intake').hidden=false;
+ }catch(e){$('intake').hidden=true;$('results').hidden=true;$('status').textContent=e.message;}}
+$('check').onclick=check;check();
+</script></main></body></html>

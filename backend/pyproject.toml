@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saturday-hack-customer-generation"
+version = "0.1.0"
+description = "Structured synthetic customer population preparation"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.18,<5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+whop_integration = ["*.html", "*.md"]
+customer_generation = ["*.html", "prompts/*.md", "prompts/*.json"]

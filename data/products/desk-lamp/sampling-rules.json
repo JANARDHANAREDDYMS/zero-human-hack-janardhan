@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.1",
+  "product_id": "desk-lamp",
+  "record_type": "sampling_rules",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "seed": 2026102404,
+  "target_count": 50,
+  "pilot_count": 5,
+  "segment_allocations": [
+    {
+      "segment_id": "small-study-desk",
+      "count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "home-office",
+      "count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "evening-reading",
+      "count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "shared-workspaces",
+      "count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "detail-tasks",
+      "count": 10,
+      "market_share": null
+    }
+  ],
+  "templates_file": "segments.json",
+  "generator": "../../tools/generate_populations.py",
+  "sampling_method": {
+    "budget_maximum": "Uniform integer within segment range, USD. This is a total budget for documents_needed where present.",
+    "budget_comfortable": "floor(maximum * uniform(0.60, 0.90)), always <= maximum.",
+    "urgency": "Uniform choice of segment deadline days; service max acceptable turnaround = deadline_days * 24.",
+    "requirements": "Uniform choice of declared values; hard vs flexible sampled using hard_probability.",
+    "category_context": "Uniform choice within segment lists.",
+    "document_requirement": "For proofreading, word_limit minimum is actual document_words (not a separately sampled conflicting value).",
+    "priorities": "Three distinct priorities sampled from priority_pool; weights normalized from three positive integers.",
+    "decision_style": "Research effort uniform low/medium/high; evidence need uniform basic/comparison/independent; familiarity uniform low/medium/high.",
+    "evaluation_action_budget": "Uniform choice of 3, 4, or 5 nonterminal actions.",
+    "switching_barriers": "Depends on existing solution: existing/working/paid tools receive retention friction; all have evaluation/setup effort.",
+    "market": "US/en/USD assumed consistently across demo.",
+    "upfront_budget": "Equals maximum budget for the represented scope; recurring plans also checked against monthly ceiling.",
+    "seed_scope": "Reproduces profile bytes for fixed generator/templates; not remote-model decisions."
+  },
+  "constraints": [
+    "comfortable <= maximum",
+    "unique IDs and meaningful non-ID profile variation",
+    "valid source references",
+    "no predetermined choice or outcome",
+    "50 profiles; ten per segment",
+    "category-specific quantities and billing period retained",
+    "customer deadline and acceptable service turnaround agree"
+  ],
+  "notes": "Designed in chat and constructed by code; no external LLM API required. Synthetic priors, not respondent records."
+}

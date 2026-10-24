@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "product_id": "sony-speaker",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "earlier-product-discussion",
+      "kind": "user_supplied_conversation",
+      "path": "../../../docs/context/product-briefs-pasted.txt"
+    },
+    {
+      "source_id": "sony-official",
+      "url": "https://electronics.sony.com/audio/speakers/wireless-speakers/p/srsult10-b",
+      "kind": "official_provider_page",
+      "finding": "Portable positioning; up to 12 hours and IP67 protection. Price was not extractable.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "sony-help",
+      "url": "https://helpguide.sony.net/speaker/7862/v1/en/contents/TP1001477513.html",
+      "kind": "official_provider_page",
+      "finding": "Dimensions 206 × 77 × 76 mm; mass about 650 g.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "jbl-official",
+      "url": "https://www.jbl.com/FLIP-7.html?dwvar_FLIP-7_color=Funky+Black-AM-Current&locale=en_US",
+      "kind": "official_provider_page",
+      "finding": "Displayed US price $149.95; portable waterproof positioning.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "jbl-guide",
+      "url": "https://www.jbl.com.pa/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcf93595e/pdfs/PA_JBL_Flip%207_QSG_Global_SOP_V9_online.pdf",
+      "kind": "official_provider_page",
+      "finding": "560 g; 14-hour advertised playback plus boost; conditions vary.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "soundcore-official",
+      "url": "https://www.soundcore.com/products/boom2-bluetooth-speaker-for-bass",
+      "kind": "official_provider_page",
+      "finding": "Displayed $139.99; advertised 24-hour runtime, IPX7, and 3.7 lb mass; manufacturer suggests patios and car camping.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "offer_id": "sony-ult-field-1",
+      "name": "Sony ULT FIELD 1",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "billing_period": "one_time"
+      },
+      "price_status": "unknown",
+      "attributes": {
+        "weight_g": 650,
+        "dimensions_cm": [
+          20.6,
+          7.7,
+          7.6
+        ],
+        "battery_hours_up_to": 12,
+        "protection": "IP67"
+      },
+      "source_ids": [
+        "sony-official",
+        "sony-help"
+      ]
+    },
+    {
+      "offer_id": "jbl-flip-7",
+      "name": "JBL Flip 7",
+      "price": {
+        "amount": 149.95,
+        "currency": "USD",
+        "billing_period": "one_time"
+      },
+      "attributes": {
+        "weight_g": 560,
+        "battery_hours_up_to": 14
+      },
+      "source_ids": [
+        "jbl-official",
+        "jbl-guide"
+      ]
+    },
+    {
+      "offer_id": "soundcore-boom-2",
+      "name": "soundcore Boom 2",
+      "price": {
+        "amount": 139.99,
+        "currency": "USD",
+        "billing_period": "one_time"
+      },
+      "attributes": {
+        "weight_g_approx": 1678,
+        "battery_hours_up_to": 24,
+        "protection": "IPX7"
+      },
+      "source_ids": [
+        "soundcore-official"
+      ]
+    }
+  ],
+  "benchmarks": {},
+  "additional_alternatives": [],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Initial official-page research only; competitor claims were not independently tested.",
+    "Current prices or availability may be unknown; retain unknown values.",
+    "Buying situations and all individual distributions below are design hypotheses, not measured customer data."
+  ]
+}

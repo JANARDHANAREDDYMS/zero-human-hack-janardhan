@@ -1,0 +1,4996 @@
+{
+  "schema_version": "1.1",
+  "product_id": "resume-review",
+  "record_type": "customers",
+  "status": "prepared_for_demo",
+  "population_version": "demo-1.0",
+  "seed": 2026102405,
+  "generator_version": "1.0",
+  "input_hashes": {
+    "segments_sha256": "a8db38503340eb709526c3989593089e488a9c777240786ed43af9871fecc8d5",
+    "rules_sha256": "0839ab011e50be8b6028c87cc59584f924d07643cbbb1be818f01d64e717e7dc"
+  },
+  "count": 50,
+  "customers": [
+    {
+      "customer_id": "resume-review-001",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 26,
+        "maximum": 42,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 42,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.2
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.5
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.3
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 8,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-002",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Graduation approaching",
+      "current_solution": "University career advice",
+      "budget": {
+        "comfortable": 21,
+        "maximum": 29,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 29,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.133333
+        },
+        {
+          "attribute": "price",
+          "weight": 0.266667
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.6
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 8,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-003",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 14,
+        "maximum": 23,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 23,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.117647
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.529412
+        },
+        {
+          "attribute": "price",
+          "weight": 0.352941
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-004",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 10,
+        "maximum": 14,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 14,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.375
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.25
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 12,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-005",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Graduation approaching",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 39,
+        "maximum": 46,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 46,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.090909
+        },
+        {
+          "attribute": "price",
+          "weight": 0.272727
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.636364
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-006",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 18,
+        "maximum": 25,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 25,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.277778
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.5
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.222222
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-007",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 25,
+        "maximum": 38,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 38,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.263158
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.315789
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.421053
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 12,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-008",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Graduation approaching",
+      "current_solution": "Self-written resume",
+      "budget": {
+        "comfortable": 28,
+        "maximum": 34,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 34,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.615385
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.307692
+        },
+        {
+          "attribute": "price",
+          "weight": 0.076923
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 8,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-009",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Graduation approaching",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 28,
+        "maximum": 46,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 46,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.333334
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 8,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-010",
+      "segment_id": "first-job",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_trigger": "Internship applications",
+      "current_solution": "University career advice",
+      "budget": {
+        "comfortable": 10,
+        "maximum": 12,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 12,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 48,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.454545
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.454545
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.09091
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "first-job"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-011",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 43,
+        "maximum": 59,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 59,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 3,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.071429
+        },
+        {
+          "attribute": "price",
+          "weight": 0.642857
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-012",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Beginning external applications",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 28,
+        "maximum": 39,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 39,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 3,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.428572
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-013",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Beginning external applications",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 14,
+        "maximum": 18,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 18,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 5,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.571429
+        },
+        {
+          "attribute": "price",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.285714
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 15,
+        "experience_years": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-014",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "DIY chatbot edits",
+      "budget": {
+        "comfortable": 53,
+        "maximum": 79,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 79,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.2
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.4
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.4
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-015",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 71,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 71,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 3,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.076923
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.384615
+        },
+        {
+          "attribute": "price",
+          "weight": 0.538462
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-016",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Beginning external applications",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 62,
+        "maximum": 73,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 73,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 1,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 3,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 24,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.105263
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.473684
+        },
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.421053
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 15,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-017",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "DIY chatbot edits",
+      "budget": {
+        "comfortable": 15,
+        "maximum": 26,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 26,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 3,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "price",
+          "weight": 0.333334
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-018",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 38,
+        "maximum": 53,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 53,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 1,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 24,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.090909
+        },
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.454545
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.454546
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-019",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "Free resume checker",
+      "budget": {
+        "comfortable": 46,
+        "maximum": 55,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 55,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "usage_allowance",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.294118
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.235294
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 20,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-020",
+      "segment_id": "active-job-search",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_trigger": "Role ended",
+      "current_solution": "Existing resume subscription",
+      "budget": {
+        "comfortable": 34,
+        "maximum": 40,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 40,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 8,
+          "unit": "reviews"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.416667
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.166667
+        },
+        {
+          "attribute": "price",
+          "weight": 0.416666
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 10,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "active-job-search"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-021",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Existing resume",
+      "budget": {
+        "comfortable": 32,
+        "maximum": 44,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 44,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.1
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.2
+        },
+        {
+          "attribute": "price",
+          "weight": 0.7
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-022",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Changing job family",
+      "current_solution": "Existing resume",
+      "budget": {
+        "comfortable": 38,
+        "maximum": 56,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 56,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.1875
+        },
+        {
+          "attribute": "price",
+          "weight": 0.25
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.5625
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-023",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Existing resume",
+      "budget": {
+        "comfortable": 21,
+        "maximum": 34,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 34,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.409091
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.181818
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.409091
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 8
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-024",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Changing job family",
+      "current_solution": "Self-edited resume",
+      "budget": {
+        "comfortable": 24,
+        "maximum": 37,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 37,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.266667
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.4
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-025",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Existing resume",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 71,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 71,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.263158
+        },
+        {
+          "attribute": "price",
+          "weight": 0.263158
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.473684
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "target_transition": "Operations to project roles",
+        "experience_years": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-026",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Changing job family",
+      "current_solution": "Self-edited resume",
+      "budget": {
+        "comfortable": 17,
+        "maximum": 26,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 26,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.375
+        },
+        {
+          "attribute": "price",
+          "weight": 0.125
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.5
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-027",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Career-center feedback",
+      "budget": {
+        "comfortable": 36,
+        "maximum": 56,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 56,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "job_fit",
+          "weight": 0.166667
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.416667
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.416666
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Other career change",
+        "experience_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-028",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Career-center feedback",
+      "budget": {
+        "comfortable": 50,
+        "maximum": 78,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 78,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.058824
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Operations to project roles",
+        "experience_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-029",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Career-center feedback",
+      "budget": {
+        "comfortable": 21,
+        "maximum": 29,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 29,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.153846
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.230769
+        },
+        {
+          "attribute": "price",
+          "weight": 0.615385
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-030",
+      "segment_id": "career-switch",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_trigger": "Completing retraining",
+      "current_solution": "Self-edited resume",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 78,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 78,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.25
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.375
+        },
+        {
+          "attribute": "job_fit",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "target_transition": "Analyst to engineering",
+        "experience_years": 8
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-switch"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-031",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Established resume",
+      "budget": {
+        "comfortable": 69,
+        "maximum": 87,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 87,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.3
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.6
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.1
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 2,
+        "experience_years": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-032",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Referral invitation",
+      "current_solution": "Established resume",
+      "budget": {
+        "comfortable": 71,
+        "maximum": 82,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 82,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.357143
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "price",
+          "weight": 0.357143
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 2,
+        "experience_years": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-033",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Trusted colleague feedback",
+      "budget": {
+        "comfortable": 31,
+        "maximum": 37,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 37,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.4
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.266667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-034",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Referral invitation",
+      "current_solution": "Established resume",
+      "budget": {
+        "comfortable": 23,
+        "maximum": 32,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 32,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.45
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.45
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.1
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-035",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Trusted colleague feedback",
+      "budget": {
+        "comfortable": 62,
+        "maximum": 86,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 86,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.473684
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.210526
+        },
+        {
+          "attribute": "price",
+          "weight": 0.31579
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-036",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Referral invitation",
+      "current_solution": "Trusted colleague feedback",
+      "budget": {
+        "comfortable": 38,
+        "maximum": 63,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 63,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "price",
+          "weight": 0.285715
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 2,
+        "experience_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-037",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Established resume",
+      "budget": {
+        "comfortable": 34,
+        "maximum": 39,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 39,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "turnaround",
+          "weight": 0.529412
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.117647
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.352941
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 12
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-038",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Established resume",
+      "budget": {
+        "comfortable": 61,
+        "maximum": 96,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 96,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "credibility",
+          "weight": 0.5
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.125
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-039",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Specific opportunity",
+      "current_solution": "Trusted colleague feedback",
+      "budget": {
+        "comfortable": 59,
+        "maximum": 79,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 79,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.4
+        },
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.4
+        },
+        {
+          "attribute": "credibility",
+          "weight": 0.2
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 1,
+        "experience_years": 12
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-040",
+      "segment_id": "experienced-targeted",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_trigger": "Referral invitation",
+      "current_solution": "Existing paid tool",
+      "budget": {
+        "comfortable": 55,
+        "maximum": 75,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 75,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "evidence_of_edits",
+          "weight": 0.375
+        },
+        {
+          "attribute": "turnaround",
+          "weight": 0.1875
+        },
+        {
+          "attribute": "price",
+          "weight": 0.4375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 2,
+        "experience_years": 12
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "experienced-targeted"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-041",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Trusted friend",
+      "budget": {
+        "comfortable": 32,
+        "maximum": 53,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 53,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "incremental_value",
+          "weight": 0.3
+        },
+        {
+          "attribute": "price",
+          "weight": 0.4
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.3
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-042",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Free resume review",
+      "budget": {
+        "comfortable": 48,
+        "maximum": 59,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 59,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "effort",
+          "weight": 0.461538
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.307692
+        },
+        {
+          "attribute": "price",
+          "weight": 0.23077
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-043",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Free tool feedback conflicts",
+      "current_solution": "Trusted friend",
+      "budget": {
+        "comfortable": 7,
+        "maximum": 12,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 12,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 336,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "effort",
+          "weight": 0.133333
+        },
+        {
+          "attribute": "price",
+          "weight": 0.4
+        },
+        {
+          "attribute": "incremental_value",
+          "weight": 0.466667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 1,
+        "experience_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-044",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Free tool feedback conflicts",
+      "current_solution": "Free resume review",
+      "budget": {
+        "comfortable": 37,
+        "maximum": 60,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 60,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.428572
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-045",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Existing chatbot access",
+      "budget": {
+        "comfortable": 27,
+        "maximum": 45,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 45,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "incremental_value",
+          "weight": 0.75
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.125
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.125
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 5,
+        "experience_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-046",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Free tool feedback conflicts",
+      "current_solution": "Existing chatbot access",
+      "budget": {
+        "comfortable": 16,
+        "maximum": 27,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 27,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.421053
+        },
+        {
+          "attribute": "incremental_value",
+          "weight": 0.105263
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.473684
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-047",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Existing chatbot access",
+      "budget": {
+        "comfortable": 0,
+        "maximum": 1,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 1,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 72,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.375
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.25
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-048",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Existing chatbot access",
+      "budget": {
+        "comfortable": 35,
+        "maximum": 47,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 47,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.181818
+        },
+        {
+          "attribute": "incremental_value",
+          "weight": 0.545455
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.272727
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "applications_per_month": 1,
+        "experience_years": 0
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-049",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Free tool feedback conflicts",
+      "current_solution": "Free resume review",
+      "budget": {
+        "comfortable": 19,
+        "maximum": 22,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 22,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 1,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 168,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.466667
+        },
+        {
+          "attribute": "incremental_value",
+          "weight": 0.066667
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.466666
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 1,
+        "experience_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "resume-review-050",
+      "segment_id": "self-service-check",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_trigger": "Review before applications",
+      "current_solution": "Free resume review",
+      "budget": {
+        "comfortable": 8,
+        "maximum": 13,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 13,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 2,
+          "unit": "pages"
+        },
+        {
+          "attribute": "turnaround_hours",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 720,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "actionable_feedback",
+          "weight": 0.214286
+        },
+        {
+          "attribute": "effort",
+          "weight": 0.5
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "applications_per_month": 3,
+        "experience_years": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "self-service-check"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ],
+  "limitations": [
+    "Synthetic individuals, not real respondents or demand observations.",
+    "Equal segment coverage is not market weighting; numerical distributions are assumptions.",
+    "No customer choices, journey histories, or launch verdicts are assigned."
+  ]
+}

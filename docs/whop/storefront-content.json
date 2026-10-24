@@ -1,0 +1,11 @@
+{
+  "business": {
+    "title": "Customer Labs",
+    "description": "Explore your product through market evidence and simulated customer decisions. Understand objections, compare alternatives, and identify improvements worth testing."
+  },
+  "product": {
+    "title": "Customer Labs",
+    "headline": "Understand why customers would choose—or pass on—your product.",
+    "description": "Before you invest more in your product, explore what could make people choose it—and what might hold them back.\n\nShare a short product brief or upload a Markdown (.md) file. Customer Labs researches alternatives, builds customer groups for you to review, and simulates how those customers compare your offer with competitors, their current solution, or buying nothing.\n\nYour report explains each customer's choice in plain language, summarizes feedback by group, and suggests improvements to investigate. It also identifies concerns that could benefit from a relevant human expert. Expert sourcing and hiring are separate steps.\n\nFAQ\n\nWhat do I need to provide?\nYour product name and a short description. Add a planned price and key features if you have them.\n\nAre these real customers?\nNo. Profiles and responses are synthetic scenarios informed by research, not real interviews or verified demand.\n\nWhat do I receive?\nCollected research, customer groups and profiles, simulated choices, and a readable report with suggested improvements.\n\nWill this predict sales?\nNo. Use it to form hypotheses and plan real customer tests. It does not guarantee revenue or product success.\n\nIs expert work included?\nNo. Any Terac sourcing, recruitment, or paid expert work is handled separately."
+  }
+}

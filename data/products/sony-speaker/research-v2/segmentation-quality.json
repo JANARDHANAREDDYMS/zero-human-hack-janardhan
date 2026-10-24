@@ -1,0 +1,117 @@
+{
+  "status": "diagnostic_not_market_validation",
+  "track_findings": {
+    "offers": [
+      "offer-price",
+      "offer-endurance",
+      "offer-protection"
+    ],
+    "buyer_situations": [
+      "serviceability-request",
+      "travel-tradeoff",
+      "repair-friction"
+    ],
+    "counterevidence": [
+      "travel-switch-friction",
+      "repair-alternative",
+      "retain-satisfied"
+    ]
+  },
+  "warnings": [],
+  "segments": [
+    {
+      "segment_id": "repair-hesitant",
+      "status": "evidence_informed_hypothesis",
+      "buyer_finding_ids": [
+        "serviceability-request",
+        "repair-friction"
+      ],
+      "buyer_source_count": 2,
+      "warnings": [],
+      "constant_fields": [
+        "budget.currency",
+        "budget.billing_period",
+        "budget.scope_units",
+        "budget.scope_note",
+        "urgency.basis",
+        "switching_barriers"
+      ],
+      "numeric_distributions": "assumed_unless_individually_supported"
+    },
+    {
+      "segment_id": "repair-capable",
+      "status": "evidence_informed_hypothesis",
+      "buyer_finding_ids": [
+        "repair-alternative"
+      ],
+      "buyer_source_count": 1,
+      "warnings": [
+        "Buyer support comes from one source; multiple findings do not establish independent corroboration."
+      ],
+      "constant_fields": [
+        "budget.currency",
+        "budget.billing_period",
+        "budget.scope_units",
+        "budget.scope_note",
+        "urgency.basis",
+        "switching_barriers"
+      ],
+      "numeric_distributions": "assumed_unless_individually_supported"
+    },
+    {
+      "segment_id": "travel-upgrade",
+      "status": "evidence_informed_hypothesis",
+      "buyer_finding_ids": [
+        "travel-tradeoff",
+        "travel-switch-friction"
+      ],
+      "buyer_source_count": 1,
+      "warnings": [
+        "Buyer support comes from one source; multiple findings do not establish independent corroboration."
+      ],
+      "constant_fields": [
+        "budget.currency",
+        "budget.billing_period",
+        "budget.scope_units",
+        "budget.scope_note",
+        "urgency.basis",
+        "switching_barriers"
+      ],
+      "numeric_distributions": "assumed_unless_individually_supported"
+    },
+    {
+      "segment_id": "satisfied-retain",
+      "status": "evidence_informed_hypothesis",
+      "buyer_finding_ids": [
+        "retain-satisfied"
+      ],
+      "buyer_source_count": 1,
+      "warnings": [
+        "Buyer support comes from one source; multiple findings do not establish independent corroboration."
+      ],
+      "constant_fields": [
+        "budget.currency",
+        "budget.billing_period",
+        "budget.scope_units",
+        "budget.scope_note",
+        "urgency.basis",
+        "switching_barriers"
+      ],
+      "numeric_distributions": "assumed_unless_individually_supported"
+    }
+  ],
+  "allocation_basis": "scenario_coverage_not_market_share",
+  "evidence_limitations": [
+    "Small purposive sample: three discussion threads, two from related repair-oriented communities; selection bias toward repair concerns.",
+    "No representative survey, interviews, verified-purchase review dataset, or market prevalence.",
+    "Historical discussions inform situations, not current competitor prices or buyer distributions.",
+    "Only one refreshed official competitor offer; previous competitor catalog remains historical and requires refresh before a live shopping comparison.",
+    "No direct evidence for willingness to pay for this hypothetical Sony concept, future spare availability, battery endurance in use, or actual sound quality.",
+    "Research was manually interpreted in chat; not a live Exa/model-bridge generation run."
+  ],
+  "limitations": [
+    "Counts measure scenario coverage, not market share.",
+    "Linked reports may be biased, duplicated, historical or unverified; semantic review is still required.",
+    "Constant fields are reported for review, not automatically errors."
+  ]
+}

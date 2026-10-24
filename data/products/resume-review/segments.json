@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.1",
+  "product_id": "resume-review",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "first-job",
+      "name": "Students applying for first professional roles",
+      "goal": "Present limited experience clearly for entry-level applications.",
+      "purchase_triggers": [
+        "Graduation approaching",
+        "Internship applications"
+      ],
+      "current_solutions": [
+        "Self-written resume",
+        "University career advice",
+        "Free resume checker"
+      ],
+      "budget_maximum_range": [
+        0,
+        55
+      ],
+      "urgency_days_options": [
+        2,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "values": [
+            1,
+            2
+          ],
+          "unit": "pages",
+          "hard_probability": 0.8
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "actionable_feedback",
+        "credibility",
+        "ease_of_use"
+      ],
+      "source_ids": [
+        "resume-rezi",
+        "resume-topresume"
+      ],
+      "category_context": {
+        "applications_per_month": [
+          3,
+          5,
+          8,
+          12
+        ],
+        "experience_years": [
+          0,
+          1
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "active-job-search",
+      "name": "Active applicants tailoring multiple applications",
+      "goal": "Improve and adapt a resume across an active job search.",
+      "purchase_triggers": [
+        "Role ended",
+        "Beginning external applications"
+      ],
+      "current_solutions": [
+        "Existing resume subscription",
+        "Free resume checker",
+        "DIY chatbot edits"
+      ],
+      "budget_maximum_range": [
+        15,
+        85
+      ],
+      "urgency_days_options": [
+        1,
+        3,
+        7,
+        14
+      ],
+      "requirements": [
+        {
+          "attribute": "reviews_per_month",
+          "operator": "gte",
+          "values": [
+            3,
+            5,
+            8,
+            12
+          ],
+          "unit": "reviews",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.6
+        }
+      ],
+      "priority_pool": [
+        "turnaround",
+        "usage_allowance",
+        "job_fit",
+        "price"
+      ],
+      "source_ids": [
+        "resume-worded",
+        "resume-jobscan"
+      ],
+      "category_context": {
+        "applications_per_month": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "experience_years": [
+          1,
+          2,
+          4,
+          6
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "career-switch",
+      "name": "Career changers reframing experience",
+      "goal": "Explain transferable experience without misrepresenting qualifications.",
+      "purchase_triggers": [
+        "Changing job family",
+        "Completing retraining"
+      ],
+      "current_solutions": [
+        "Existing resume",
+        "Career-center feedback",
+        "Self-edited resume"
+      ],
+      "budget_maximum_range": [
+        10,
+        80
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.7
+        },
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "values": [
+            1,
+            2
+          ],
+          "unit": "pages",
+          "hard_probability": 0.7
+        }
+      ],
+      "priority_pool": [
+        "evidence_of_edits",
+        "job_fit",
+        "credibility",
+        "price"
+      ],
+      "source_ids": [
+        "resume-worded",
+        "resume-jobscan"
+      ],
+      "category_context": {
+        "target_transition": [
+          "Analyst to engineering",
+          "Operations to project roles",
+          "Other career change"
+        ],
+        "experience_years": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "experienced-targeted",
+      "name": "Experienced candidates considering a small number of roles",
+      "goal": "Assess how clearly relevant accomplishments fit a particular role.",
+      "purchase_triggers": [
+        "Specific opportunity",
+        "Referral invitation"
+      ],
+      "current_solutions": [
+        "Established resume",
+        "Trusted colleague feedback",
+        "Existing paid tool"
+      ],
+      "budget_maximum_range": [
+        20,
+        120
+      ],
+      "urgency_days_options": [
+        1,
+        3,
+        7,
+        14
+      ],
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "values": [
+            2
+          ],
+          "unit": "pages",
+          "hard_probability": 0.8
+        },
+        {
+          "attribute": "job_matching",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.65
+        }
+      ],
+      "priority_pool": [
+        "credibility",
+        "evidence_of_edits",
+        "turnaround",
+        "price"
+      ],
+      "source_ids": [
+        "resume-human-muse",
+        "resume-worded"
+      ],
+      "category_context": {
+        "applications_per_month": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "experience_years": [
+          5,
+          8,
+          10,
+          12
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "self-service-check",
+      "name": "DIY applicants checking whether payment adds value",
+      "goal": "Find concrete gaps that justify paying beyond existing free tools.",
+      "purchase_triggers": [
+        "Free tool feedback conflicts",
+        "Review before applications"
+      ],
+      "current_solutions": [
+        "Free resume review",
+        "Existing chatbot access",
+        "Trusted friend"
+      ],
+      "budget_maximum_range": [
+        0,
+        60
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "resume_pages_supported",
+          "operator": "gte",
+          "values": [
+            1,
+            2
+          ],
+          "unit": "pages",
+          "hard_probability": 0.7
+        }
+      ],
+      "priority_pool": [
+        "incremental_value",
+        "price",
+        "actionable_feedback",
+        "effort"
+      ],
+      "source_ids": [
+        "resume-topresume",
+        "resume-rezi"
+      ],
+      "category_context": {
+        "applications_per_month": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "experience_years": [
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

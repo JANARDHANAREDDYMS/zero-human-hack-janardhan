@@ -1,0 +1,138 @@
+{
+  "status": "passed_structural_and_reproducibility_checks",
+  "total_customers": 300,
+  "products": [
+    {
+      "product_id": "codesensei",
+      "count": 50,
+      "segment_counts": {
+        "upcoming-interview": 10,
+        "steady-learning": 10,
+        "career-transition": 10,
+        "communication-practice": 10,
+        "existing-tool-users": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        6,
+        63
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    },
+    {
+      "product_id": "commuter-backpack",
+      "count": 50,
+      "segment_counts": {
+        "public-transit": 10,
+        "multi-workspace": 10,
+        "campus-work": 10,
+        "short-business-trips": 10,
+        "replace-working-bag": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        37,
+        178
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    },
+    {
+      "product_id": "desk-lamp",
+      "count": 50,
+      "segment_counts": {
+        "small-study-desk": 10,
+        "home-office": 10,
+        "evening-reading": 10,
+        "shared-workspaces": 10,
+        "detail-tasks": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        16,
+        154
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    },
+    {
+      "product_id": "proofreading",
+      "count": 50,
+      "segment_counts": {
+        "occasional-personal": 10,
+        "students-deadlines": 10,
+        "client-writers": 10,
+        "regular-office": 10,
+        "careful-authors": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        0,
+        100
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    },
+    {
+      "product_id": "resume-review",
+      "count": 50,
+      "segment_counts": {
+        "first-job": 10,
+        "active-job-search": 10,
+        "career-switch": 10,
+        "experienced-targeted": 10,
+        "self-service-check": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        1,
+        96
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    },
+    {
+      "product_id": "sony-speaker",
+      "count": 50,
+      "segment_counts": {
+        "portable-weekend": 10,
+        "garden-gatherings": 10,
+        "home-desk": 10,
+        "gift-buyers": 10,
+        "replace-or-retain": 10
+      },
+      "unique_profiles": 50,
+      "budget_maximum_range": [
+        60,
+        199
+      ],
+      "reproducibility": "passed",
+      "consistency": "passed",
+      "source_references": "passed",
+      "external_validity": "not established",
+      "customer_choices": "not generated"
+    }
+  ],
+  "schema_checks": "passed",
+  "pilot_checks": "passed",
+  "sony_input_fixture": "passed",
+  "action_contract_checks": "passed",
+  "external_validity": "Not established; no human, behavioral, or runtime model evaluation performed.",
+  "runtime_simulator": "Not implemented"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "hypothetical": true,
+  "id": "desk-lamp",
+  "name": "Detachable desk lamp",
+  "type": "physical",
+  "baseline": {
+    "Lighting": "Three brightness levels; integrated LED",
+    "Adjustment": "Tilting head and adjustable desk stand",
+    "Controls": "Physical power/brightness control; no app required",
+    "Charging": "USB-C for detachable light; cable and USB power adapter included (proposed)",
+    "Battery target": "Four hours at 100 lumens; full-output runtime unverified",
+    "Construction": "Plastic/aluminum body; proposed one-year warranty"
+  },
+  "standout": "Detachable rechargeable light head that works on its included mini stand away from the desk base.",
+  "selling_point": "One desk light that moves with your work.",
+  "negative_features": [
+    {
+      "feature": "Maximum brightness 250 lumens",
+      "comparison": "Below sampled median 420 lm and Lepro detailed specification of 750 lm; above IKEA 170 lm.",
+      "reason": "Deliberate light-output limitation, relevant to large work areas."
+    },
+    {
+      "feature": "Fixed 2700 K warm-white light; no color-temperature selection",
+      "comparison": "OttLite offers three modes and Lepro five; IKEA is also fixed 2700 K.",
+      "reason": "Deliberate loss of color-temperature flexibility; may suit evening readers."
+    }
+  ],
+  "design_notes": "Price equals sampled median. Brightness and color-mode count deliberately depart from sampled medians. Detachability and battery performance are unverified concept engineering targets. The three-brand price sample spans budget to premium; not a representative market median.",
+  "price_description": "$26.99, one-time",
+  "price": {
+    "amount": 26.99,
+    "currency": "USD",
+    "billing_period": "one_time"
+  },
+  "audience": [],
+  "research_question": "Which purchasing situations prefer this offer over alternatives, and does the marketed feature compensate for the deliberate tradeoffs?",
+  "experiments": [
+    "Same offer with versus without marketed standout",
+    "Address each disadvantage separately",
+    "Compare by segment without predetermining launch outcome"
+  ],
+  "status": "proposed_specification",
+  "source_refs": [
+    "competitor-baselines-snapshot"
+  ],
+  "audience_status": "not_defined"
+}

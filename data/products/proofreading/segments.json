@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.1",
+  "product_id": "proofreading",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "occasional-personal",
+      "name": "Occasional personal-document writers",
+      "goal": "Correct an important short personal document without unnecessary cost.",
+      "purchase_triggers": [
+        "Important letter",
+        "Personal statement draft"
+      ],
+      "current_solutions": [
+        "Self-editing",
+        "Free grammar tool",
+        "Friend review"
+      ],
+      "budget_maximum_range": [
+        0,
+        25
+      ],
+      "urgency_days_options": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "values": [
+            500,
+            1000,
+            1500,
+            2000
+          ],
+          "unit": "words",
+          "hard_probability": 1.0
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "clarity",
+        "ease_of_use",
+        "turnaround"
+      ],
+      "source_ids": [
+        "proof-grammarly-free",
+        "proof-quillbot-free"
+      ],
+      "category_context": {
+        "document_words": [
+          500,
+          800,
+          1200,
+          1800
+        ],
+        "documents_needed": [
+          1
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "students-deadlines",
+      "name": "Students with a writing deadline",
+      "goal": "Improve grammar and clarity while retaining ownership of the writing.",
+      "purchase_triggers": [
+        "Essay deadline",
+        "Project report due"
+      ],
+      "current_solutions": [
+        "Free grammar checker",
+        "University writing support",
+        "Self-editing"
+      ],
+      "budget_maximum_range": [
+        0,
+        30
+      ],
+      "urgency_days_options": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "values": [
+            1000,
+            1500,
+            2000,
+            3000
+          ],
+          "unit": "words",
+          "hard_probability": 1.0
+        }
+      ],
+      "priority_pool": [
+        "turnaround",
+        "price",
+        "author_control",
+        "clarity"
+      ],
+      "source_ids": [
+        "proof-scribbr",
+        "proof-grammarly-free"
+      ],
+      "category_context": {
+        "document_words": [
+          1000,
+          1500,
+          2000,
+          2800
+        ],
+        "documents_needed": [
+          1,
+          2
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "client-writers",
+      "name": "Freelancers preparing client documents",
+      "goal": "Present clear client-facing writing while controlling stylistic changes.",
+      "purchase_triggers": [
+        "Client delivery",
+        "Proposal submission"
+      ],
+      "current_solutions": [
+        "Existing writing subscription",
+        "Self-editing",
+        "Existing chatbot access"
+      ],
+      "budget_maximum_range": [
+        10,
+        90
+      ],
+      "urgency_days_options": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "values": [
+            1000,
+            2000,
+            3000
+          ],
+          "unit": "words",
+          "hard_probability": 1.0
+        }
+      ],
+      "priority_pool": [
+        "author_control",
+        "clarity",
+        "turnaround",
+        "price"
+      ],
+      "source_ids": [
+        "proof-quillbot",
+        "proof-grammarly"
+      ],
+      "category_context": {
+        "document_words": [
+          800,
+          1500,
+          2000,
+          2800
+        ],
+        "documents_needed": [
+          1,
+          2,
+          4
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "regular-office",
+      "name": "People editing recurring work documents",
+      "goal": "Reduce editing effort across recurring reports and correspondence.",
+      "purchase_triggers": [
+        "Recurring report",
+        "New writing responsibilities"
+      ],
+      "current_solutions": [
+        "Existing grammar subscription",
+        "Word processor checker",
+        "Colleague review"
+      ],
+      "budget_maximum_range": [
+        5,
+        100
+      ],
+      "urgency_days_options": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "values": [
+            1000,
+            2000,
+            3000
+          ],
+          "unit": "words",
+          "hard_probability": 1.0
+        }
+      ],
+      "priority_pool": [
+        "total_cost",
+        "turnaround",
+        "effort",
+        "clarity"
+      ],
+      "source_ids": [
+        "proof-scribbr",
+        "proof-grammarly"
+      ],
+      "category_context": {
+        "document_words": [
+          600,
+          1200,
+          1800,
+          2500
+        ],
+        "documents_needed": [
+          3,
+          5,
+          8
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "careful-authors",
+      "name": "Authors seeking understandable editorial changes",
+      "goal": "Improve wording while retaining personal voice and editorial control.",
+      "purchase_triggers": [
+        "Important submission",
+        "Concern about aggressive automated rewrites"
+      ],
+      "current_solutions": [
+        "Self-editing",
+        "Human editor",
+        "Free grammar tool"
+      ],
+      "budget_maximum_range": [
+        10,
+        70
+      ],
+      "urgency_days_options": [
+        2,
+        3,
+        7,
+        14
+      ],
+      "requirements": [
+        {
+          "attribute": "word_limit",
+          "operator": "gte",
+          "values": [
+            1000,
+            1500,
+            2000,
+            3000
+          ],
+          "unit": "words",
+          "hard_probability": 1.0
+        }
+      ],
+      "priority_pool": [
+        "author_control",
+        "explanations",
+        "clarity",
+        "price"
+      ],
+      "source_ids": [
+        "proof-human-scribbr",
+        "proof-quillbot"
+      ],
+      "category_context": {
+        "document_words": [
+          900,
+          1500,
+          2000,
+          2600
+        ],
+        "documents_needed": [
+          1,
+          2
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "product_id": "commuter-backpack",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "competitor-baselines-snapshot",
+      "kind": "research_snapshot",
+      "path": "../../../docs/data/competitor-baselines.json"
+    },
+    {
+      "source_id": "bag-tomtoc-ta1",
+      "url": "https://www.tomtoc.com/products/vintpack-ta1-22l-laptop-backpack",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "bag-tomtoc-t71",
+      "url": "https://www.tomtoc.com/products/navigator-t71-laptop-backpack-m",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "bag-raven20",
+      "url": "https://www.fjallraven.com/us/en-us/bags-gear/backpacks-bags/laptop-bags/raven-202/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "id": "bag-tomtoc-ta1",
+      "name": "tomtoc VintPack-TA1",
+      "url": "https://www.tomtoc.com/products/vintpack-ta1-22l-laptop-backpack",
+      "price_usd": 86.99,
+      "price_basis": "one-time; displayed before cart promotion",
+      "features": [
+        "Padded tech compartment",
+        "Organized pockets",
+        "Drawstring and magnetic flap",
+        "Two-year warranty"
+      ],
+      "capacity_l": 22,
+      "weight_g": 900,
+      "laptop_inches": 15.6,
+      "dimensions_cm": [
+        45.01,
+        30,
+        15.01
+      ]
+    },
+    {
+      "id": "bag-tomtoc-t71",
+      "name": "tomtoc Navigator-T71 24L",
+      "url": "https://www.tomtoc.com/products/navigator-t71-laptop-backpack-m",
+      "price_usd": 89.99,
+      "price_basis": "one-time; displayed before cart promotion",
+      "features": [
+        "Padded laptop storage",
+        "Splash-resistant polyester",
+        "Breathable back panel",
+        "Two-year warranty"
+      ],
+      "capacity_l": 24,
+      "weight_g": 1010,
+      "laptop_inches": 17.3,
+      "dimensions_cm": [
+        45.01,
+        30,
+        16.99
+      ]
+    },
+    {
+      "id": "bag-raven20",
+      "name": "Fjällräven Räven 20",
+      "url": "https://www.fjallraven.com/us/en-us/bags-gear/backpacks-bags/laptop-bags/raven-202/",
+      "price_usd": 105,
+      "price_basis": "one-time; listed price; availability not confirmed",
+      "features": [
+        "G-1000 HeavyDuty fabric",
+        "Organizing pockets",
+        "Padded back panel",
+        "Side pockets"
+      ],
+      "capacity_l": 20,
+      "weight_g": 650,
+      "laptop_inches": 15,
+      "dimensions_cm": [
+        42,
+        28,
+        18
+      ]
+    }
+  ],
+  "benchmarks": {
+    "price_usd": {
+      "value": 89.99,
+      "n": 3,
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-tomtoc-t71",
+        "bag-raven20"
+      ]
+    },
+    "capacity_l": {
+      "value": 22,
+      "n": 3,
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-tomtoc-t71",
+        "bag-raven20"
+      ]
+    },
+    "weight_g": {
+      "value": 900,
+      "n": 3,
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-tomtoc-t71",
+        "bag-raven20"
+      ]
+    },
+    "laptop_inches": {
+      "value": 15.6,
+      "n": 3,
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-tomtoc-t71",
+        "bag-raven20"
+      ]
+    }
+  },
+  "additional_alternatives": [],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Three selected paid peers per category; not all competitors or a representative market census.",
+    "Use one-time USD prices for physical products and short-term monthly USD costs for software. Exclude annual equivalents, human packages, free tiers, and cart promotions from those price medians.",
+    "Use independently sorted numeric fields; categorical baselines are common features or explicit design choices. No median invented for missing/unknown fields.",
+    "Store marketed standout and two deliberate disadvantages separately; final offers are median-derived concepts with stated exceptions, not literal all-field median products.",
+    "Customer-facing simulation offers must not expose negative/standout labels or this research rationale. Show factual attributes uniformly for all alternatives.",
+    "Known free/DIY and human substitutes remain choice options even when excluded from paid-peer arithmetic.",
+    "Manufacturer lumen/capacity claims and software feature claims are not independent performance tests.",
+    "Sony and CodeSensei remain unchanged; this research covers only the four newly selected scenarios."
+  ]
+}

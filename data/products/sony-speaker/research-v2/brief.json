@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0",
+  "product_id": "sony-speaker",
+  "description": "Hypothetical Sony portable Bluetooth speaker: $119 USD, 19 x 7 x 7 cm, 550 g, up to 14 h target, IP67 target, USB-C, stereo pairing, physical controls and basic app EQ. Tool-free battery swap target under a minute; one battery included, optional spare $29; open compartment only when dry. Targets, not measured performance.",
+  "research_question": "Which purchasing situations value this offer over competitors, repairing or keeping an existing speaker, borrowing, or buying nothing?",
+  "name": "Hypothetical Sony portable speaker",
+  "category": "portable Bluetooth speaker",
+  "price": {
+    "amount": 119,
+    "currency": "USD",
+    "billing_period": "one_time"
+  }
+}

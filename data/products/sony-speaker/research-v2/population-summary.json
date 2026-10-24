@@ -1,0 +1,47 @@
+{
+  "status": "synthetic_input_diagnostics_not_buying_predictions",
+  "count": 50,
+  "segments": [
+    {
+      "segment_id": "repair-hesitant",
+      "count": 13,
+      "sampled_maximum_budget_min": 68,
+      "sampled_maximum_budget_max": 164,
+      "budget_below_base_119": 7,
+      "budget_below_base_plus_spare_148": 9,
+      "carry_limit_below_550g": 0
+    },
+    {
+      "segment_id": "repair-capable",
+      "count": 12,
+      "sampled_maximum_budget_min": 39,
+      "sampled_maximum_budget_max": 154,
+      "budget_below_base_119": 8,
+      "budget_below_base_plus_spare_148": 11,
+      "carry_limit_below_550g": 0
+    },
+    {
+      "segment_id": "travel-upgrade",
+      "count": 13,
+      "sampled_maximum_budget_min": 52,
+      "sampled_maximum_budget_max": 177,
+      "budget_below_base_119": 4,
+      "budget_below_base_plus_spare_148": 7,
+      "carry_limit_below_550g": 8
+    },
+    {
+      "segment_id": "satisfied-retain",
+      "count": 12,
+      "sampled_maximum_budget_min": 43,
+      "sampled_maximum_budget_max": 165,
+      "budget_below_base_119": 10,
+      "budget_below_base_plus_spare_148": 11,
+      "carry_limit_below_550g": 0
+    }
+  ],
+  "limitations": [
+    "All thresholds/ranges/allocations are authored assumptions. These counts reflect the constructed sample, not demand or conversion.",
+    "Sony base plus spare is $148 before unknown taxes/shipping. Capacity is only arithmetic affordability, not willingness to buy.",
+    "Carry limit is hard for travel scenarios and flexible for the others. Advertised maximum endurance is not equated to actual session endurance."
+  ]
+}

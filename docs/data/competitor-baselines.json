@@ -1,0 +1,494 @@
+{
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "currency": "USD",
+  "status": "Research-informed hypothetical demo specifications; no customer profiles or outcomes generated",
+  "methodology": [
+    "Three selected paid peers per category; not all competitors or a representative market census.",
+    "Use one-time USD prices for physical products and short-term monthly USD costs for software. Exclude annual equivalents, human packages, free tiers, and cart promotions from those price medians.",
+    "Use independently sorted numeric fields; categorical baselines are common features or explicit design choices. No median invented for missing/unknown fields.",
+    "Store marketed standout and two deliberate disadvantages separately; final offers are median-derived concepts with stated exceptions, not literal all-field median products.",
+    "Customer-facing simulation offers must not expose negative/standout labels or this research rationale. Show factual attributes uniformly for all alternatives.",
+    "Known free/DIY and human substitutes remain choice options even when excluded from paid-peer arithmetic.",
+    "Manufacturer lumen/capacity claims and software feature claims are not independent performance tests.",
+    "Sony and CodeSensei remain unchanged; this research covers only the four newly selected scenarios."
+  ],
+  "competitor_groups": {
+    "commuter-backpack": [
+      {
+        "id": "bag-tomtoc-ta1",
+        "name": "tomtoc VintPack-TA1",
+        "url": "https://www.tomtoc.com/products/vintpack-ta1-22l-laptop-backpack",
+        "price_usd": 86.99,
+        "price_basis": "one-time; displayed before cart promotion",
+        "features": [
+          "Padded tech compartment",
+          "Organized pockets",
+          "Drawstring and magnetic flap",
+          "Two-year warranty"
+        ],
+        "capacity_l": 22,
+        "weight_g": 900,
+        "laptop_inches": 15.6,
+        "dimensions_cm": [
+          45.01,
+          30,
+          15.01
+        ]
+      },
+      {
+        "id": "bag-tomtoc-t71",
+        "name": "tomtoc Navigator-T71 24L",
+        "url": "https://www.tomtoc.com/products/navigator-t71-laptop-backpack-m",
+        "price_usd": 89.99,
+        "price_basis": "one-time; displayed before cart promotion",
+        "features": [
+          "Padded laptop storage",
+          "Splash-resistant polyester",
+          "Breathable back panel",
+          "Two-year warranty"
+        ],
+        "capacity_l": 24,
+        "weight_g": 1010,
+        "laptop_inches": 17.3,
+        "dimensions_cm": [
+          45.01,
+          30,
+          16.99
+        ]
+      },
+      {
+        "id": "bag-raven20",
+        "name": "Fjällräven Räven 20",
+        "url": "https://www.fjallraven.com/us/en-us/bags-gear/backpacks-bags/laptop-bags/raven-202/",
+        "price_usd": 105,
+        "price_basis": "one-time; listed price; availability not confirmed",
+        "features": [
+          "G-1000 HeavyDuty fabric",
+          "Organizing pockets",
+          "Padded back panel",
+          "Side pockets"
+        ],
+        "capacity_l": 20,
+        "weight_g": 650,
+        "laptop_inches": 15,
+        "dimensions_cm": [
+          42,
+          28,
+          18
+        ]
+      }
+    ],
+    "desk-lamp": [
+      {
+        "id": "lamp-ikea",
+        "name": "IKEA KORVSNÖRE",
+        "url": "https://www.ikea.com/us/en/p/korvsnoere-led-desk-lamp-dimmable-white-80624301/",
+        "price_usd": 24.99,
+        "price_basis": "one-time; displayed price",
+        "features": [
+          "Continuous dimming",
+          "Adjustable head",
+          "Integrated LED"
+        ],
+        "lumens": 170,
+        "color_modes": 1,
+        "color_temperatures_k": [
+          2700
+        ],
+        "power_w": 2.6
+      },
+      {
+        "id": "lamp-lepro",
+        "name": "Lepro touch-control desk lamp",
+        "url": "https://www.lepro.com/products/lepro-touch-control-led-desk-lamp-dimmable-with-3-color-modes-for-home-office",
+        "price_usd": 26.99,
+        "price_basis": "one-time; displayed product price",
+        "features": [
+          "Five brightness levels",
+          "Setting memory",
+          "Adjustable arm"
+        ],
+        "lumens": 750,
+        "color_modes": 5,
+        "color_temperatures_k": [
+          3000,
+          3500,
+          4000,
+          5000,
+          6500
+        ],
+        "power_w": 9.5,
+        "source_caveat": "Detailed specification says 750 lm; title/images also say 800 lm. Use 750 provisionally, flag conflict; no Bluetooth feature assumed from inconsistent metadata."
+      },
+      {
+        "id": "lamp-ottlite",
+        "name": "OttLite Adjust LED Desk Lamp",
+        "url": "https://ottlite.com/products/adjust-led-desk-lamp",
+        "price_usd": 149.99,
+        "price_basis": "one-time; displayed product price",
+        "features": [
+          "Three brightness levels",
+          "Flexible neck",
+          "Setting memory",
+          "USB charging port"
+        ],
+        "lumens": 420,
+        "color_modes": 3,
+        "power_w": null
+      }
+    ],
+    "resume-review": [
+      {
+        "id": "resume-rezi",
+        "name": "Rezi Pro",
+        "url": "https://www.rezi.ai/pricing",
+        "price_usd": 29,
+        "price_basis": "month-to-month",
+        "features": [
+          "Unlimited resumes",
+          "AI editor",
+          "Score",
+          "Keyword targeting"
+        ]
+      },
+      {
+        "id": "resume-worded",
+        "name": "Resume Worded Pro",
+        "url": "https://resumeworded.com/get-pro",
+        "price_usd": 49,
+        "price_basis": "month-to-month",
+        "features": [
+          "Unlimited complete reviews",
+          "Line-by-line report",
+          "AI rewrites",
+          "LinkedIn review"
+        ]
+      },
+      {
+        "id": "resume-jobscan",
+        "name": "Jobscan Premium",
+        "url": "https://www.jobscan.co/blog/jobscan-vs-teal/",
+        "price_usd": 49.95,
+        "price_basis": "month-to-month",
+        "features": [
+          "Job-description matching",
+          "AI optimization",
+          "LinkedIn optimization"
+        ],
+        "source_caveat": "Provider comparison article; checkout plan text could not be extracted. Price provisional until checkout reconfirmed."
+      }
+    ],
+    "proofreading": [
+      {
+        "id": "proof-scribbr",
+        "name": "Scribbr AI",
+        "url": "https://www.scribbr.com/proofreading-services/",
+        "price_usd": 9.95,
+        "price_basis": "one month; page wording; renewal terms unverified",
+        "features": [
+          "Unlimited documents",
+          "DOCX tracked changes",
+          "Grammar and spelling",
+          "Clarity",
+          "US/UK English"
+        ],
+        "turnaround_max_minutes": 10
+      },
+      {
+        "id": "proof-quillbot",
+        "name": "QuillBot Premium",
+        "url": "https://quillbot.com/blog/frequently-asked-questions/how-much-is-quillbot-premium/",
+        "price_usd": 19.95,
+        "price_basis": "month-to-month",
+        "features": [
+          "Advanced grammar recommendations",
+          "Paraphrasing",
+          "Writing tools"
+        ],
+        "feature_source": "https://quillbot.com/premium"
+      },
+      {
+        "id": "proof-grammarly",
+        "name": "Grammarly Pro",
+        "url": "https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost",
+        "price_usd": 30,
+        "price_basis": "month-to-month",
+        "features": [
+          "Sentence rewrites",
+          "Tone adjustment",
+          "Writing suggestions"
+        ],
+        "feature_source": "https://www.grammarly.com/plans"
+      }
+    ]
+  },
+  "benchmarks": {
+    "commuter-backpack": {
+      "price_usd": {
+        "value": 89.99,
+        "n": 3,
+        "source_ids": [
+          "bag-tomtoc-ta1",
+          "bag-tomtoc-t71",
+          "bag-raven20"
+        ]
+      },
+      "capacity_l": {
+        "value": 22,
+        "n": 3,
+        "source_ids": [
+          "bag-tomtoc-ta1",
+          "bag-tomtoc-t71",
+          "bag-raven20"
+        ]
+      },
+      "weight_g": {
+        "value": 900,
+        "n": 3,
+        "source_ids": [
+          "bag-tomtoc-ta1",
+          "bag-tomtoc-t71",
+          "bag-raven20"
+        ]
+      },
+      "laptop_inches": {
+        "value": 15.6,
+        "n": 3,
+        "source_ids": [
+          "bag-tomtoc-ta1",
+          "bag-tomtoc-t71",
+          "bag-raven20"
+        ]
+      }
+    },
+    "desk-lamp": {
+      "price_usd": {
+        "value": 26.99,
+        "n": 3,
+        "source_ids": [
+          "lamp-ikea",
+          "lamp-lepro",
+          "lamp-ottlite"
+        ]
+      },
+      "lumens": {
+        "value": 420,
+        "n": 3,
+        "source_ids": [
+          "lamp-ikea",
+          "lamp-lepro",
+          "lamp-ottlite"
+        ]
+      },
+      "color_modes": {
+        "value": 3,
+        "n": 3,
+        "source_ids": [
+          "lamp-ikea",
+          "lamp-lepro",
+          "lamp-ottlite"
+        ]
+      }
+    },
+    "resume-review": {
+      "price_usd": {
+        "value": 49,
+        "n": 3,
+        "source_ids": [
+          "resume-rezi",
+          "resume-worded",
+          "resume-jobscan"
+        ]
+      }
+    },
+    "proofreading": {
+      "price_usd": {
+        "value": 19.95,
+        "n": 3,
+        "source_ids": [
+          "proof-scribbr",
+          "proof-quillbot",
+          "proof-grammarly"
+        ]
+      }
+    }
+  },
+  "additional_alternatives": [
+    {
+      "id": "resume-topresume",
+      "name": "TopResume free review",
+      "url": "https://topresume.com/resume-review",
+      "price_usd": 0,
+      "price_basis": "free review",
+      "features": [
+        "Critique and ATS analysis",
+        "Advertised feedback under 48 hours"
+      ]
+    },
+    {
+      "id": "proof-grammarly-free",
+      "name": "Grammarly Free",
+      "url": "https://www.grammarly.com/plans",
+      "price_usd": 0,
+      "price_basis": "free basic tier",
+      "features": [
+        "Spelling/grammar corrections",
+        "Tone information"
+      ]
+    },
+    {
+      "id": "proof-quillbot-free",
+      "name": "QuillBot Free",
+      "url": "https://quillbot.com/premium",
+      "price_usd": 0,
+      "price_basis": "free basic tier",
+      "features": [
+        "Basic grammar corrections; other usage limits apply"
+      ]
+    },
+    {
+      "id": "resume-human-muse",
+      "name": "The Muse Mentor résumé review",
+      "url": "https://www.themuse.com/coaching/resume-review",
+      "price_usd": 139,
+      "price_basis": "per package; human service",
+      "features": [
+        "30-minute call",
+        "Revised draft and feedback iteration"
+      ]
+    },
+    {
+      "id": "proof-human-scribbr",
+      "name": "Scribbr human editing example",
+      "url": "https://www.scribbr.com/proofreading-services/",
+      "price_usd": 100,
+      "price_basis": "published example for 4,100 words, not a quote for 2,000",
+      "features": [
+        "Professional editing and tracked changes"
+      ]
+    }
+  ],
+  "unpriced_substitutes": [
+    "Use an existing AI chatbot, subject to the customer’s access and usage limits; current chatbot plans not verified here.",
+    "Edit independently, retain an existing backpack/lamp, or buy nothing."
+  ],
+  "proposed_products": [
+    {
+      "id": "commuter-backpack",
+      "name": "Commuter backpack",
+      "type": "physical",
+      "price": "$89.99, one-time",
+      "baseline": {
+        "Capacity": "22 L",
+        "Body dimensions": "Approximately 45 × 30 × 17 cm; design choice, not componentwise median",
+        "Organization": "Padded laptop compartment, front organizer, key clip, two bottle pockets",
+        "Carry": "Padded shoulder straps and back panel",
+        "Fabric": "Water-resistant polyester; no waterproof certification claimed",
+        "Color": "Black or gray; design choice",
+        "Warranty": "Two years; design choice consistent with tomtoc sample"
+      },
+      "standout": "Removable work organizer: lift out charger, cables, pens, and small essentials together and transfer to another bag. Organizer included.",
+      "selling_point": "Switch bags without repacking your work essentials.",
+      "negative_features": [
+        {
+          "feature": "1,150 g empty, including organizer",
+          "comparison": "Heavier than all three sampled bags (650–1,010 g); sample median 900 g.",
+          "reason": "A deliberate weight tradeoff to test against organizer convenience."
+        },
+        {
+          "feature": "Laptop sleeve supports up to 15-inch devices; usable compartment 36 × 25 × 2.5 cm (proposed)",
+          "comparison": "Lower claimed diagonal compatibility than tomtoc 15.6-inch and 17.3-inch options; sample median 15.6 inches. Device dimensions still govern fit.",
+          "reason": "A deliberate compatibility limit; not a universal negative for smaller-laptop buyers."
+        }
+      ],
+      "design_notes": "Price and capacity equal sample medians. Weight and laptop compatibility deliberately depart below competitiveness. Other categorical specifications are proposed common-feature choices, not computed medians."
+    },
+    {
+      "id": "desk-lamp",
+      "name": "Detachable desk lamp",
+      "type": "physical",
+      "price": "$26.99, one-time",
+      "baseline": {
+        "Lighting": "Three brightness levels; integrated LED",
+        "Adjustment": "Tilting head and adjustable desk stand",
+        "Controls": "Physical power/brightness control; no app required",
+        "Charging": "USB-C for detachable light; cable and USB power adapter included (proposed)",
+        "Battery target": "Four hours at 100 lumens; full-output runtime unverified",
+        "Construction": "Plastic/aluminum body; proposed one-year warranty"
+      },
+      "standout": "Detachable rechargeable light head that works on its included mini stand away from the desk base.",
+      "selling_point": "One desk light that moves with your work.",
+      "negative_features": [
+        {
+          "feature": "Maximum brightness 250 lumens",
+          "comparison": "Below sampled median 420 lm and Lepro detailed specification of 750 lm; above IKEA 170 lm.",
+          "reason": "Deliberate light-output limitation, relevant to large work areas."
+        },
+        {
+          "feature": "Fixed 2700 K warm-white light; no color-temperature selection",
+          "comparison": "OttLite offers three modes and Lepro five; IKEA is also fixed 2700 K.",
+          "reason": "Deliberate loss of color-temperature flexibility; may suit evening readers."
+        }
+      ],
+      "design_notes": "Price equals sampled median. Brightness and color-mode count deliberately depart from sampled medians. Detachability and battery performance are unverified concept engineering targets. The three-brand price sample spans budget to premium; not a representative market median."
+    },
+    {
+      "id": "resume-review",
+      "name": "Job-targeted résumé review",
+      "type": "professional service",
+      "price": "$49/month, billed monthly; proposed from selected paid-software median",
+      "baseline": {
+        "Scope": "Up to two pages per résumé; one target job posting per review",
+        "Checks": "Structure, clarity, bullet impact, formatting, and job-requirement coverage",
+        "Deliverable": "Prioritized feedback plus suggested before/after bullet edits in a downloadable report",
+        "Method": "AI-assisted analysis; no recruiter or human review promised",
+        "Boundary": "No fabricated accomplishments and no interview or hiring guarantee"
+      },
+      "standout": "Each suggested bullet rewrite includes the target-job requirement and the original résumé evidence it uses; missing evidence is flagged instead of filled in.",
+      "selling_point": "See what each rewrite supports—and where the evidence comes from.",
+      "negative_features": [
+        {
+          "feature": "Three completed reviews per month",
+          "comparison": "Rezi advertises unlimited resumes; Resume Worded advertises unlimited complete reviews.",
+          "reason": "Deliberate usage cap at a median subscription price."
+        },
+        {
+          "feature": "Delivery within 48 hours rather than instant feedback",
+          "comparison": "Resume Worded describes instant feedback: https://help.resumeworded.com/article/31-will-resume-worded-pro-help-me-improve-my-resumes-content",
+          "reason": "Deliberate service delay; urgent applicants may prefer an immediate tool."
+        }
+      ],
+      "design_notes": "$49 is the median of three selected monthly AI-software plans, not a per-review or human-service median. Page limit, deliverable format, cap, and delay are scenario design choices. Job tailoring already exists; traceable evidence is the proposed marketed emphasis, not proven exclusivity."
+    },
+    {
+      "id": "proofreading",
+      "name": "Explained document proofreading",
+      "type": "professional service",
+      "price": "$20 per document, one-time; retained proposed test price, NOT a computed median",
+      "baseline": {
+        "Scope": "One English document, up to 2,000 words",
+        "Checks": "Grammar, spelling, punctuation, and clarity",
+        "Deliverable": "Edited document and an original/revised comparison",
+        "Tone": "Preserve intended author tone; target promise, not measured performance",
+        "Method": "AI-assisted editing; no human editor promised",
+        "Exclusions": "No factual verification, citation verification, plagiarism certification, or subject-matter review"
+      },
+      "standout": "An edit ledger explains each substantive change and distinguishes necessary corrections from optional style changes.",
+      "selling_point": "Understand every meaningful edit. Keep control of your voice.",
+      "negative_features": [
+        {
+          "feature": "$20 for each document; no unlimited-document plan",
+          "comparison": "Scribbr AI advertises $9.95 for one month of unlimited documents; Grammarly and QuillBot also have free basic alternatives.",
+          "reason": "Deliberate recurring-cost disadvantage; keep rather than automatically improve the offer."
+        },
+        {
+          "feature": "48-hour turnaround",
+          "comparison": "Scribbr AI advertises at most ten minutes; free interactive correction tools are additional substitutes.",
+          "reason": "Deliberate delay to test whether explained edits justify waiting."
+        }
+      ],
+      "design_notes": "Selected paid monthly-tool median is $19.95/month ($9.95, $19.95, $30). It cannot be relabeled $20/document. Common correction features form the baseline; the chosen billing unit and wait are explicit deviations. Document cap, file handling, and edit-ledger specifications are design choices."
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Synthetic customer profile v1.1",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "segment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synthetic": {
+      "const": true
+    },
+    "market": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "country",
+        "language",
+        "currency"
+      ]
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purchase_trigger": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_solution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "budget": {
+      "type": "object",
+      "properties": {
+        "comfortable": {
+          "type": "number",
+          "minimum": 0
+        },
+        "maximum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "billing_period": {
+          "type": "string",
+          "enum": [
+            "one_time",
+            "month",
+            "year",
+            "document",
+            "document_bundle",
+            "session",
+            "project"
+          ]
+        },
+        "scope_units": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "upfront_maximum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "scope_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "comfortable",
+        "maximum",
+        "currency",
+        "billing_period",
+        "scope_units",
+        "upfront_maximum",
+        "scope_note"
+      ]
+    },
+    "urgency": {
+      "type": "object",
+      "properties": {
+        "deadline_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "deadline_days",
+        "basis"
+      ]
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attribute": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operator": {
+            "enum": [
+              "lte",
+              "gte",
+              "eq",
+              "contains"
+            ]
+          },
+          "constraint": {
+            "enum": [
+              "hard",
+              "flexible"
+            ]
+          },
+          "value": {},
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "attribute",
+          "operator",
+          "constraint",
+          "value",
+          "unit"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "tradeoffs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attribute": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weight": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          }
+        },
+        "required": [
+          "attribute",
+          "weight"
+        ]
+      },
+      "minItems": 1
+    },
+    "decision_style": {
+      "type": "object",
+      "properties": {
+        "research_effort": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "evidence_need": {
+          "enum": [
+            "basic",
+            "comparison",
+            "independent"
+          ]
+        },
+        "category_familiarity": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "evaluation_action_budget": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "research_effort",
+        "evidence_need",
+        "category_familiarity",
+        "evaluation_action_budget"
+      ]
+    },
+    "switching_barriers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "category_context": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "enum": [
+              "assumption",
+              "market_evidence",
+              "client_specification"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "finding_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "field",
+          "basis",
+          "source_ids",
+          "note",
+          "finding_ids"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "customer_id",
+    "segment_id",
+    "synthetic",
+    "market",
+    "goal",
+    "purchase_trigger",
+    "current_solution",
+    "budget",
+    "urgency",
+    "requirements",
+    "tradeoffs",
+    "decision_style",
+    "switching_barriers",
+    "category_context",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

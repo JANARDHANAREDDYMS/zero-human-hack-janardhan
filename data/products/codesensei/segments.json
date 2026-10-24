@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.1",
+  "product_id": "codesensei",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "upcoming-interview",
+      "name": "Candidates with scheduled coding interviews",
+      "goal": "Practice explaining coding solutions before an upcoming interview.",
+      "purchase_triggers": [
+        "Technical interview scheduled",
+        "Recruiter screen passed"
+      ],
+      "current_solutions": [
+        "Free coding questions",
+        "Existing question-bank subscription",
+        "Practice with a friend"
+      ],
+      "budget_maximum_range": [
+        10,
+        70
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14
+      ],
+      "requirements": [
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.8
+        },
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "values": [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript"
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "mock_interview_minutes",
+          "operator": "gte",
+          "values": [
+            20,
+            30,
+            45
+          ],
+          "unit": "minutes",
+          "hard_probability": 0.4
+        }
+      ],
+      "priority_pool": [
+        "time_to_value",
+        "interview_feedback",
+        "price",
+        "language_fit"
+      ],
+      "source_ids": [
+        "leetcode-official",
+        "pramp-official"
+      ],
+      "category_context": {
+        "interview_format": [
+          "Algorithms",
+          "Mixed technical"
+        ],
+        "study_hours_per_week": [
+          4,
+          6,
+          10,
+          14
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "steady-learning",
+      "name": "Students preparing over a semester",
+      "goal": "Build coding fundamentals with regular affordable practice.",
+      "purchase_triggers": [
+        "Starting internship search",
+        "Planning future applications"
+      ],
+      "current_solutions": [
+        "Free learning materials",
+        "University exercises",
+        "Free practice sites"
+      ],
+      "budget_maximum_range": [
+        0,
+        35
+      ],
+      "urgency_days_options": [
+        30,
+        60,
+        90
+      ],
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "values": [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript"
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "progress_tracking",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.3
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "learning_structure",
+        "practice_depth",
+        "feedback"
+      ],
+      "source_ids": [
+        "neetcode-official",
+        "leetcode-official"
+      ],
+      "category_context": {
+        "skill_level": [
+          "Beginner",
+          "Intermediate"
+        ],
+        "study_hours_per_week": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "career-transition",
+      "name": "Career switchers with limited study time",
+      "goal": "Identify coding gaps while preparing to change careers.",
+      "purchase_triggers": [
+        "Bootcamp completion",
+        "Beginning a career transition"
+      ],
+      "current_solutions": [
+        "Course exercises",
+        "Chatbot assistance",
+        "Free question bank"
+      ],
+      "budget_maximum_range": [
+        10,
+        65
+      ],
+      "urgency_days_options": [
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "values": [
+            "Python",
+            "JavaScript",
+            "Java"
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.6
+        }
+      ],
+      "priority_pool": [
+        "explanation_quality",
+        "time_efficiency",
+        "price",
+        "learning_structure"
+      ],
+      "source_ids": [
+        "neetcode-official",
+        "leetcode-official"
+      ],
+      "category_context": {
+        "prior_role": [
+          "Analyst",
+          "Nontechnical role",
+          "Other engineering"
+        ],
+        "study_hours_per_week": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "communication-practice",
+      "name": "Candidates seeking interview conversation practice",
+      "goal": "Improve reasoning aloud and receiving interview feedback.",
+      "purchase_triggers": [
+        "Difficulty explaining a solution",
+        "Mock interview feedback was unclear"
+      ],
+      "current_solutions": [
+        "Practice with a friend",
+        "Peer mock interviews",
+        "Self-recorded practice"
+      ],
+      "budget_maximum_range": [
+        5,
+        60
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "communication_feedback",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.65
+        },
+        {
+          "attribute": "mock_interviews_per_month",
+          "operator": "gte",
+          "values": [
+            2,
+            4,
+            6
+          ],
+          "unit": "sessions",
+          "hard_probability": 0.4
+        }
+      ],
+      "priority_pool": [
+        "feedback_credibility",
+        "conversation_practice",
+        "convenience",
+        "price"
+      ],
+      "source_ids": [
+        "pramp-official"
+      ],
+      "category_context": {
+        "skill_level": [
+          "Intermediate",
+          "Advanced"
+        ],
+        "study_hours_per_week": [
+          2,
+          4,
+          6
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "existing-tool-users",
+      "name": "Existing subscribers evaluating another tool",
+      "goal": "Determine whether another subscription adds enough value.",
+      "purchase_triggers": [
+        "Current platform feels repetitive",
+        "Exploring mock-interview options",
+        "No immediate interview planned"
+      ],
+      "current_solutions": [
+        "Paid question-bank subscription",
+        "Existing course library",
+        "Free practice sites"
+      ],
+      "budget_maximum_range": [
+        5,
+        65
+      ],
+      "urgency_days_options": [
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "values": [
+            "Python",
+            "Java",
+            "C++",
+            "JavaScript"
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.7
+        }
+      ],
+      "priority_pool": [
+        "incremental_value",
+        "switching_effort",
+        "price",
+        "feedback"
+      ],
+      "source_ids": [
+        "leetcode-official",
+        "neetcode-official"
+      ],
+      "category_context": {
+        "existing_subscription_usd_month": [
+          0,
+          15,
+          25,
+          40
+        ],
+        "study_hours_per_week": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "hypothetical": true,
+  "id": "proofreading",
+  "name": "Explained document proofreading",
+  "type": "professional service",
+  "baseline": {
+    "Scope": "One English document, up to 2,000 words",
+    "Checks": "Grammar, spelling, punctuation, and clarity",
+    "Deliverable": "Edited document and an original/revised comparison",
+    "Tone": "Preserve intended author tone; target promise, not measured performance",
+    "Method": "AI-assisted editing; no human editor promised",
+    "Exclusions": "No factual verification, citation verification, plagiarism certification, or subject-matter review"
+  },
+  "standout": "An edit ledger explains each substantive change and distinguishes necessary corrections from optional style changes.",
+  "selling_point": "Understand every meaningful edit. Keep control of your voice.",
+  "negative_features": [
+    {
+      "feature": "$20 for each document; no unlimited-document plan",
+      "comparison": "Scribbr AI advertises $9.95 for one month of unlimited documents; Grammarly and QuillBot also have free basic alternatives.",
+      "reason": "Deliberate recurring-cost disadvantage; keep rather than automatically improve the offer."
+    },
+    {
+      "feature": "48-hour turnaround",
+      "comparison": "Scribbr AI advertises at most ten minutes; free interactive correction tools are additional substitutes.",
+      "reason": "Deliberate delay to test whether explained edits justify waiting."
+    }
+  ],
+  "design_notes": "Selected paid monthly-tool median is $19.95/month ($9.95, $19.95, $30). It cannot be relabeled $20/document. Common correction features form the baseline; the chosen billing unit and wait are explicit deviations. Document cap, file handling, and edit-ledger specifications are design choices.",
+  "price_description": "$20 per document, one-time; retained proposed test price, NOT a computed median",
+  "price": {
+    "amount": 20,
+    "currency": "USD",
+    "billing_period": "document"
+  },
+  "audience": [],
+  "research_question": "Which purchasing situations prefer this offer over alternatives, and does the marketed feature compensate for the deliberate tradeoffs?",
+  "experiments": [
+    "Same offer with versus without marketed standout",
+    "Address each disadvantage separately",
+    "Compare by segment without predetermining launch outcome"
+  ],
+  "status": "proposed_specification",
+  "source_refs": [
+    "competitor-baselines-snapshot"
+  ],
+  "audience_status": "not_defined"
+}

@@ -1,0 +1,23 @@
+# Local research cache
+.firecrawl/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS metadata
+.DS_Store
+
+# Worker dependencies
+node_modules/
+
+# Local payment ledger, order access hashes and webhook signing records
+backend/var/

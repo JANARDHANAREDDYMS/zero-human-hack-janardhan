@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Demo product brief",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "physical",
+        "professional service"
+      ]
+    },
+    "status": {
+      "enum": [
+        "agreed_concept",
+        "proposed_specification"
+      ]
+    },
+    "hypothetical": {
+      "const": true
+    },
+    "price": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Price",
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "const": "USD"
+        },
+        "billing_period": {
+          "enum": [
+            "one_time",
+            "month",
+            "document"
+          ]
+        }
+      },
+      "required": [
+        "amount",
+        "currency",
+        "billing_period"
+      ]
+    },
+    "baseline": {
+      "type": "object"
+    },
+    "standout": {
+      "type": "string"
+    },
+    "selling_point": {
+      "type": "string"
+    },
+    "negative_features": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "Deliberate disadvantage",
+        "type": "object",
+        "properties": {
+          "feature": {
+            "type": "string"
+          },
+          "comparison": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "feature",
+          "comparison",
+          "reason"
+        ]
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "name",
+    "type",
+    "status",
+    "hypothetical",
+    "price",
+    "baseline",
+    "standout",
+    "selling_point",
+    "negative_features",
+    "source_refs"
+  ]
+}

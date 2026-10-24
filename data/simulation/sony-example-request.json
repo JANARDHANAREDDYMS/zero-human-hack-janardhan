@@ -1,0 +1,452 @@
+{
+  "contract_version": "1.0",
+  "run_id": "sony-demo-example-input",
+  "product_id": "sony-speaker",
+  "variant_id": "baseline",
+  "population_version": "demo-1.0",
+  "customer": {
+    "customer_id": "sony-speaker-001",
+    "segment_id": "portable-weekend",
+    "market": {
+      "country": "US",
+      "language": "en",
+      "currency": "USD"
+    },
+    "goal": "Carry shared audio for private weekend trips without excessive weight.",
+    "purchase_trigger": "Private cabin trip",
+    "current_solution": "Phone speaker",
+    "budget": {
+      "comfortable": 89,
+      "maximum": 108,
+      "currency": "USD",
+      "billing_period": "one_time",
+      "scope_units": 1,
+      "upfront_maximum": 108,
+      "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+    },
+    "urgency": {
+      "deadline_days": 7,
+      "basis": "assumed relative time horizon"
+    },
+    "requirements": [
+      {
+        "attribute": "weight_g",
+        "operator": "lte",
+        "constraint": "hard",
+        "value": 750,
+        "unit": "g"
+      },
+      {
+        "attribute": "battery_hours_up_to",
+        "operator": "gte",
+        "constraint": "flexible",
+        "value": 10,
+        "unit": "hours"
+      },
+      {
+        "attribute": "water_protection",
+        "operator": "contains",
+        "constraint": "hard",
+        "value": "splash",
+        "unit": null
+      }
+    ],
+    "tradeoffs": [
+      {
+        "attribute": "carry_weight",
+        "weight": 0.444444
+      },
+      {
+        "attribute": "price",
+        "weight": 0.333333
+      },
+      {
+        "attribute": "battery_endurance",
+        "weight": 0.222223
+      }
+    ],
+    "decision_style": {
+      "research_effort": "low",
+      "evidence_need": "basic",
+      "category_familiarity": "medium",
+      "evaluation_action_budget": 5
+    },
+    "switching_barriers": [
+      "Time and effort to evaluate and set up an alternative"
+    ],
+    "category_context": {
+      "listening_place": "Private cabin",
+      "transport": "Train"
+    },
+    "provenance": [
+      {
+        "field": "segment_id",
+        "basis": "assumption",
+        "source_ids": [
+          "portable-weekend"
+        ],
+        "note": "Purchasing situation inspired by provider material; membership is invented."
+      },
+      {
+        "field": "goal,purchase_trigger,current_solution,category_context",
+        "basis": "assumption",
+        "source_ids": [
+          "portable-weekend"
+        ],
+        "note": "Plausible template and sampled choices, not actual respondents."
+      },
+      {
+        "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+        "basis": "assumption",
+        "source_ids": [
+          "sampling-rules-v1"
+        ],
+        "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+      }
+    ],
+    "synthetic": true
+  },
+  "presentation_seed": 20261024,
+  "max_decisions": 6,
+  "offers": [
+    {
+      "offer_id": "sony-concept",
+      "name": "Sony portable speaker concept",
+      "description": "Portable Bluetooth speaker",
+      "price": {
+        "amount": 119,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "mandatory_upfront": 119,
+        "scope": "One speaker; tax/shipping and delivery availability unknown"
+      },
+      "sections": {
+        "features": [
+          {
+            "fact_id": "sony-concept:weight_g",
+            "attribute": "weight_g",
+            "value": 550,
+            "unit": "g",
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:battery_hours_up_to",
+            "attribute": "battery_hours_up_to",
+            "value": 14,
+            "unit": "hours",
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:bluetooth",
+            "attribute": "bluetooth",
+            "value": true,
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:stereo_pairing",
+            "attribute": "stereo_pairing",
+            "value": true,
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:protection",
+            "attribute": "protection",
+            "value": "IP67",
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:battery_replacement",
+            "attribute": "battery_replacement",
+            "value": "Tool-free; under a minute; dry compartment only",
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          },
+          {
+            "fact_id": "sony-concept:optional_spare_price",
+            "attribute": "optional_spare_price",
+            "value": 29,
+            "unit": "USD",
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          }
+        ],
+        "pricing": [
+          {
+            "fact_id": "sony-concept:price_amount",
+            "attribute": "price_amount",
+            "value": 119,
+            "unit": "USD",
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          }
+        ],
+        "evidence": [
+          {
+            "fact_id": "sony-concept:performance_qualification",
+            "attribute": "performance_qualification",
+            "value": "Advertised or proposed figures are not independent test results.",
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          }
+        ],
+        "terms": [
+          {
+            "fact_id": "sony-concept:delivery_days",
+            "attribute": "delivery_days",
+            "value": null,
+            "unit": "days",
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "unknown"
+          },
+          {
+            "fact_id": "sony-concept:protection_qualification",
+            "attribute": "protection_qualification",
+            "value": "IP67 and battery runtime are proposed engineering targets; test conditions unavailable.",
+            "unit": null,
+            "source_id": "earlier-product-discussion",
+            "evidence_status": "provided_concept"
+          }
+        ]
+      },
+      "sample_available": false
+    },
+    {
+      "offer_id": "sony-ult-field-1",
+      "name": "Sony ULT FIELD 1",
+      "description": "Portable Bluetooth speaker",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "mandatory_upfront": null,
+        "scope": "One speaker; tax/shipping and delivery availability unknown"
+      },
+      "sections": {
+        "features": [
+          {
+            "fact_id": "sony-ult-field-1:battery_hours_up_to",
+            "attribute": "battery_hours_up_to",
+            "value": 12,
+            "unit": "hours",
+            "source_id": "sony-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "sony-ult-field-1:protection",
+            "attribute": "protection",
+            "value": "IP67",
+            "unit": null,
+            "source_id": "sony-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "sony-ult-field-1:bluetooth",
+            "attribute": "bluetooth",
+            "value": true,
+            "unit": null,
+            "source_id": "sony-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "sony-ult-field-1:weight_g",
+            "attribute": "weight_g",
+            "value": 650,
+            "unit": "g",
+            "source_id": "sony-help",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "pricing": [
+          {
+            "fact_id": "sony-ult-field-1:price_amount",
+            "attribute": "price_amount",
+            "value": null,
+            "unit": "USD",
+            "source_id": "sony-official",
+            "evidence_status": "unknown"
+          }
+        ],
+        "evidence": [
+          {
+            "fact_id": "sony-ult-field-1:performance_qualification",
+            "attribute": "performance_qualification",
+            "value": "Advertised or proposed figures are not independent test results.",
+            "unit": null,
+            "source_id": "sony-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "terms": [
+          {
+            "fact_id": "sony-ult-field-1:delivery_days",
+            "attribute": "delivery_days",
+            "value": null,
+            "unit": "days",
+            "source_id": "sony-official",
+            "evidence_status": "unknown"
+          }
+        ]
+      },
+      "sample_available": false
+    },
+    {
+      "offer_id": "jbl-flip-7",
+      "name": "JBL Flip 7",
+      "description": "Portable Bluetooth speaker",
+      "price": {
+        "amount": 149.95,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "mandatory_upfront": 149.95,
+        "scope": "One speaker; tax/shipping and delivery availability unknown"
+      },
+      "sections": {
+        "features": [
+          {
+            "fact_id": "jbl-flip-7:weight_g",
+            "attribute": "weight_g",
+            "value": 560,
+            "unit": "g",
+            "source_id": "jbl-guide",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "jbl-flip-7:battery_hours_up_to",
+            "attribute": "battery_hours_up_to",
+            "value": 14,
+            "unit": "hours",
+            "source_id": "jbl-guide",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "pricing": [
+          {
+            "fact_id": "jbl-flip-7:price_amount",
+            "attribute": "price_amount",
+            "value": 149.95,
+            "unit": "USD",
+            "source_id": "jbl-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "evidence": [
+          {
+            "fact_id": "jbl-flip-7:performance_qualification",
+            "attribute": "performance_qualification",
+            "value": "Advertised or proposed figures are not independent test results.",
+            "unit": null,
+            "source_id": "jbl-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "terms": [
+          {
+            "fact_id": "jbl-flip-7:delivery_days",
+            "attribute": "delivery_days",
+            "value": null,
+            "unit": "days",
+            "source_id": "jbl-official",
+            "evidence_status": "unknown"
+          }
+        ]
+      },
+      "sample_available": false
+    },
+    {
+      "offer_id": "soundcore-boom-2",
+      "name": "soundcore Boom 2",
+      "description": "Portable Bluetooth speaker",
+      "price": {
+        "amount": 139.99,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "mandatory_upfront": 139.99,
+        "scope": "One speaker; tax/shipping and delivery availability unknown"
+      },
+      "sections": {
+        "features": [
+          {
+            "fact_id": "soundcore-boom-2:weight_g",
+            "attribute": "weight_g",
+            "value": 1678,
+            "unit": "g",
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "soundcore-boom-2:battery_hours_up_to",
+            "attribute": "battery_hours_up_to",
+            "value": 24,
+            "unit": "hours",
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "soundcore-boom-2:protection",
+            "attribute": "protection",
+            "value": "IPX7",
+            "unit": null,
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "pricing": [
+          {
+            "fact_id": "soundcore-boom-2:price_amount",
+            "attribute": "price_amount",
+            "value": 139.99,
+            "unit": "USD",
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "evidence": [
+          {
+            "fact_id": "soundcore-boom-2:performance_qualification",
+            "attribute": "performance_qualification",
+            "value": "Advertised or proposed figures are not independent test results.",
+            "unit": null,
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          },
+          {
+            "fact_id": "soundcore-boom-2:runtime_conditions",
+            "attribute": "runtime_conditions",
+            "value": "Up to 24 hours at 50% volume with BassUp and lights off; actual results vary.",
+            "unit": null,
+            "source_id": "soundcore-official",
+            "evidence_status": "provider_claim"
+          }
+        ],
+        "terms": [
+          {
+            "fact_id": "soundcore-boom-2:delivery_days",
+            "attribute": "delivery_days",
+            "value": null,
+            "unit": "days",
+            "source_id": "soundcore-official",
+            "evidence_status": "unknown"
+          }
+        ]
+      },
+      "sample_available": false
+    }
+  ],
+  "current_solution": "Phone speaker",
+  "allowed_terminal_choices": [
+    "select_offer",
+    "keep_current",
+    "decline",
+    "insufficient_information"
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "status": "synthetic_pilot",
+  "product_id": "codesensei",
+  "count": 5,
+  "customers": [
+    {
+      "customer_id": "codesensei-001",
+      "segment_id": "upcoming-interview",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Practice explaining coding solutions before an upcoming interview.",
+      "purchase_trigger": "Recruiter screen passed",
+      "current_solution": "Free coding questions",
+      "budget": {
+        "comfortable": 20,
+        "maximum": 25,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 25,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "JavaScript",
+          "unit": null
+        },
+        {
+          "attribute": "mock_interview_minutes",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 20,
+          "unit": "minutes"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "time_to_value",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "interview_feedback",
+          "weight": 0.214286
+        },
+        {
+          "attribute": "language_fit",
+          "weight": 0.357143
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "interview_format": "Algorithms",
+        "study_hours_per_week": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "upcoming-interview"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "upcoming-interview"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "codesensei-011",
+      "segment_id": "steady-learning",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Build coding fundamentals with regular affordable practice.",
+      "purchase_trigger": "Starting internship search",
+      "current_solution": "University exercises",
+      "budget": {
+        "comfortable": 14,
+        "maximum": 22,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 22,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "Python",
+          "unit": null
+        },
+        {
+          "attribute": "progress_tracking",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "feedback",
+          "weight": 0.1
+        },
+        {
+          "attribute": "learning_structure",
+          "weight": 0.8
+        },
+        {
+          "attribute": "price",
+          "weight": 0.1
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "skill_level": "Intermediate",
+        "study_hours_per_week": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "steady-learning"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "steady-learning"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "codesensei-021",
+      "segment_id": "career-transition",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Identify coding gaps while preparing to change careers.",
+      "purchase_trigger": "Beginning a career transition",
+      "current_solution": "Chatbot assistance",
+      "budget": {
+        "comfortable": 41,
+        "maximum": 51,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 51,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "Python",
+          "unit": null
+        },
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "time_efficiency",
+          "weight": 0.642857
+        },
+        {
+          "attribute": "price",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "explanation_quality",
+          "weight": 0.071429
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "prior_role": "Analyst",
+        "study_hours_per_week": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "career-transition"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "career-transition"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "codesensei-031",
+      "segment_id": "communication-practice",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Improve reasoning aloud and receiving interview feedback.",
+      "purchase_trigger": "Difficulty explaining a solution",
+      "current_solution": "Self-recorded practice",
+      "budget": {
+        "comfortable": 21,
+        "maximum": 25,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 25,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "communication_feedback",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "mock_interviews_per_month",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 2,
+          "unit": "sessions"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.166667
+        },
+        {
+          "attribute": "conversation_practice",
+          "weight": 0.5
+        },
+        {
+          "attribute": "convenience",
+          "weight": 0.333333
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "skill_level": "Intermediate",
+        "study_hours_per_week": 6
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "communication-practice"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "communication-practice"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "codesensei-041",
+      "segment_id": "existing-tool-users",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Determine whether another subscription adds enough value.",
+      "purchase_trigger": "Current platform feels repetitive",
+      "current_solution": "Existing course library",
+      "budget": {
+        "comfortable": 17,
+        "maximum": 22,
+        "currency": "USD",
+        "billing_period": "month",
+        "scope_units": 1,
+        "upfront_maximum": 22,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "supported_languages",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "C++",
+          "unit": null
+        },
+        {
+          "attribute": "code_execution",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "switching_effort",
+          "weight": 0.076923
+        },
+        {
+          "attribute": "price",
+          "weight": 0.538462
+        },
+        {
+          "attribute": "incremental_value",
+          "weight": 0.384615
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_subscription_usd_month": 15,
+        "study_hours_per_week": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "existing-tool-users"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "existing-tool-users"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ]
+}

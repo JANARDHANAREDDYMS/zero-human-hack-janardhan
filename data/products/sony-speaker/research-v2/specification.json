@@ -1,0 +1,1716 @@
+{
+  "schema_version": "2.0",
+  "seed": 42,
+  "target_count": 50,
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_provenance": {
+    "basis": "assumption",
+    "source_ids": [],
+    "finding_ids": [],
+    "note": "US English USD demo scenario, not confirmed audience geography."
+  },
+  "allocation_basis": "scenario_coverage_not_market_share",
+  "product_id": "sony-speaker",
+  "population_version": "sony-research-v2-manual-1",
+  "attributes": {
+    "repair_confidence": {
+      "type": "string",
+      "unit": null,
+      "description": "Ability and willingness to arrange repair"
+    },
+    "existing_battery_hours": {
+      "type": "integer",
+      "unit": "hours",
+      "description": "Assumed present useful battery endurance"
+    },
+    "required_session_hours": {
+      "type": "integer",
+      "unit": "hours",
+      "description": "Intended listening session"
+    },
+    "maximum_carry_weight_g": {
+      "type": "integer",
+      "unit": "g",
+      "description": "Carrying constraint independent of offered speaker"
+    },
+    "current_satisfaction": {
+      "type": "string",
+      "unit": null,
+      "description": "Satisfaction with existing solution"
+    },
+    "charging_access": {
+      "type": "string",
+      "unit": null,
+      "description": "Access to power during listening"
+    },
+    "battery_hours_up_to": {
+      "type": "number",
+      "unit": "hours",
+      "description": "Advertised maximum; not guaranteed session duration"
+    },
+    "weight_g": {
+      "type": "number",
+      "unit": "g",
+      "description": "Offer mass"
+    },
+    "serviceability": {
+      "type": "string",
+      "unit": null,
+      "description": "Repair access and ongoing parts availability need evidence"
+    }
+  },
+  "segments": [
+    {
+      "segment_id": "repair-hesitant",
+      "name": "Aging-speaker owners reluctant to repair",
+      "goal": "Restore dependable portable listening without a difficult repair.",
+      "count": 13,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "battery-request",
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "serviceability-request",
+          "repair-friction"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Battery no longer lasts the intended session"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Aging portable speaker with short battery endurance"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 60,
+            "maximum": 180
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One portable speaker or repair alternative; taxes, shipping and optional spare must be considered separately."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              7,
+              14,
+              30
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              [
+                {
+                  "attribute": "total_cost",
+                  "weight": 0.5
+                },
+                {
+                  "attribute": "serviceability_evidence",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "repair_effort",
+                  "weight": 0.2
+                }
+              ],
+              [
+                {
+                  "attribute": "total_cost",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "serviceability_evidence",
+                  "weight": 0.4
+                },
+                {
+                  "attribute": "repair_effort",
+                  "weight": 0.3
+                }
+              ]
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Repair access is uncertain",
+              "New sound quality and long-term spare supply are unverified"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.repair_confidence": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.existing_battery_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              1,
+              2,
+              3
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.current_satisfaction": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.required_session_hours": {
+          "rule": {
+            "kind": "scale",
+            "field": "category_context.existing_battery_hours",
+            "factor": 1,
+            "offset": 2
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.maximum_carry_weight_g": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              600,
+              800,
+              1000
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.charging_access": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Power available between sessions",
+              "Limited power during session"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.maximum_carry_weight_g"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        },
+        {
+          "left": "category_context.existing_battery_hours",
+          "operator": "lte",
+          "right": {
+            "field": "category_context.required_session_hours"
+          },
+          "message": "Battery-related repair trigger requires a session need beyond current endurance."
+        }
+      ],
+      "situation": {
+        "trigger": "Battery no longer lasts the intended session",
+        "goal": "Restore dependable portable listening without a difficult repair.",
+        "current_solution": "Aging portable speaker with short battery endurance",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Repair access is uncertain"
+      }
+    },
+    {
+      "segment_id": "repair-capable",
+      "name": "Owners comparing repair with replacement",
+      "goal": "Keep useful audio working at a reasonable total cost.",
+      "count": 12,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "repair-alternative"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Battery endurance has declined; repair is an option"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Aging speaker with a potential battery repair"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 30,
+            "maximum": 160
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One portable speaker or repair alternative; taxes, shipping and optional spare must be considered separately."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              14,
+              30,
+              60
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              [
+                {
+                  "attribute": "total_cost",
+                  "weight": 0.5
+                },
+                {
+                  "attribute": "serviceability_evidence",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "repair_effort",
+                  "weight": 0.2
+                }
+              ],
+              [
+                {
+                  "attribute": "total_cost",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "serviceability_evidence",
+                  "weight": 0.4
+                },
+                {
+                  "attribute": "repair_effort",
+                  "weight": 0.3
+                }
+              ]
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Repairing the existing device may cost less",
+              "Tools, parts and sealing depend on the existing model"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.repair_confidence": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.existing_battery_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              1,
+              2,
+              3
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.current_satisfaction": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.required_session_hours": {
+          "rule": {
+            "kind": "scale",
+            "field": "category_context.existing_battery_hours",
+            "factor": 1,
+            "offset": 2
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.maximum_carry_weight_g": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              600,
+              800,
+              1000
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.charging_access": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Power available between sessions",
+              "Limited power during session"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.maximum_carry_weight_g"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        },
+        {
+          "left": "category_context.existing_battery_hours",
+          "operator": "lte",
+          "right": {
+            "field": "category_context.required_session_hours"
+          },
+          "message": "Battery-related repair trigger requires a session need beyond current endurance."
+        }
+      ],
+      "situation": {
+        "trigger": "Battery endurance has declined; repair is an option",
+        "goal": "Keep useful audio working at a reasonable total cost.",
+        "current_solution": "Aging speaker with a potential battery repair",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Repairing the existing device may cost less"
+      }
+    },
+    {
+      "segment_id": "travel-upgrade",
+      "name": "Travelers weighing sound against bag space",
+      "goal": "Improve hotel-room listening without excessive carrying burden.",
+      "count": 13,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "travel-request"
+        ],
+        "finding_ids": [
+          "travel-tradeoff",
+          "travel-switch-friction"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Planning another trip after finding compact audio unsatisfying"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Working compact travel speaker"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 45,
+            "maximum": 180
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One portable speaker or repair alternative; taxes, shipping and optional spare must be considered separately."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              7,
+              14,
+              30
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              [
+                {
+                  "attribute": "price",
+                  "weight": 0.5
+                },
+                {
+                  "attribute": "sound_evidence",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "portability",
+                  "weight": 0.2
+                }
+              ],
+              [
+                {
+                  "attribute": "price",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "sound_evidence",
+                  "weight": 0.4
+                },
+                {
+                  "attribute": "portability",
+                  "weight": 0.3
+                }
+              ]
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Current speaker already fits the bag",
+              "Sound superiority is unverified",
+              "Firmware and app setup effort"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.repair_confidence": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.existing_battery_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              5,
+              6,
+              8
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.current_satisfaction": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "medium"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.required_session_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.maximum_carry_weight_g": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              300,
+              450,
+              650
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.charging_access": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Hotel power available",
+              "Power bank available"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.maximum_carry_weight_g"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        }
+      ],
+      "situation": {
+        "trigger": "Planning another trip after finding compact audio unsatisfying",
+        "goal": "Improve hotel-room listening without excessive carrying burden.",
+        "current_solution": "Working compact travel speaker",
+        "constraint": "Bag size and sound tradeoff",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Current speaker already fits the bag"
+      }
+    },
+    {
+      "segment_id": "satisfied-retain",
+      "name": "Satisfied owners exploring without an urgent need",
+      "goal": "Continue convenient listening unless an upgrade provides a useful improvement.",
+      "count": 12,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "retain-satisfied"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "fields": {
+        "purchase_trigger": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Browsing alternatives without an existing fault"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "current_solution": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Working older portable speaker that meets present needs"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.maximum": {
+          "rule": {
+            "kind": "integer",
+            "minimum": 30,
+            "maximum": 180
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.comfortable": {
+          "rule": {
+            "kind": "scale",
+            "field": "budget.maximum",
+            "factor": 0.75,
+            "round": "floor"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.currency": {
+          "rule": {
+            "kind": "constant",
+            "value": "USD"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.billing_period": {
+          "rule": {
+            "kind": "constant",
+            "value": "one_time"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_units": {
+          "rule": {
+            "kind": "constant",
+            "value": 1
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.upfront_maximum": {
+          "rule": {
+            "kind": "reference",
+            "field": "budget.maximum"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "budget.scope_note": {
+          "rule": {
+            "kind": "constant",
+            "value": "One portable speaker or repair alternative; taxes, shipping and optional spare must be considered separately."
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.deadline_days": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              30,
+              60,
+              90
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "urgency.basis": {
+          "rule": {
+            "kind": "constant",
+            "value": "Assumed time horizon"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "tradeoffs": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              [
+                {
+                  "attribute": "price",
+                  "weight": 0.5
+                },
+                {
+                  "attribute": "sound_evidence",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "portability",
+                  "weight": 0.2
+                }
+              ],
+              [
+                {
+                  "attribute": "price",
+                  "weight": 0.3
+                },
+                {
+                  "attribute": "sound_evidence",
+                  "weight": 0.4
+                },
+                {
+                  "attribute": "portability",
+                  "weight": 0.3
+                }
+              ]
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.research_effort": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evidence_need": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "basic",
+              "comparison",
+              "independent"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.category_familiarity": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "decision_style.evaluation_action_budget": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              3,
+              4,
+              5
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "switching_barriers": {
+          "rule": {
+            "kind": "constant",
+            "value": [
+              "Existing speaker already meets current needs",
+              "Buying nothing avoids spending and setup"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.repair_confidence": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.existing_battery_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              6,
+              8,
+              10
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.current_satisfaction": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "high"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.required_session_hours": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.maximum_carry_weight_g": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              600,
+              800,
+              1000
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        },
+        "category_context.charging_access": {
+          "rule": {
+            "kind": "choice",
+            "values": [
+              "Power available between sessions",
+              "Limited power during session"
+            ]
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value_rule": {
+            "kind": "reference",
+            "field": "category_context.maximum_carry_weight_g"
+          },
+          "provenance": {
+            "basis": "assumption",
+            "source_ids": [],
+            "finding_ids": [],
+            "note": "Authored scenario range or relationship for coverage; not a measured buyer distribution."
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "left": "budget.comfortable",
+          "operator": "lte",
+          "right": {
+            "field": "budget.maximum"
+          },
+          "message": "Comfortable budget cannot exceed maximum."
+        }
+      ],
+      "situation": {
+        "trigger": "Browsing alternatives without an existing fault",
+        "goal": "Continue convenient listening unless an upgrade provides a useful improvement.",
+        "current_solution": "Working older portable speaker that meets present needs",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Existing speaker already meets current needs"
+      }
+    }
+  ]
+}

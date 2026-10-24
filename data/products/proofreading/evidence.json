@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "product_id": "proofreading",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "competitor-baselines-snapshot",
+      "kind": "research_snapshot",
+      "path": "../../../docs/data/competitor-baselines.json"
+    },
+    {
+      "source_id": "proof-scribbr",
+      "url": "https://www.scribbr.com/proofreading-services/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "proof-quillbot",
+      "url": "https://quillbot.com/blog/frequently-asked-questions/how-much-is-quillbot-premium/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "proof-grammarly",
+      "url": "https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "proof-grammarly-free",
+      "url": "https://www.grammarly.com/plans",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "proof-quillbot-free",
+      "url": "https://quillbot.com/premium",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "proof-human-scribbr",
+      "url": "https://www.scribbr.com/proofreading-services/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "id": "proof-scribbr",
+      "name": "Scribbr AI",
+      "url": "https://www.scribbr.com/proofreading-services/",
+      "price_usd": 9.95,
+      "price_basis": "one month; page wording; renewal terms unverified",
+      "features": [
+        "Unlimited documents",
+        "DOCX tracked changes",
+        "Grammar and spelling",
+        "Clarity",
+        "US/UK English"
+      ],
+      "turnaround_max_minutes": 10
+    },
+    {
+      "id": "proof-quillbot",
+      "name": "QuillBot Premium",
+      "url": "https://quillbot.com/blog/frequently-asked-questions/how-much-is-quillbot-premium/",
+      "price_usd": 19.95,
+      "price_basis": "month-to-month",
+      "features": [
+        "Advanced grammar recommendations",
+        "Paraphrasing",
+        "Writing tools"
+      ],
+      "feature_source": "https://quillbot.com/premium"
+    },
+    {
+      "id": "proof-grammarly",
+      "name": "Grammarly Pro",
+      "url": "https://support.grammarly.com/hc/en-us/articles/115000090011-How-much-does-Grammarly-Pro-cost",
+      "price_usd": 30,
+      "price_basis": "month-to-month",
+      "features": [
+        "Sentence rewrites",
+        "Tone adjustment",
+        "Writing suggestions"
+      ],
+      "feature_source": "https://www.grammarly.com/plans"
+    }
+  ],
+  "benchmarks": {
+    "price_usd": {
+      "value": 19.95,
+      "n": 3,
+      "source_ids": [
+        "proof-scribbr",
+        "proof-quillbot",
+        "proof-grammarly"
+      ]
+    }
+  },
+  "additional_alternatives": [
+    {
+      "id": "proof-grammarly-free",
+      "name": "Grammarly Free",
+      "url": "https://www.grammarly.com/plans",
+      "price_usd": 0,
+      "price_basis": "free basic tier",
+      "features": [
+        "Spelling/grammar corrections",
+        "Tone information"
+      ]
+    },
+    {
+      "id": "proof-quillbot-free",
+      "name": "QuillBot Free",
+      "url": "https://quillbot.com/premium",
+      "price_usd": 0,
+      "price_basis": "free basic tier",
+      "features": [
+        "Basic grammar corrections; other usage limits apply"
+      ]
+    },
+    {
+      "id": "proof-human-scribbr",
+      "name": "Scribbr human editing example",
+      "url": "https://www.scribbr.com/proofreading-services/",
+      "price_usd": 100,
+      "price_basis": "published example for 4,100 words, not a quote for 2,000",
+      "features": [
+        "Professional editing and tracked changes"
+      ]
+    }
+  ],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Three selected paid peers per category; not all competitors or a representative market census.",
+    "Use one-time USD prices for physical products and short-term monthly USD costs for software. Exclude annual equivalents, human packages, free tiers, and cart promotions from those price medians.",
+    "Use independently sorted numeric fields; categorical baselines are common features or explicit design choices. No median invented for missing/unknown fields.",
+    "Store marketed standout and two deliberate disadvantages separately; final offers are median-derived concepts with stated exceptions, not literal all-field median products.",
+    "Customer-facing simulation offers must not expose negative/standout labels or this research rationale. Show factual attributes uniformly for all alternatives.",
+    "Known free/DIY and human substitutes remain choice options even when excluded from paid-peer arithmetic.",
+    "Manufacturer lumen/capacity claims and software feature claims are not independent performance tests.",
+    "Sony and CodeSensei remain unchanged; this research covers only the four newly selected scenarios."
+  ]
+}

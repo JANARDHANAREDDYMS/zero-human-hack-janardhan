@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "product_id": "resume-review",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "competitor-baselines-snapshot",
+      "kind": "research_snapshot",
+      "path": "../../../docs/data/competitor-baselines.json"
+    },
+    {
+      "source_id": "resume-rezi",
+      "url": "https://www.rezi.ai/pricing",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "resume-worded",
+      "url": "https://resumeworded.com/get-pro",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "resume-jobscan",
+      "url": "https://www.jobscan.co/blog/jobscan-vs-teal/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "resume-topresume",
+      "url": "https://topresume.com/resume-review",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "resume-human-muse",
+      "url": "https://www.themuse.com/coaching/resume-review",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "id": "resume-rezi",
+      "name": "Rezi Pro",
+      "url": "https://www.rezi.ai/pricing",
+      "price_usd": 29,
+      "price_basis": "month-to-month",
+      "features": [
+        "Unlimited resumes",
+        "AI editor",
+        "Score",
+        "Keyword targeting"
+      ]
+    },
+    {
+      "id": "resume-worded",
+      "name": "Resume Worded Pro",
+      "url": "https://resumeworded.com/get-pro",
+      "price_usd": 49,
+      "price_basis": "month-to-month",
+      "features": [
+        "Unlimited complete reviews",
+        "Line-by-line report",
+        "AI rewrites",
+        "LinkedIn review"
+      ]
+    },
+    {
+      "id": "resume-jobscan",
+      "name": "Jobscan Premium",
+      "url": "https://www.jobscan.co/blog/jobscan-vs-teal/",
+      "price_usd": 49.95,
+      "price_basis": "month-to-month",
+      "features": [
+        "Job-description matching",
+        "AI optimization",
+        "LinkedIn optimization"
+      ],
+      "source_caveat": "Provider comparison article; checkout plan text could not be extracted. Price provisional until checkout reconfirmed."
+    }
+  ],
+  "benchmarks": {
+    "price_usd": {
+      "value": 49,
+      "n": 3,
+      "source_ids": [
+        "resume-rezi",
+        "resume-worded",
+        "resume-jobscan"
+      ]
+    }
+  },
+  "additional_alternatives": [
+    {
+      "id": "resume-topresume",
+      "name": "TopResume free review",
+      "url": "https://topresume.com/resume-review",
+      "price_usd": 0,
+      "price_basis": "free review",
+      "features": [
+        "Critique and ATS analysis",
+        "Advertised feedback under 48 hours"
+      ]
+    },
+    {
+      "id": "resume-human-muse",
+      "name": "The Muse Mentor résumé review",
+      "url": "https://www.themuse.com/coaching/resume-review",
+      "price_usd": 139,
+      "price_basis": "per package; human service",
+      "features": [
+        "30-minute call",
+        "Revised draft and feedback iteration"
+      ]
+    }
+  ],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Three selected paid peers per category; not all competitors or a representative market census.",
+    "Use one-time USD prices for physical products and short-term monthly USD costs for software. Exclude annual equivalents, human packages, free tiers, and cart promotions from those price medians.",
+    "Use independently sorted numeric fields; categorical baselines are common features or explicit design choices. No median invented for missing/unknown fields.",
+    "Store marketed standout and two deliberate disadvantages separately; final offers are median-derived concepts with stated exceptions, not literal all-field median products.",
+    "Customer-facing simulation offers must not expose negative/standout labels or this research rationale. Show factual attributes uniformly for all alternatives.",
+    "Known free/DIY and human substitutes remain choice options even when excluded from paid-peer arithmetic.",
+    "Manufacturer lumen/capacity claims and software feature claims are not independent performance tests.",
+    "Sony and CodeSensei remain unchanged; this research covers only the four newly selected scenarios."
+  ]
+}

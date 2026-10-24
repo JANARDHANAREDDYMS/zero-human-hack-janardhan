@@ -1,0 +1,650 @@
+{
+  "schema_version": "compact-1",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_note": "US English USD offline scenario assumption.",
+  "segments": [
+    {
+      "name": "Aging-speaker owners reluctant to repair",
+      "goal": "Restore dependable portable listening without a difficult repair.",
+      "count": 13,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "battery-request",
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "serviceability-request",
+          "repair-friction"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "situation": {
+        "trigger": "Battery no longer lasts the intended session",
+        "goal": "Restore dependable portable listening without a difficult repair.",
+        "current_solution": "Aging portable speaker with short battery endurance",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Repair access is uncertain"
+      },
+      "assumption_note": "Manually constructed compact Sony test fixture; no live model judgment.",
+      "purchase_triggers": [
+        "Battery no longer lasts the intended session"
+      ],
+      "current_solutions": [
+        "Aging portable speaker with short battery endurance"
+      ],
+      "switching_barriers": [
+        "Repair access is uncertain",
+        "New sound quality and long-term spare supply are unverified"
+      ],
+      "budget_min": 60,
+      "budget_max": 180,
+      "deadline_days": [
+        7,
+        14,
+        30
+      ],
+      "research_effort": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "evidence_need": [
+        "basic",
+        "comparison",
+        "independent"
+      ],
+      "familiarity": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "action_budget": [
+        3,
+        4,
+        5
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "total_cost",
+          "weight": 0.5
+        },
+        {
+          "attribute": "serviceability_evidence",
+          "weight": 0.3
+        },
+        {
+          "attribute": "repair_effort",
+          "weight": 0.2
+        }
+      ],
+      "category_values": [
+        {
+          "slot": 0,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 1,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 2,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 3,
+          "text_values": [],
+          "number_values": [
+            2,
+            4,
+            8
+          ],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 4,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 5,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 6,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 7,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        }
+      ]
+    },
+    {
+      "name": "Owners comparing repair with replacement",
+      "goal": "Keep useful audio working at a reasonable total cost.",
+      "count": 12,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "repair-alternative"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "situation": {
+        "trigger": "Battery endurance has declined; repair is an option",
+        "goal": "Keep useful audio working at a reasonable total cost.",
+        "current_solution": "Aging speaker with a potential battery repair",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Repairing the existing device may cost less"
+      },
+      "assumption_note": "Manually constructed compact Sony test fixture; no live model judgment.",
+      "purchase_triggers": [
+        "Battery endurance has declined; repair is an option"
+      ],
+      "current_solutions": [
+        "Aging speaker with a potential battery repair"
+      ],
+      "switching_barriers": [
+        "Repairing the existing device may cost less",
+        "Tools, parts and sealing depend on the existing model"
+      ],
+      "budget_min": 30,
+      "budget_max": 160,
+      "deadline_days": [
+        14,
+        30,
+        60
+      ],
+      "research_effort": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "evidence_need": [
+        "basic",
+        "comparison",
+        "independent"
+      ],
+      "familiarity": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "action_budget": [
+        3,
+        4,
+        5
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "total_cost",
+          "weight": 0.5
+        },
+        {
+          "attribute": "serviceability_evidence",
+          "weight": 0.3
+        },
+        {
+          "attribute": "repair_effort",
+          "weight": 0.2
+        }
+      ],
+      "category_values": [
+        {
+          "slot": 0,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 1,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 2,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 3,
+          "text_values": [],
+          "number_values": [
+            2,
+            4,
+            8
+          ],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 4,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 5,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 6,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 7,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        }
+      ]
+    },
+    {
+      "name": "Travelers weighing sound against bag space",
+      "goal": "Improve hotel-room listening without excessive carrying burden.",
+      "count": 13,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "travel-request"
+        ],
+        "finding_ids": [
+          "travel-tradeoff",
+          "travel-switch-friction"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "situation": {
+        "trigger": "Planning another trip after finding compact audio unsatisfying",
+        "goal": "Improve hotel-room listening without excessive carrying burden.",
+        "current_solution": "Working compact travel speaker",
+        "constraint": "Bag size and sound tradeoff",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Current speaker already fits the bag"
+      },
+      "assumption_note": "Manually constructed compact Sony test fixture; no live model judgment.",
+      "purchase_triggers": [
+        "Planning another trip after finding compact audio unsatisfying"
+      ],
+      "current_solutions": [
+        "Working compact travel speaker"
+      ],
+      "switching_barriers": [
+        "Current speaker already fits the bag",
+        "Sound superiority is unverified",
+        "Firmware and app setup effort"
+      ],
+      "budget_min": 45,
+      "budget_max": 180,
+      "deadline_days": [
+        7,
+        14,
+        30
+      ],
+      "research_effort": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "evidence_need": [
+        "basic",
+        "comparison",
+        "independent"
+      ],
+      "familiarity": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "action_budget": [
+        3,
+        4,
+        5
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.5
+        },
+        {
+          "attribute": "sound_evidence",
+          "weight": 0.3
+        },
+        {
+          "attribute": "portability",
+          "weight": 0.2
+        }
+      ],
+      "category_values": [
+        {
+          "slot": 0,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 1,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 2,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 3,
+          "text_values": [],
+          "number_values": [
+            2,
+            4,
+            8
+          ],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 4,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 5,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 6,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 7,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        }
+      ]
+    },
+    {
+      "name": "Satisfied owners exploring without an urgent need",
+      "goal": "Continue convenient listening unless an upgrade provides a useful improvement.",
+      "count": 12,
+      "rationale": {
+        "basis": "market_evidence",
+        "source_ids": [
+          "repair-retain"
+        ],
+        "finding_ids": [
+          "retain-satisfied"
+        ],
+        "note": "Qualitative situation suggested by self-reports; grouping, boundaries and count remain authored assumptions. Not prevalence or willingness to pay."
+      },
+      "situation": {
+        "trigger": "Browsing alternatives without an existing fault",
+        "goal": "Continue convenient listening unless an upgrade provides a useful improvement.",
+        "current_solution": "Working older portable speaker that meets present needs",
+        "constraint": "Useful endurance, cost and repair effort",
+        "switch_reason": "An alternative must improve a relevant unmet need with credible evidence",
+        "stay_reason": "Existing speaker already meets current needs"
+      },
+      "assumption_note": "Manually constructed compact Sony test fixture; no live model judgment.",
+      "purchase_triggers": [
+        "Browsing alternatives without an existing fault"
+      ],
+      "current_solutions": [
+        "Working older portable speaker that meets present needs"
+      ],
+      "switching_barriers": [
+        "Existing speaker already meets current needs",
+        "Buying nothing avoids spending and setup"
+      ],
+      "budget_min": 30,
+      "budget_max": 180,
+      "deadline_days": [
+        30,
+        60,
+        90
+      ],
+      "research_effort": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "evidence_need": [
+        "basic",
+        "comparison",
+        "independent"
+      ],
+      "familiarity": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "action_budget": [
+        3,
+        4,
+        5
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.5
+        },
+        {
+          "attribute": "sound_evidence",
+          "weight": 0.3
+        },
+        {
+          "attribute": "portability",
+          "weight": 0.2
+        }
+      ],
+      "category_values": [
+        {
+          "slot": 0,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 1,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 2,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 3,
+          "text_values": [],
+          "number_values": [
+            2,
+            4,
+            8
+          ],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 4,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 5,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 6,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        },
+        {
+          "slot": 7,
+          "text_values": [
+            "occasional use",
+            "regular use"
+          ],
+          "number_values": [],
+          "boolean_values": [],
+          "note": "Synthetic offline test coverage assumptions, not buyer evidence."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic offline fixture; uniform coverage assumptions, no category hard constraints or conditional relationships; not a live model response."
+  ]
+}

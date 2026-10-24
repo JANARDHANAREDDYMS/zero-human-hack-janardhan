@@ -1,0 +1,177 @@
+{
+  "schema_version": "2.0",
+  "product_id": "sony-speaker",
+  "sources": [
+    {
+      "source_id": "jbl-flip7",
+      "title": "JBL Flip 7 official US offer",
+      "url": "https://www.jbl.com/FLIP-7.html",
+      "retrieved_at": "2026-10-24T04:32:17.814768+00:00"
+    },
+    {
+      "source_id": "jbl-qsg",
+      "title": "JBL Flip 7 global quick-start guide",
+      "url": "https://www.jbl.com.pa/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwcf93595e/pdfs/PA_JBL_Flip%207_QSG_Global_SOP_V9_online.pdf",
+      "retrieved_at": "2026-10-24T04:32:17.815053+00:00"
+    },
+    {
+      "source_id": "battery-request",
+      "title": "Request for a serviceable portable speaker",
+      "url": "https://www.reddit.com/r/BuyItForLife/comments/16778vj/looking_for_bluetooth_speaker_with_replaceable/",
+      "retrieved_at": "2026-10-24T04:32:17.815055+00:00"
+    },
+    {
+      "source_id": "travel-request",
+      "title": "Travel speaker purchasing discussion",
+      "url": "https://www.reddit.com/r/Bluetooth_Speakers/comments/1dx1zgr/travel_speaker/",
+      "retrieved_at": "2026-10-24T04:32:17.815056+00:00"
+    },
+    {
+      "source_id": "repair-retain",
+      "title": "Battery repair and retaining older speakers",
+      "url": "https://www.reddit.com/r/YouShouldKnow/comments/xqftj6/ysk_you_shouldnt_buy_a_new_bluetooth_speaker_once/",
+      "retrieved_at": "2026-10-24T04:32:17.815057+00:00"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "offer-price",
+      "subject": "JBL Flip 7 standard US blue offer",
+      "attribute": "price",
+      "value": 149.95,
+      "unit": "USD",
+      "basis": "provider_claim",
+      "source_ids": [
+        "jbl-flip7"
+      ],
+      "track": "offers",
+      "note": "Observed displayed price; excludes tax/shipping. Not personalized SKU or historical median."
+    },
+    {
+      "finding_id": "offer-endurance",
+      "subject": "JBL Flip 7",
+      "attribute": "battery_hours_up_to",
+      "value": 14,
+      "unit": "hours",
+      "basis": "provider_claim",
+      "source_ids": [
+        "jbl-flip7"
+      ],
+      "track": "offers",
+      "note": "Manufacturer maximum; an additional two hours is claimed with Playtime Boost. Not actual listening endurance."
+    },
+    {
+      "finding_id": "offer-protection",
+      "subject": "JBL Flip 7",
+      "attribute": "protection",
+      "value": "IP68",
+      "unit": null,
+      "basis": "provider_claim",
+      "source_ids": [
+        "jbl-flip7"
+      ],
+      "track": "offers",
+      "note": "Manufacturer claim with freshwater immersion qualifications; no independent testing here."
+    },
+    {
+      "finding_id": "serviceability-request",
+      "subject": "One BuyItForLife poster",
+      "attribute": "purchase_situation",
+      "value": "Seeking portable waterproof clip-style audio with easier battery servicing",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "battery-request"
+      ],
+      "track": "buyer_situations",
+      "note": "First-person request, not verified ownership or representative demand. Do not repeat the poster's claim that all competing batteries are unreplaceable as fact."
+    },
+    {
+      "finding_id": "travel-tradeoff",
+      "subject": "One travel speaker poster",
+      "attribute": "purchase_situation",
+      "value": "Already owns a JBL Go 4, wants better sound for hotels/Airbnb while keeping bag size small",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "travel-request"
+      ],
+      "track": "buyer_situations",
+      "note": "Historical self-report; motivates a size/sound tradeoff, not a measured sound ranking."
+    },
+    {
+      "finding_id": "travel-switch-friction",
+      "subject": "Travel poster follow-up",
+      "attribute": "switching_barrier",
+      "value": "Reported choosing another speaker and finding its firmware update inconvenient",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "travel-request"
+      ],
+      "track": "counterevidence",
+      "note": "Self-report supports considering setup effort. Historical quoted price is not a current competitor offer."
+    },
+    {
+      "finding_id": "repair-alternative",
+      "subject": "Charge 3 owner in repair thread",
+      "attribute": "current_solution",
+      "value": "Reported replacing an aging speaker battery rather than buying a new speaker",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "repair-retain"
+      ],
+      "track": "counterevidence",
+      "note": "Individual historical repair experience, not universal repair feasibility, current cost, or a repair instruction."
+    },
+    {
+      "finding_id": "retain-satisfied",
+      "subject": "Older Charge owner comments",
+      "attribute": "current_solution",
+      "value": "Some owners report satisfaction with older speakers and continued use",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "repair-retain"
+      ],
+      "track": "counterevidence",
+      "note": "Anecdotes from one thread. Not independent representative samples or verified longevity."
+    },
+    {
+      "finding_id": "repair-friction",
+      "subject": "Repair thread participants",
+      "attribute": "switching_barrier",
+      "value": "Access difficulty and concern about water resistance after opening were discussed",
+      "unit": null,
+      "basis": "observed_report",
+      "source_ids": [
+        "repair-retain"
+      ],
+      "track": "buyer_situations",
+      "note": "Reported concerns; actual repair difficulty and post-repair sealing depend on model and repair."
+    },
+    {
+      "finding_id": "weight-conflict",
+      "subject": "JBL Flip 7 documentation",
+      "attribute": "weight_g",
+      "value": null,
+      "unit": "g",
+      "basis": "unknown",
+      "source_ids": [
+        "jbl-flip7",
+        "jbl-qsg"
+      ],
+      "track": "offers",
+      "note": "US product page displays 0.826 kg, while the linked-model global quick-start document found in search reports 0.56 kg. Unresolved; neither selected as reliable comparison weight."
+    }
+  ],
+  "limitations": [
+    "Small purposive sample: three discussion threads, two from related repair-oriented communities; selection bias toward repair concerns.",
+    "No representative survey, interviews, verified-purchase review dataset, or market prevalence.",
+    "Historical discussions inform situations, not current competitor prices or buyer distributions.",
+    "Only one refreshed official competitor offer; previous competitor catalog remains historical and requires refresh before a live shopping comparison.",
+    "No direct evidence for willingness to pay for this hypothetical Sony concept, future spare availability, battery endurance in use, or actual sound quality.",
+    "Research was manually interpreted in chat; not a live Exa/model-bridge generation run."
+  ]
+}

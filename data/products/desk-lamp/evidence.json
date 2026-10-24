@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "product_id": "desk-lamp",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "competitor-baselines-snapshot",
+      "kind": "research_snapshot",
+      "path": "../../../docs/data/competitor-baselines.json"
+    },
+    {
+      "source_id": "lamp-ikea",
+      "url": "https://www.ikea.com/us/en/p/korvsnoere-led-desk-lamp-dimmable-white-80624301/",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "lamp-lepro",
+      "url": "https://www.lepro.com/products/lepro-touch-control-led-desk-lamp-dimmable-with-3-color-modes-for-home-office",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "lamp-ottlite",
+      "url": "https://ottlite.com/products/adjust-led-desk-lamp",
+      "kind": "official_provider_page",
+      "finding": "Provider features and price recorded in the competitor record.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "id": "lamp-ikea",
+      "name": "IKEA KORVSNÖRE",
+      "url": "https://www.ikea.com/us/en/p/korvsnoere-led-desk-lamp-dimmable-white-80624301/",
+      "price_usd": 24.99,
+      "price_basis": "one-time; displayed price",
+      "features": [
+        "Continuous dimming",
+        "Adjustable head",
+        "Integrated LED"
+      ],
+      "lumens": 170,
+      "color_modes": 1,
+      "color_temperatures_k": [
+        2700
+      ],
+      "power_w": 2.6
+    },
+    {
+      "id": "lamp-lepro",
+      "name": "Lepro touch-control desk lamp",
+      "url": "https://www.lepro.com/products/lepro-touch-control-led-desk-lamp-dimmable-with-3-color-modes-for-home-office",
+      "price_usd": 26.99,
+      "price_basis": "one-time; displayed product price",
+      "features": [
+        "Five brightness levels",
+        "Setting memory",
+        "Adjustable arm"
+      ],
+      "lumens": 750,
+      "color_modes": 5,
+      "color_temperatures_k": [
+        3000,
+        3500,
+        4000,
+        5000,
+        6500
+      ],
+      "power_w": 9.5,
+      "source_caveat": "Detailed specification says 750 lm; title/images also say 800 lm. Use 750 provisionally, flag conflict; no Bluetooth feature assumed from inconsistent metadata."
+    },
+    {
+      "id": "lamp-ottlite",
+      "name": "OttLite Adjust LED Desk Lamp",
+      "url": "https://ottlite.com/products/adjust-led-desk-lamp",
+      "price_usd": 149.99,
+      "price_basis": "one-time; displayed product price",
+      "features": [
+        "Three brightness levels",
+        "Flexible neck",
+        "Setting memory",
+        "USB charging port"
+      ],
+      "lumens": 420,
+      "color_modes": 3,
+      "power_w": null
+    }
+  ],
+  "benchmarks": {
+    "price_usd": {
+      "value": 26.99,
+      "n": 3,
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-lepro",
+        "lamp-ottlite"
+      ]
+    },
+    "lumens": {
+      "value": 420,
+      "n": 3,
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-lepro",
+        "lamp-ottlite"
+      ]
+    },
+    "color_modes": {
+      "value": 3,
+      "n": 3,
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-lepro",
+        "lamp-ottlite"
+      ]
+    }
+  },
+  "additional_alternatives": [],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Three selected paid peers per category; not all competitors or a representative market census.",
+    "Use one-time USD prices for physical products and short-term monthly USD costs for software. Exclude annual equivalents, human packages, free tiers, and cart promotions from those price medians.",
+    "Use independently sorted numeric fields; categorical baselines are common features or explicit design choices. No median invented for missing/unknown fields.",
+    "Store marketed standout and two deliberate disadvantages separately; final offers are median-derived concepts with stated exceptions, not literal all-field median products.",
+    "Customer-facing simulation offers must not expose negative/standout labels or this research rationale. Show factual attributes uniformly for all alternatives.",
+    "Known free/DIY and human substitutes remain choice options even when excluded from paid-peer arithmetic.",
+    "Manufacturer lumen/capacity claims and software feature claims are not independent performance tests.",
+    "Sony and CodeSensei remain unchanged; this research covers only the four newly selected scenarios."
+  ]
+}

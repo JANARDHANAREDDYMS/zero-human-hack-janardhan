@@ -1,0 +1,483 @@
+{
+  "status": "synthetic_pilot",
+  "product_id": "desk-lamp",
+  "count": 5,
+  "customers": [
+    {
+      "customer_id": "desk-lamp-001",
+      "segment_id": "small-study-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Light a small reading and study area within a modest budget.",
+      "purchase_trigger": "Existing lamp failed",
+      "current_solution": "Ceiling light",
+      "budget": {
+        "comfortable": 15,
+        "maximum": 20,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 20,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 350,
+          "unit": "lm"
+        },
+        {
+          "attribute": "brightness_levels",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 3,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "brightness",
+          "weight": 0.111111
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.388889
+        },
+        {
+          "attribute": "ease_of_use",
+          "weight": 0.5
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "desk_width_cm": 80,
+        "sessions_hours": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "small-study-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "small-study-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "desk-lamp-011",
+      "segment_id": "home-office",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Illuminate work and reading comfortably over longer desk sessions.",
+      "purchase_trigger": "New remote role",
+      "current_solution": "Ceiling light",
+      "budget": {
+        "comfortable": 35,
+        "maximum": 41,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 41,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 250,
+          "unit": "lm"
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": 4000,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.1
+        },
+        {
+          "attribute": "color_flexibility",
+          "weight": 0.7
+        },
+        {
+          "attribute": "brightness",
+          "weight": 0.2
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "desk_width_cm": 90,
+        "sessions_hours": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-office"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-office"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "desk-lamp-021",
+      "segment_id": "evening-reading",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Read in a small personal space without harsh bright lighting.",
+      "purchase_trigger": "Evening reading habit",
+      "current_solution": "Existing reading light",
+      "budget": {
+        "comfortable": 22,
+        "maximum": 32,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 32,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 200,
+          "unit": "lm"
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": 3000,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "warm_light",
+          "weight": 0.636364
+        },
+        {
+          "attribute": "portability",
+          "weight": 0.181818
+        },
+        {
+          "attribute": "price",
+          "weight": 0.181818
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "reading_location": "Bedside",
+        "sessions_hours": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "evening-reading"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "evening-reading"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "desk-lamp-031",
+      "segment_id": "shared-workspaces",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Use useful task lighting across more than one work area.",
+      "purchase_trigger": "Shared living arrangement",
+      "current_solution": "Ceiling lights",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 59,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 59,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 450,
+          "unit": "lm"
+        },
+        {
+          "attribute": "cordless_runtime_hours",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 5,
+          "unit": "hours"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "portability",
+          "weight": 0.357143
+        },
+        {
+          "attribute": "brightness",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.357143
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "work_areas": 3,
+        "sessions_hours": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "shared-workspaces"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "shared-workspaces"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "desk-lamp-041",
+      "segment_id": "detail-tasks",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "See small work clearly while making or repairing items.",
+      "purchase_trigger": "New craft project",
+      "current_solution": "Magnifier lamp",
+      "budget": {
+        "comfortable": 81,
+        "maximum": 105,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 105,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 450,
+          "unit": "lm"
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": 5000,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "adjustability",
+          "weight": 0.391304
+        },
+        {
+          "attribute": "brightness",
+          "weight": 0.347826
+        },
+        {
+          "attribute": "price",
+          "weight": 0.26087
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "task": "Small repairs",
+        "sessions_hours": 4
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "detail-tasks"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "detail-tasks"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "schema_version": "1.1",
+  "product_id": "sony-speaker",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "portable-weekend",
+      "name": "Small-bag weekend listeners",
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_triggers": [
+        "Private cabin trip",
+        "Weekend away with friends"
+      ],
+      "current_solutions": [
+        "Phone speaker",
+        "Older bulky portable speaker",
+        "Borrow a speaker"
+      ],
+      "budget_maximum_range": [
+        55,
+        175
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            400,
+            500,
+            600,
+            750,
+            900
+          ],
+          "unit": "g",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "values": [
+            6,
+            8,
+            10,
+            12,
+            16
+          ],
+          "unit": "hours",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "values": [
+            "splash",
+            "immersion"
+          ],
+          "unit": null,
+          "hard_probability": 0.35
+        }
+      ],
+      "priority_pool": [
+        "carry_weight",
+        "battery_endurance",
+        "price",
+        "evidence_quality"
+      ],
+      "source_ids": [
+        "sony-help",
+        "sony-official",
+        "soundcore-official"
+      ],
+      "category_context": {
+        "listening_place": [
+          "Private cabin",
+          "Private campsite where music is permitted"
+        ],
+        "transport": [
+          "Train",
+          "Car",
+          "Bus"
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "garden-gatherings",
+      "name": "Patio and small-group hosts",
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_triggers": [
+        "Planned patio dinner",
+        "Replacing awkward borrowed audio"
+      ],
+      "current_solutions": [
+        "Existing small speaker",
+        "Phone speaker",
+        "Borrowed home speaker"
+      ],
+      "budget_maximum_range": [
+        65,
+        220
+      ],
+      "urgency_days_options": [
+        2,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "values": [
+            4,
+            6,
+            8,
+            12
+          ],
+          "unit": "hours",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "values": [
+            "splash",
+            "immersion"
+          ],
+          "unit": null,
+          "hard_probability": 0.4
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.15
+        }
+      ],
+      "priority_pool": [
+        "group_suitability",
+        "battery_endurance",
+        "price",
+        "weather_protection"
+      ],
+      "source_ids": [
+        "soundcore-official",
+        "sony-official"
+      ],
+      "category_context": {
+        "group_size": [
+          4,
+          6,
+          8,
+          12
+        ],
+        "location": [
+          "Private patio",
+          "Private garden"
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "home-desk",
+      "name": "Home and shared-space listeners",
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_triggers": [
+        "Setting up a desk",
+        "Moving to shared housing"
+      ],
+      "current_solutions": [
+        "Laptop speakers",
+        "Wired desktop speakers",
+        "Working portable speaker"
+      ],
+      "budget_maximum_range": [
+        35,
+        155
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            500,
+            700,
+            1000
+          ],
+          "unit": "g",
+          "hard_probability": 0.15
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.65
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "clarity_evidence",
+        "desk_space",
+        "setup_effort"
+      ],
+      "source_ids": [
+        "sony-official",
+        "sony-help"
+      ],
+      "category_context": {
+        "content": [
+          "Podcasts",
+          "Mixed music",
+          "Talks"
+        ],
+        "private_space": [
+          "Small bedroom",
+          "Home office"
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "gift-buyers",
+      "name": "Practical gift buyers",
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_triggers": [
+        "Birthday",
+        "Graduation gift"
+      ],
+      "current_solutions": [
+        "Give a gift card",
+        "Recipient already has a speaker",
+        "No planned purchase yet"
+      ],
+      "budget_maximum_range": [
+        50,
+        180
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "values": [
+            true
+          ],
+          "unit": null,
+          "hard_probability": 0.75
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            600,
+            800,
+            1000
+          ],
+          "unit": "g",
+          "hard_probability": 0.2
+        }
+      ],
+      "priority_pool": [
+        "recipient_fit",
+        "price",
+        "return_terms",
+        "brand_familiarity"
+      ],
+      "source_ids": [
+        "sony-official",
+        "jbl-official"
+      ],
+      "category_context": {
+        "recipient_use": [
+          "Home listening",
+          "Travel",
+          "Private outdoor gatherings"
+        ],
+        "recipient_knowledge": [
+          "Low",
+          "Moderate"
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "replace-or-retain",
+      "name": "Owners considering replacement",
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_triggers": [
+        "Reduced battery endurance",
+        "Heavy existing unit",
+        "No urgent fault; exploring upgrades"
+      ],
+      "current_solutions": [
+        "Working compact speaker",
+        "Aging Bluetooth speaker",
+        "Working home speaker"
+      ],
+      "budget_maximum_range": [
+        60,
+        200
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "values": [
+            6,
+            8,
+            12,
+            16
+          ],
+          "unit": "hours",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            500,
+            650,
+            900,
+            1200
+          ],
+          "unit": "g",
+          "hard_probability": 0.35
+        }
+      ],
+      "priority_pool": [
+        "improvement_over_existing",
+        "lifetime_cost",
+        "battery_endurance",
+        "price"
+      ],
+      "source_ids": [
+        "sony-help",
+        "sony-official"
+      ],
+      "category_context": {
+        "existing_battery_hours": [
+          3,
+          5,
+          8,
+          10
+        ],
+        "ownership_years": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

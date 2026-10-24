@@ -1,0 +1,389 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Population preparation records v1.1",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.1"
+        },
+        "product_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "const": "segments"
+        },
+        "status": {
+          "const": "specified"
+        },
+        "population_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "market": {
+          "type": "object"
+        },
+        "market_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "segment_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "goal": {
+                "type": "string",
+                "minLength": 1
+              },
+              "purchase_triggers": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "current_solutions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "budget_maximum_range": {
+                "type": "array",
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "urgency_days_options": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "minItems": 1
+              },
+              "requirements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "attribute": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "operator": {
+                      "enum": [
+                        "lte",
+                        "gte",
+                        "eq",
+                        "contains"
+                      ]
+                    },
+                    "values": {
+                      "type": "array",
+                      "items": {},
+                      "minItems": 1
+                    },
+                    "unit": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "hard_probability": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  },
+                  "required": [
+                    "attribute",
+                    "operator",
+                    "values",
+                    "unit",
+                    "hard_probability"
+                  ]
+                },
+                "minItems": 1
+              },
+              "priority_pool": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 3,
+                "uniqueItems": true
+              },
+              "source_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "category_context": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "array",
+                  "items": {},
+                  "minItems": 1
+                }
+              },
+              "rationale_basis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "rationale": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sample_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "market_share": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "segment_id",
+              "name",
+              "goal",
+              "purchase_triggers",
+              "current_solutions",
+              "budget_maximum_range",
+              "urgency_days_options",
+              "requirements",
+              "priority_pool",
+              "source_ids",
+              "category_context",
+              "rationale_basis",
+              "rationale",
+              "sample_count",
+              "market_share"
+            ]
+          },
+          "minItems": 1
+        },
+        "allocation_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "product_id",
+        "record_type",
+        "status",
+        "population_version",
+        "market",
+        "market_basis",
+        "segments",
+        "allocation_basis",
+        "limitations"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.1"
+        },
+        "product_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "const": "sampling_rules"
+        },
+        "status": {
+          "const": "specified"
+        },
+        "population_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pilot_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "segment_allocations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "segment_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "market_share": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "segment_id",
+              "count",
+              "market_share"
+            ]
+          },
+          "minItems": 1
+        },
+        "templates_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "generator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sampling_method": {
+          "type": "object"
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "product_id",
+        "record_type",
+        "status",
+        "population_version",
+        "seed",
+        "target_count",
+        "pilot_count",
+        "segment_allocations",
+        "templates_file",
+        "generator",
+        "sampling_method",
+        "constraints",
+        "notes"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.1"
+        },
+        "product_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_type": {
+          "const": "customers"
+        },
+        "status": {
+          "const": "prepared_for_demo"
+        },
+        "population_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "generator_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input_hashes": {
+          "type": "object",
+          "properties": {
+            "segments_sha256": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rules_sha256": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "segments_sha256",
+            "rules_sha256"
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "customers": {
+          "type": "array",
+          "items": {
+            "$ref": "customer.schema.json"
+          },
+          "minItems": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "product_id",
+        "record_type",
+        "status",
+        "population_version",
+        "seed",
+        "generator_version",
+        "input_hashes",
+        "count",
+        "customers",
+        "limitations"
+      ]
+    }
+  ],
+  "description": "Structural schema only. Run data/tools/generate_populations.py --all --check for cross-field, cross-file, and reproducibility validation."
+}

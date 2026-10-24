@@ -1,0 +1,668 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "population-specification v2.0",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "product_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+    },
+    "population_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "target_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "market": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "country",
+        "language",
+        "currency"
+      ],
+      "additionalProperties": false
+    },
+    "market_provenance": {
+      "type": "object",
+      "properties": {
+        "basis": {
+          "enum": [
+            "assumption",
+            "market_evidence",
+            "client_specification"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+          },
+          "uniqueItems": true
+        },
+        "finding_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+          },
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "basis",
+        "source_ids",
+        "finding_ids",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "allocation_basis": {
+      "const": "scenario_coverage_not_market_share"
+    },
+    "attributes": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 100,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "enum": [
+              "number",
+              "integer",
+              "string",
+              "boolean",
+              "string_array"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "type",
+          "unit",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "segment_id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "goal": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "rationale": {
+            "type": "object",
+            "properties": {
+              "basis": {
+                "enum": [
+                  "assumption",
+                  "market_evidence",
+                  "client_specification"
+                ]
+              },
+              "source_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                },
+                "uniqueItems": true
+              },
+              "finding_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                },
+                "uniqueItems": true
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "basis",
+              "source_ids",
+              "finding_ids",
+              "note"
+            ],
+            "additionalProperties": false
+          },
+          "fields": {
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 100,
+            "propertyNames": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+              "maxLength": 160
+            },
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "rule": {
+                  "$ref": "#/$defs/rule"
+                },
+                "provenance": {
+                  "type": "object",
+                  "properties": {
+                    "basis": {
+                      "enum": [
+                        "assumption",
+                        "market_evidence",
+                        "client_specification"
+                      ]
+                    },
+                    "source_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                      },
+                      "uniqueItems": true
+                    },
+                    "finding_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                      },
+                      "uniqueItems": true
+                    },
+                    "note": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "basis",
+                    "source_ids",
+                    "finding_ids",
+                    "note"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "rule",
+                "provenance"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "attribute": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                },
+                "operator": {
+                  "enum": [
+                    "lte",
+                    "gte",
+                    "eq",
+                    "contains"
+                  ]
+                },
+                "constraint": {
+                  "enum": [
+                    "hard",
+                    "flexible"
+                  ]
+                },
+                "value_rule": {
+                  "$ref": "#/$defs/rule"
+                },
+                "provenance": {
+                  "type": "object",
+                  "properties": {
+                    "basis": {
+                      "enum": [
+                        "assumption",
+                        "market_evidence",
+                        "client_specification"
+                      ]
+                    },
+                    "source_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                      },
+                      "uniqueItems": true
+                    },
+                    "finding_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+                      },
+                      "uniqueItems": true
+                    },
+                    "note": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    }
+                  },
+                  "required": [
+                    "basis",
+                    "source_ids",
+                    "finding_ids",
+                    "note"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "attribute",
+                "operator",
+                "constraint",
+                "value_rule",
+                "provenance"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "maxItems": 30
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "left": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+                  "maxLength": 160
+                },
+                "operator": {
+                  "enum": [
+                    "lte",
+                    "gte",
+                    "eq"
+                  ]
+                },
+                "right": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "field": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+                          "maxLength": 160
+                        }
+                      },
+                      "required": [
+                        "field"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "value": {}
+                      },
+                      "required": [
+                        "value"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                "message": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "left",
+                "operator",
+                "right",
+                "message"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 30
+          },
+          "situation": {
+            "type": "object",
+            "properties": {
+              "trigger": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "goal": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "current_solution": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "constraint": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "switch_reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "stay_reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "trigger",
+              "goal",
+              "current_solution",
+              "constraint",
+              "switch_reason",
+              "stay_reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "segment_id",
+          "name",
+          "goal",
+          "count",
+          "rationale",
+          "fields",
+          "requirements",
+          "constraints"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 20
+    }
+  },
+  "required": [
+    "schema_version",
+    "product_id",
+    "population_version",
+    "seed",
+    "target_count",
+    "market",
+    "market_provenance",
+    "allocation_basis",
+    "attributes",
+    "segments"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "rule": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "constant"
+            },
+            "value": {}
+          },
+          "required": [
+            "kind",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "choice"
+            },
+            "values": {
+              "type": "array",
+              "items": {},
+              "minItems": 1,
+              "maxItems": 100
+            },
+            "weights": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "minItems": 1,
+              "maxItems": 100
+            }
+          },
+          "required": [
+            "kind",
+            "values"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "integer"
+            },
+            "minimum": {
+              "type": "integer"
+            },
+            "maximum": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "kind",
+            "minimum",
+            "maximum"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "number"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "decimals": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6
+            }
+          },
+          "required": [
+            "kind",
+            "minimum",
+            "maximum"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "reference"
+            },
+            "field": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+              "maxLength": 160
+            }
+          },
+          "required": [
+            "kind",
+            "field"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "scale"
+            },
+            "field": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+              "maxLength": 160
+            },
+            "factor": {
+              "type": "number"
+            },
+            "offset": {
+              "type": "number"
+            },
+            "round": {
+              "enum": [
+                "none",
+                "floor",
+                "ceil"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "field",
+            "factor"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "conditional"
+            },
+            "when": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)*$",
+                  "maxLength": 160
+                },
+                "operator": {
+                  "enum": [
+                    "eq",
+                    "in",
+                    "lt",
+                    "lte",
+                    "gt",
+                    "gte"
+                  ]
+                },
+                "value": {}
+              },
+              "required": [
+                "field",
+                "operator",
+                "value"
+              ],
+              "additionalProperties": false
+            },
+            "then": {
+              "$ref": "#/$defs/rule"
+            },
+            "else": {
+              "$ref": "#/$defs/rule"
+            }
+          },
+          "required": [
+            "kind",
+            "when",
+            "then",
+            "else"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

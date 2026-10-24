@@ -1,0 +1,4925 @@
+{
+  "schema_version": "1.1",
+  "product_id": "sony-speaker",
+  "record_type": "customers",
+  "status": "prepared_for_demo",
+  "population_version": "demo-1.0",
+  "seed": 2026102401,
+  "generator_version": "1.0",
+  "input_hashes": {
+    "segments_sha256": "981b01125f0d8f07f558459714267dc4b8654ab37e3c07504778fac3b7fe190c",
+    "rules_sha256": "ab2ab97ddf02b07a2d590faa068dac1554a0630782c71d5b6769dffbd4bb1e7c"
+  },
+  "count": 50,
+  "customers": [
+    {
+      "customer_id": "sony-speaker-001",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 89,
+        "maximum": 108,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 108,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 750,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 10,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "carry_weight",
+          "weight": 0.444444
+        },
+        {
+          "attribute": "price",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.222223
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-002",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Weekend away with friends",
+      "current_solution": "Borrow a speaker",
+      "budget": {
+        "comfortable": 87,
+        "maximum": 125,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 125,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 750,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 10,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.409091
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.227273
+        },
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.363636
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-003",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 53,
+        "maximum": 60,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 60,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 750,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.3
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.25
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.45
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-004",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Weekend away with friends",
+      "current_solution": "Borrow a speaker",
+      "budget": {
+        "comfortable": 91,
+        "maximum": 127,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 127,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 750,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 16,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.3
+        },
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.45
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.25
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Bus"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-005",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Weekend away with friends",
+      "current_solution": "Borrow a speaker",
+      "budget": {
+        "comfortable": 103,
+        "maximum": 150,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 150,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 750,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.421053
+        },
+        {
+          "attribute": "price",
+          "weight": 0.315789
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.263158
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private campsite where music is permitted",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-006",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Older bulky portable speaker",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 86,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 86,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "carry_weight",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.380952
+        },
+        {
+          "attribute": "price",
+          "weight": 0.190477
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Bus"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-007",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 86,
+        "maximum": 107,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 107,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 900,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 10,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.25
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.1875
+        },
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.5625
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-008",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Older bulky portable speaker",
+      "budget": {
+        "comfortable": 45,
+        "maximum": 70,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 70,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 500,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.181818
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.363636
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.454546
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private campsite where music is permitted",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-009",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Weekend away with friends",
+      "current_solution": "Older bulky portable speaker",
+      "budget": {
+        "comfortable": 141,
+        "maximum": 173,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 173,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "immersion",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.3125
+        },
+        {
+          "attribute": "evidence_quality",
+          "weight": 0.3125
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private campsite where music is permitted",
+        "transport": "Car"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-010",
+      "segment_id": "portable-weekend",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry shared audio for private weekend trips without excessive weight.",
+      "purchase_trigger": "Private cabin trip",
+      "current_solution": "Older bulky portable speaker",
+      "budget": {
+        "comfortable": 84,
+        "maximum": 120,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 120,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        },
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 16,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "immersion",
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.666667
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.25
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.083333
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "listening_place": "Private cabin",
+        "transport": "Train"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "portable-weekend"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-011",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 71,
+        "maximum": 90,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 90,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 6,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "immersion",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.176471
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.411765
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.411764
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 12,
+        "location": "Private garden"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-012",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Borrowed home speaker",
+      "budget": {
+        "comfortable": 101,
+        "maximum": 119,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 119,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.307692
+        },
+        {
+          "attribute": "group_suitability",
+          "weight": 0.076923
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.615385
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 4,
+        "location": "Private garden"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-013",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Borrowed home speaker",
+      "budget": {
+        "comfortable": 86,
+        "maximum": 136,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 136,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 6,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "group_suitability",
+          "weight": 0.529412
+        },
+        {
+          "attribute": "price",
+          "weight": 0.176471
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.294117
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 6,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-014",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 107,
+        "maximum": 130,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 130,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "weather_protection",
+          "weight": 0.315789
+        },
+        {
+          "attribute": "price",
+          "weight": 0.473684
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.210527
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 12,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-015",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Replacing awkward borrowed audio",
+      "current_solution": "Borrowed home speaker",
+      "budget": {
+        "comfortable": 132,
+        "maximum": 199,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 199,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "immersion",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "weather_protection",
+          "weight": 0.375
+        },
+        {
+          "attribute": "group_suitability",
+          "weight": 0.125
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.5
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 4,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-016",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Replacing awkward borrowed audio",
+      "current_solution": "Existing small speaker",
+      "budget": {
+        "comfortable": 52,
+        "maximum": 78,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 78,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "splash",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "group_suitability",
+          "weight": 0.230769
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.538462
+        },
+        {
+          "attribute": "price",
+          "weight": 0.230769
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "group_size": 8,
+        "location": "Private garden"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-017",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 120,
+        "maximum": 141,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 141,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 4,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "hard",
+          "value": "immersion",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "group_suitability",
+          "weight": 0.2
+        },
+        {
+          "attribute": "price",
+          "weight": 0.4
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.4
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 8,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-018",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Planned patio dinner",
+      "current_solution": "Existing small speaker",
+      "budget": {
+        "comfortable": 120,
+        "maximum": 179,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 179,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "splash",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "group_suitability",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.5
+        },
+        {
+          "attribute": "price",
+          "weight": 0.166667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "group_size": 6,
+        "location": "Private garden"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-019",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Replacing awkward borrowed audio",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 77,
+        "maximum": 103,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 103,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 4,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "immersion",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "weather_protection",
+          "weight": 0.545455
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.181818
+        },
+        {
+          "attribute": "price",
+          "weight": 0.272727
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 12,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-020",
+      "segment_id": "garden-gatherings",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Provide convenient music for small gatherings in private outdoor space.",
+      "purchase_trigger": "Replacing awkward borrowed audio",
+      "current_solution": "Phone speaker",
+      "budget": {
+        "comfortable": 143,
+        "maximum": 166,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 166,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 2,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "water_protection",
+          "operator": "contains",
+          "constraint": "flexible",
+          "value": "immersion",
+          "unit": null
+        },
+        {
+          "attribute": "stereo_pairing",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.235294
+        },
+        {
+          "attribute": "group_suitability",
+          "weight": 0.352941
+        },
+        {
+          "attribute": "weather_protection",
+          "weight": 0.411765
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "group_size": 12,
+        "location": "Private patio"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "garden-gatherings"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-021",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Working portable speaker",
+      "budget": {
+        "comfortable": 90,
+        "maximum": 115,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 115,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 700,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.466667
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.4
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.133333
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "content": "Talks",
+        "private_space": "Home office"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-022",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Wired desktop speakers",
+      "budget": {
+        "comfortable": 56,
+        "maximum": 69,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 69,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 1000,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.5
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.1875
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.3125
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "content": "Mixed music",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-023",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Working portable speaker",
+      "budget": {
+        "comfortable": 75,
+        "maximum": 93,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 93,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 700,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "setup_effort",
+          "weight": 0.375
+        },
+        {
+          "attribute": "price",
+          "weight": 0.0625
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.5625
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "content": "Podcasts",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-024",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Working portable speaker",
+      "budget": {
+        "comfortable": 50,
+        "maximum": 61,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 61,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 1000,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "setup_effort",
+          "weight": 0.5625
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.3125
+        },
+        {
+          "attribute": "price",
+          "weight": 0.125
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "content": "Podcasts",
+        "private_space": "Home office"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-025",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Setting up a desk",
+      "current_solution": "Working portable speaker",
+      "budget": {
+        "comfortable": 82,
+        "maximum": 96,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 96,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 500,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.5
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.166667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "content": "Podcasts",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-026",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Setting up a desk",
+      "current_solution": "Laptop speakers",
+      "budget": {
+        "comfortable": 82,
+        "maximum": 119,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 119,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 500,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "setup_effort",
+          "weight": 0.125
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.4375
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.4375
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "content": "Talks",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-027",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Setting up a desk",
+      "current_solution": "Wired desktop speakers",
+      "budget": {
+        "comfortable": 109,
+        "maximum": 128,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 128,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 700,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "desk_space",
+          "weight": 0.388889
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.5
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.111111
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "content": "Podcasts",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-028",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Setting up a desk",
+      "current_solution": "Laptop speakers",
+      "budget": {
+        "comfortable": 107,
+        "maximum": 152,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 152,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 700,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.428572
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "content": "Podcasts",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-029",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Laptop speakers",
+      "budget": {
+        "comfortable": 58,
+        "maximum": 79,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 79,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 700,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.421053
+        },
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.157895
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.421052
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "content": "Talks",
+        "private_space": "Home office"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-030",
+      "segment_id": "home-desk",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Listen to spoken audio and music at a desk without unnecessary expense.",
+      "purchase_trigger": "Moving to shared housing",
+      "current_solution": "Working portable speaker",
+      "budget": {
+        "comfortable": 68,
+        "maximum": 78,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 78,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1000,
+          "unit": "g"
+        },
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "clarity_evidence",
+          "weight": 0.083333
+        },
+        {
+          "attribute": "desk_space",
+          "weight": 0.5
+        },
+        {
+          "attribute": "setup_effort",
+          "weight": 0.416667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "content": "Talks",
+        "private_space": "Small bedroom"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "home-desk"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-031",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Birthday",
+      "current_solution": "Recipient already has a speaker",
+      "budget": {
+        "comfortable": 140,
+        "maximum": 164,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 164,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 800,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "return_terms",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.238096
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Travel",
+        "recipient_knowledge": "Low"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-032",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Graduation gift",
+      "current_solution": "No planned purchase yet",
+      "budget": {
+        "comfortable": 69,
+        "maximum": 81,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 81,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "return_terms",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.571429
+        },
+        {
+          "attribute": "price",
+          "weight": 0.285714
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Home listening",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-033",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Graduation gift",
+      "current_solution": "No planned purchase yet",
+      "budget": {
+        "comfortable": 113,
+        "maximum": 153,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 153,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1000,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "return_terms",
+          "weight": 0.375
+        },
+        {
+          "attribute": "price",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.291667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Private outdoor gatherings",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-034",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Graduation gift",
+      "current_solution": "Recipient already has a speaker",
+      "budget": {
+        "comfortable": 109,
+        "maximum": 137,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 137,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1000,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.066667
+        },
+        {
+          "attribute": "return_terms",
+          "weight": 0.6
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Home listening",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-035",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Birthday",
+      "current_solution": "No planned purchase yet",
+      "budget": {
+        "comfortable": 66,
+        "maximum": 76,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 76,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "flexible",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 800,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.4
+        },
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.533333
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.066667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Home listening",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-036",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Birthday",
+      "current_solution": "Give a gift card",
+      "budget": {
+        "comfortable": 96,
+        "maximum": 130,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 130,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.642857
+        },
+        {
+          "attribute": "price",
+          "weight": 0.071429
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Private outdoor gatherings",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-037",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Birthday",
+      "current_solution": "No planned purchase yet",
+      "budget": {
+        "comfortable": 109,
+        "maximum": 136,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 136,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1000,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.6
+        },
+        {
+          "attribute": "return_terms",
+          "weight": 0.1
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.3
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "basic",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Private outdoor gatherings",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-038",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Graduation gift",
+      "current_solution": "Recipient already has a speaker",
+      "budget": {
+        "comfortable": 113,
+        "maximum": 142,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 142,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 800,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.125
+        },
+        {
+          "attribute": "return_terms",
+          "weight": 0.125
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.75
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "comparison",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Travel",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-039",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Birthday",
+      "current_solution": "Recipient already has a speaker",
+      "budget": {
+        "comfortable": 72,
+        "maximum": 111,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 111,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "recipient_fit",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "price",
+          "weight": 0.285714
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.571429
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Private outdoor gatherings",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-040",
+      "segment_id": "gift-buyers",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Choose a useful portable-audio gift with clear terms and recipient fit.",
+      "purchase_trigger": "Graduation gift",
+      "current_solution": "Recipient already has a speaker",
+      "budget": {
+        "comfortable": 89,
+        "maximum": 134,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 134,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "bluetooth",
+          "operator": "eq",
+          "constraint": "hard",
+          "value": true,
+          "unit": null
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 600,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.066667
+        },
+        {
+          "attribute": "brand_familiarity",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "return_terms",
+          "weight": 0.6
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "recipient_use": "Private outdoor gatherings",
+        "recipient_knowledge": "Moderate"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "gift-buyers"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-041",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Heavy existing unit",
+      "current_solution": "Working home speaker",
+      "budget": {
+        "comfortable": 134,
+        "maximum": 172,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 172,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 650,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.294118
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.470588
+        },
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.235294
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "low",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 10,
+        "ownership_years": 7
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-042",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Heavy existing unit",
+      "current_solution": "Working home speaker",
+      "budget": {
+        "comfortable": 96,
+        "maximum": 117,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 117,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 14,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 650,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.26087
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.347826
+        },
+        {
+          "attribute": "price",
+          "weight": 0.391304
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 8,
+        "ownership_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-043",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Heavy existing unit",
+      "current_solution": "Working compact speaker",
+      "budget": {
+        "comfortable": 84,
+        "maximum": 108,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 108,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 6,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 500,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.230769
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.538462
+        },
+        {
+          "attribute": "price",
+          "weight": 0.230769
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 10,
+        "ownership_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-044",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Reduced battery endurance",
+      "current_solution": "Working home speaker",
+      "budget": {
+        "comfortable": 101,
+        "maximum": 139,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 139,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 900,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.538462
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.153846
+        },
+        {
+          "attribute": "price",
+          "weight": 0.307692
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 3,
+        "ownership_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-045",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Heavy existing unit",
+      "current_solution": "Working compact speaker",
+      "budget": {
+        "comfortable": 74,
+        "maximum": 118,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 118,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 16,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 900,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.25
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.5
+        },
+        {
+          "attribute": "price",
+          "weight": 0.25
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 8,
+        "ownership_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-046",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "No urgent fault; exploring upgrades",
+      "current_solution": "Working compact speaker",
+      "budget": {
+        "comfortable": 104,
+        "maximum": 128,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 128,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1200,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.333333
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.5
+        },
+        {
+          "attribute": "price",
+          "weight": 0.166667
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "basic",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 3,
+        "ownership_years": 5
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-047",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "No urgent fault; exploring upgrades",
+      "current_solution": "Aging Bluetooth speaker",
+      "budget": {
+        "comfortable": 71,
+        "maximum": 105,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 105,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 12,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1200,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.5
+        },
+        {
+          "attribute": "price",
+          "weight": 0.25
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.25
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "independent",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "existing_battery_hours": 10,
+        "ownership_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-048",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Reduced battery endurance",
+      "current_solution": "Aging Bluetooth speaker",
+      "budget": {
+        "comfortable": 125,
+        "maximum": 186,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 186,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 500,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.153846
+        },
+        {
+          "attribute": "lifetime_cost",
+          "weight": 0.692308
+        },
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.153846
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "existing_battery_hours": 8,
+        "ownership_years": 7
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-049",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "Reduced battery endurance",
+      "current_solution": "Working home speaker",
+      "budget": {
+        "comfortable": 105,
+        "maximum": 161,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 161,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 8,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 1200,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.555556
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.111111
+        },
+        {
+          "attribute": "price",
+          "weight": 0.333333
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "existing_battery_hours": 10,
+        "ownership_years": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "sony-speaker-050",
+      "segment_id": "replace-or-retain",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Decide whether a new speaker improves enough on a working or aging device.",
+      "purchase_trigger": "No urgent fault; exploring upgrades",
+      "current_solution": "Aging Bluetooth speaker",
+      "budget": {
+        "comfortable": 125,
+        "maximum": 191,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 191,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "battery_hours_up_to",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 16,
+          "unit": "hours"
+        },
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 650,
+          "unit": "g"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.538462
+        },
+        {
+          "attribute": "price",
+          "weight": 0.384615
+        },
+        {
+          "attribute": "battery_endurance",
+          "weight": 0.076923
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "existing_battery_hours": 5,
+        "ownership_years": 3
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-or-retain"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ],
+  "limitations": [
+    "Synthetic individuals, not real respondents or demand observations.",
+    "Equal segment coverage is not market weighting; numerical distributions are assumptions.",
+    "No customer choices, journey histories, or launch verdicts are assigned."
+  ]
+}

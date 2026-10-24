@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Saved simulation result v1.0",
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "customer_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "population_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "variant_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "model_error",
+        "infrastructure_error"
+      ]
+    },
+    "decision": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "choice": {
+              "enum": [
+                "select_offer",
+                "keep_current",
+                "decline",
+                "insufficient_information"
+              ]
+            },
+            "offer_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 600
+            },
+            "supporting_fact_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            },
+            "unresolved_attributes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "choice",
+            "offer_id",
+            "reason",
+            "supporting_fact_ids",
+            "unresolved_attributes"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "choice": {
+                    "const": "select_offer"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "offer_id": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "else": {
+                "properties": {
+                  "offer_id": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "action": {
+            "$ref": "action.schema.json"
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fact_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "attribute": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "value": {},
+                "unit": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "evidence_status": {
+                  "enum": [
+                    "provided_concept",
+                    "provider_claim",
+                    "assumed",
+                    "unknown"
+                  ]
+                }
+              },
+              "required": [
+                "fact_id",
+                "attribute",
+                "value",
+                "unit",
+                "source_id",
+                "evidence_status"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "validation_errors": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "step",
+          "action",
+          "observations",
+          "validation_errors"
+        ]
+      },
+      "maxItems": 6
+    },
+    "runtime": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "settings": {
+          "type": "object"
+        },
+        "call_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cost_usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "duration_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "model",
+        "provider",
+        "settings",
+        "call_count",
+        "cost_usd",
+        "duration_seconds"
+      ]
+    },
+    "input_sha256": {
+      "type": "string",
+      "minLength": 1
+    },
+    "presentation_order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "contract_version",
+    "run_id",
+    "customer_id",
+    "population_version",
+    "variant_id",
+    "status",
+    "decision",
+    "trace",
+    "runtime",
+    "input_sha256",
+    "presentation_order",
+    "started_at",
+    "finished_at"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "completed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "decision": {
+            "type": "object",
+            "properties": {
+              "choice": {
+                "enum": [
+                  "select_offer",
+                  "keep_current",
+                  "decline",
+                  "insufficient_information"
+                ]
+              },
+              "offer_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 600
+              },
+              "supporting_fact_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "unresolved_attributes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "choice",
+              "offer_id",
+              "reason",
+              "supporting_fact_ids",
+              "unresolved_attributes"
+            ],
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "choice": {
+                      "const": "select_offer"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "offer_id": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "offer_id": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "decision": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

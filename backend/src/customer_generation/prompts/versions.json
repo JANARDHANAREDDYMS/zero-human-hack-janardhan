@@ -1,0 +1,41 @@
+{
+  "bundle_version": "segmentation-1.1",
+  "methodology": "methodology.md",
+  "stages": {
+    "compact_propose": [
+      "compact-proposal.md"
+    ],
+    "compact_correct": [
+      "compact-proposal.md",
+      "correction.md"
+    ],
+    "intake_extract": [
+      "intake.md"
+    ],
+    "research_extract": [
+      "research.md"
+    ],
+    "propose": [
+      "population-specification.md"
+    ],
+    "review": [
+      "review.md"
+    ],
+    "correct": [
+      "population-specification.md",
+      "correction.md"
+    ],
+    "simulate_customer": [
+      "simulation.md"
+    ],
+    "simulate_concept": [
+      "simulation-concept.md"
+    ],
+    "summarize_simulation": [
+      "simulation-report.md"
+    ],
+    "extract_review_concerns": [
+      "review-concerns.md"
+    ]
+  }
+}

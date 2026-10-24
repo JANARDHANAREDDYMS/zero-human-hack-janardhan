@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "generated-population v2.0",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "product_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{0,79}$"
+    },
+    "population_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "specification_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "generator_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "evidence_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "const": "structurally_validated_synthetic"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "customers": {
+      "type": "array",
+      "items": {
+        "$ref": "customer-v2.schema.json"
+      },
+      "minItems": 1
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "attempts": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rejections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "behavioral_validity": {
+          "const": "not_evaluated"
+        }
+      },
+      "required": [
+        "attempts",
+        "rejections",
+        "behavioral_validity"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "product_id",
+    "population_version",
+    "seed",
+    "specification_sha256",
+    "generator_version",
+    "evidence_sha256",
+    "status",
+    "count",
+    "customers",
+    "validation"
+  ],
+  "additionalProperties": false
+}

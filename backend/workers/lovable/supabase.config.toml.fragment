@@ -1,0 +1,4 @@
+# Apply only if the selected hosting is a Supabase edge function.
+# Handler authentication with WORKER_SHARED_TOKEN remains mandatory.
+[functions.customer-generation]
+verify_jwt = false

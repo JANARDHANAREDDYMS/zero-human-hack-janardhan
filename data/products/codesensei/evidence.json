@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "product_id": "codesensei",
+  "status": "initial_research",
+  "sources": [
+    {
+      "source_id": "earlier-product-discussion",
+      "kind": "user_supplied_conversation",
+      "path": "../../../docs/context/product-briefs-pasted.txt"
+    },
+    {
+      "source_id": "leetcode-official",
+      "url": "https://leetcode.com/subscribe/",
+      "kind": "official_provider_page",
+      "finding": "Company-tagged questions, judge, and timed assessments; active price was not extractable. Struck-through $39 is not treated as a current price.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "neetcode-official",
+      "url": "https://neetcode.io/pro",
+      "kind": "official_provider_page",
+      "finding": "Browser practice, courses, multiple solution languages, hints, and company tags; one-year access displayed $119 with renewal off by default.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    },
+    {
+      "source_id": "pramp-official",
+      "url": "https://www.pramp.com/",
+      "kind": "official_provider_page",
+      "finding": "Directs new peer mock interviews to Aced Practice, described as free; scheduling constraints are assumptions.",
+      "limitation": "Supports a possible use case or relevant attribute, not population prevalence, individual budgets, or validated purchasing behavior."
+    }
+  ],
+  "competitors": [
+    {
+      "offer_id": "leetcode-premium",
+      "name": "LeetCode Premium",
+      "price": {
+        "amount": null,
+        "currency": "USD",
+        "billing_period": "month"
+      },
+      "price_status": "unknown",
+      "features": [
+        "Company-tagged questions",
+        "Code execution",
+        "Timed assessments"
+      ],
+      "source_ids": [
+        "leetcode-official"
+      ]
+    },
+    {
+      "offer_id": "neetcode-pro-year",
+      "name": "NeetCode Pro one-year access",
+      "price": {
+        "amount": 119,
+        "currency": "USD",
+        "billing_period": "year"
+      },
+      "mandatory_upfront_usd": 119,
+      "features": [
+        "Courses",
+        "Browser practice",
+        "AI hints",
+        "Company tags"
+      ],
+      "source_ids": [
+        "neetcode-official"
+      ]
+    },
+    {
+      "offer_id": "aced-peer-practice",
+      "name": "Aced peer practice via Pramp",
+      "price": {
+        "amount": 0,
+        "currency": "USD",
+        "billing_period": "session"
+      },
+      "features": [
+        "Peer mock interview"
+      ],
+      "source_ids": [
+        "pramp-official"
+      ]
+    }
+  ],
+  "benchmarks": {},
+  "additional_alternatives": [],
+  "assumptions": [
+    "This is a hypothetical demo concept.",
+    "Market research does not establish real customer proportions.",
+    "Proposed standout performance has not been tested."
+  ],
+  "limitations": [
+    "Initial official-page research only; competitor claims were not independently tested.",
+    "Current prices or availability may be unknown; retain unknown values.",
+    "Buying situations and all individual distributions below are design hypotheses, not measured customer data."
+  ]
+}

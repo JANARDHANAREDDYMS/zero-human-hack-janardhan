@@ -1,0 +1,399 @@
+{
+  "schema_version": "1.1",
+  "product_id": "commuter-backpack",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "public-transit",
+      "name": "Public-transit commuters",
+      "goal": "Carry work essentials comfortably on crowded public transport.",
+      "purchase_triggers": [
+        "Office commute restarting",
+        "Current bag is uncomfortable"
+      ],
+      "current_solutions": [
+        "Working backpack",
+        "Worn commuter bag",
+        "Shoulder bag"
+      ],
+      "budget_maximum_range": [
+        45,
+        145
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            700,
+            900,
+            1100,
+            1300
+          ],
+          "unit": "g",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "values": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "unit": "inches",
+          "hard_probability": 0.8
+        }
+      ],
+      "priority_pool": [
+        "carry_weight",
+        "device_fit",
+        "organization",
+        "price"
+      ],
+      "source_ids": [
+        "bag-tomtoc-t71",
+        "bag-raven20"
+      ],
+      "category_context": {
+        "commute_minutes": [
+          20,
+          40,
+          60,
+          90
+        ],
+        "device_count": [
+          1,
+          2
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "multi-workspace",
+      "name": "Workers moving among desks",
+      "goal": "Keep essentials organized across home, shared desks, and client visits.",
+      "purchase_triggers": [
+        "Starting hybrid work",
+        "Changing offices"
+      ],
+      "current_solutions": [
+        "Backpack plus tech pouch",
+        "Working messenger bag",
+        "Existing laptop bag"
+      ],
+      "budget_maximum_range": [
+        55,
+        170
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "values": [
+            16,
+            18,
+            20,
+            22
+          ],
+          "unit": "L",
+          "hard_probability": 0.4
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "values": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "unit": "inches",
+          "hard_probability": 0.8
+        }
+      ],
+      "priority_pool": [
+        "organization",
+        "packing_effort",
+        "price",
+        "carry_weight"
+      ],
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-tomtoc-t71"
+      ],
+      "category_context": {
+        "work_locations_per_week": [
+          2,
+          3,
+          4
+        ],
+        "device_count": [
+          1,
+          2,
+          3
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "campus-work",
+      "name": "Students combining campus and part-time work",
+      "goal": "Carry study materials and a laptop within a limited budget.",
+      "purchase_triggers": [
+        "New term",
+        "Old bag wearing out"
+      ],
+      "current_solutions": [
+        "School backpack",
+        "Borrowed backpack",
+        "Canvas tote"
+      ],
+      "budget_maximum_range": [
+        25,
+        110
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "values": [
+            18,
+            20,
+            22,
+            24
+          ],
+          "unit": "L",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "values": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "unit": "inches",
+          "hard_probability": 0.85
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "capacity",
+        "device_fit",
+        "durability"
+      ],
+      "source_ids": [
+        "bag-tomtoc-ta1",
+        "bag-raven20"
+      ],
+      "category_context": {
+        "book_count": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "commute_minutes": [
+          10,
+          25,
+          45,
+          60
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "short-business-trips",
+      "name": "Occasional short-trip workers",
+      "goal": "Use a daily work bag for occasional overnight trips.",
+      "purchase_triggers": [
+        "Client visit booked",
+        "Work travel returning"
+      ],
+      "current_solutions": [
+        "Daily backpack",
+        "Carry-on and tote",
+        "Existing travel bag"
+      ],
+      "budget_maximum_range": [
+        65,
+        180
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "values": [
+            20,
+            22,
+            24,
+            26
+          ],
+          "unit": "L",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "values": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "unit": "inches",
+          "hard_probability": 0.8
+        }
+      ],
+      "priority_pool": [
+        "capacity",
+        "organization",
+        "device_fit",
+        "price"
+      ],
+      "source_ids": [
+        "bag-tomtoc-t71"
+      ],
+      "category_context": {
+        "trip_nights": [
+          1,
+          2
+        ],
+        "travel_frequency": [
+          "Monthly",
+          "Quarterly"
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "replace-working-bag",
+      "name": "Owners considering a work-bag upgrade",
+      "goal": "Assess whether replacing a usable bag solves a meaningful problem.",
+      "purchase_triggers": [
+        "Annoying pocket layout",
+        "Heavy bag",
+        "Browsing without urgent need"
+      ],
+      "current_solutions": [
+        "Working backpack",
+        "Well-used laptop bag",
+        "Messenger bag"
+      ],
+      "budget_maximum_range": [
+        40,
+        160
+      ],
+      "urgency_days_options": [
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "values": [
+            700,
+            900,
+            1200,
+            1400
+          ],
+          "unit": "g",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "values": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "unit": "inches",
+          "hard_probability": 0.85
+        }
+      ],
+      "priority_pool": [
+        "improvement_over_existing",
+        "price",
+        "durability",
+        "organization"
+      ],
+      "source_ids": [
+        "bag-raven20",
+        "bag-tomtoc-ta1"
+      ],
+      "category_context": {
+        "ownership_years": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "commute_minutes": [
+          10,
+          30,
+          60
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "status": "synthetic_pilot",
+  "product_id": "commuter-backpack",
+  "count": 5,
+  "customers": [
+    {
+      "customer_id": "commuter-backpack-001",
+      "segment_id": "public-transit",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry work essentials comfortably on crowded public transport.",
+      "purchase_trigger": "Current bag is uncomfortable",
+      "current_solution": "Shoulder bag",
+      "budget": {
+        "comfortable": 72,
+        "maximum": 106,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 106,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 7,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "hard",
+          "value": 1100,
+          "unit": "g"
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 14,
+          "unit": "inches"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.166667
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.5
+        },
+        {
+          "attribute": "device_fit",
+          "weight": 0.333333
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 5
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "commute_minutes": 60,
+        "device_count": 1
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "public-transit"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "public-transit"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "commuter-backpack-011",
+      "segment_id": "multi-workspace",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Keep essentials organized across home, shared desks, and client visits.",
+      "purchase_trigger": "Changing offices",
+      "current_solution": "Existing laptop bag",
+      "budget": {
+        "comfortable": 51,
+        "maximum": 84,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 84,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 60,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 18,
+          "unit": "L"
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 13,
+          "unit": "inches"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.222222
+        },
+        {
+          "attribute": "carry_weight",
+          "weight": 0.277778
+        },
+        {
+          "attribute": "packing_effort",
+          "weight": 0.5
+        }
+      ],
+      "decision_style": {
+        "research_effort": "low",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative",
+        "An existing solution has value; replacing it must justify cost and effort"
+      ],
+      "category_context": {
+        "work_locations_per_week": 4,
+        "device_count": 2
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "multi-workspace"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "multi-workspace"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "commuter-backpack-021",
+      "segment_id": "campus-work",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Carry study materials and a laptop within a limited budget.",
+      "purchase_trigger": "New term",
+      "current_solution": "Canvas tote",
+      "budget": {
+        "comfortable": 43,
+        "maximum": 71,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 71,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 18,
+          "unit": "L"
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 16,
+          "unit": "inches"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.111111
+        },
+        {
+          "attribute": "durability",
+          "weight": 0.444444
+        },
+        {
+          "attribute": "capacity",
+          "weight": 0.444445
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "high",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "book_count": 3,
+        "commute_minutes": 10
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "campus-work"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "campus-work"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "commuter-backpack-031",
+      "segment_id": "short-business-trips",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Use a daily work bag for occasional overnight trips.",
+      "purchase_trigger": "Client visit booked",
+      "current_solution": "Daily backpack",
+      "budget": {
+        "comfortable": 135,
+        "maximum": 177,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 177,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 3,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "capacity_l",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 22,
+          "unit": "L"
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "constraint": "flexible",
+          "value": 16,
+          "unit": "inches"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "price",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "device_fit",
+          "weight": 0.428571
+        },
+        {
+          "attribute": "capacity",
+          "weight": 0.428572
+        }
+      ],
+      "decision_style": {
+        "research_effort": "medium",
+        "evidence_need": "independent",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 4
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "trip_nights": 1,
+        "travel_frequency": "Monthly"
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "short-business-trips"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "short-business-trips"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "customer_id": "commuter-backpack-041",
+      "segment_id": "replace-working-bag",
+      "market": {
+        "country": "US",
+        "language": "en",
+        "currency": "USD"
+      },
+      "goal": "Assess whether replacing a usable bag solves a meaningful problem.",
+      "purchase_trigger": "Heavy bag",
+      "current_solution": "Messenger bag",
+      "budget": {
+        "comfortable": 66,
+        "maximum": 93,
+        "currency": "USD",
+        "billing_period": "one_time",
+        "scope_units": 1,
+        "upfront_maximum": 93,
+        "scope_note": "One purchase or the first month of access; upfront commitment must also fit"
+      },
+      "urgency": {
+        "deadline_days": 30,
+        "basis": "assumed relative time horizon"
+      },
+      "requirements": [
+        {
+          "attribute": "weight_g",
+          "operator": "lte",
+          "constraint": "flexible",
+          "value": 1200,
+          "unit": "g"
+        },
+        {
+          "attribute": "laptop_inches",
+          "operator": "gte",
+          "constraint": "hard",
+          "value": 13,
+          "unit": "inches"
+        }
+      ],
+      "tradeoffs": [
+        {
+          "attribute": "durability",
+          "weight": 0.142857
+        },
+        {
+          "attribute": "improvement_over_existing",
+          "weight": 0.642857
+        },
+        {
+          "attribute": "organization",
+          "weight": 0.214286
+        }
+      ],
+      "decision_style": {
+        "research_effort": "high",
+        "evidence_need": "comparison",
+        "category_familiarity": "medium",
+        "evaluation_action_budget": 3
+      },
+      "switching_barriers": [
+        "Time and effort to evaluate and set up an alternative"
+      ],
+      "category_context": {
+        "ownership_years": 5,
+        "commute_minutes": 60
+      },
+      "provenance": [
+        {
+          "field": "segment_id",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-working-bag"
+          ],
+          "note": "Purchasing situation inspired by provider material; membership is invented."
+        },
+        {
+          "field": "goal,purchase_trigger,current_solution,category_context",
+          "basis": "assumption",
+          "source_ids": [
+            "replace-working-bag"
+          ],
+          "note": "Plausible template and sampled choices, not actual respondents."
+        },
+        {
+          "field": "budget,urgency,requirements,tradeoffs,decision_style,switching_barriers,market",
+          "basis": "assumption",
+          "source_ids": [
+            "sampling-rules-v1"
+          ],
+          "note": "Ranges, relationships, US market, and numerical values are explicit demo assumptions."
+        }
+      ],
+      "synthetic": true
+    }
+  ]
+}

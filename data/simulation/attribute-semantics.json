@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "rules": {
+    "lte": "Numeric offered value must be <= required maximum.",
+    "gte": "Numeric offered capability/limit must be >= requested minimum.",
+    "eq": "Exact scalar match; unknown is unresolved.",
+    "contains": "Collection contains requested language/capability or a numeric range includes requested value. Do not stringify and substring-match."
+  },
+  "normalization": {
+    "water_protection": "Derive supported exposure categories only with a qualified rating source: IP67/IP68 support immersion and splash claims; IPX7 supports water immersion/splash but says nothing about dust. Preserve evidence qualification; no empirical guarantee.",
+    "color_temperature_k": "Represent offered fixed values or documented supported range, not prose.",
+    "battery_hours_up_to": "Maximum advertised runtime is not guaranteed runtime at the customer’s volume; retain test conditions and treat sufficient real-world endurance as unresolved where conditions differ.",
+    "laptop_inches": "Diagonal claim alone does not establish fit. Compare actual device and compartment dimensions when available; otherwise unresolved fit caveat.",
+    "brightness_levels": "For continuous dimming, record dimming_mode=continuous; do not invent a count to compare numerically. Mark functional requirement met only with a documented normalization rule.",
+    "reviews_per_month": "Represent explicitly unlimited allowances as unlimited, never an invented large integer.",
+    "turnaround_hours": "For immediate interactive tools, latency may remain unknown; do not invent a delivery SLA.",
+    "word_limit": "Use documented maximum if available; an unknown limit is not unlimited.",
+    "documents_needed": "Compute whole evaluation-scope cost before comparing price. An annual plan must fit full upfront budget; no imaginary monthly purchasing option."
+  },
+  "status": "Contract mapping guidance; runtime normalization/enforcement not implemented."
+}

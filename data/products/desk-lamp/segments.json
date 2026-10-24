@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.1",
+  "product_id": "desk-lamp",
+  "record_type": "segments",
+  "status": "specified",
+  "population_version": "demo-1.0",
+  "market": {
+    "country": "US",
+    "language": "en",
+    "currency": "USD"
+  },
+  "market_basis": "Explicit demo assumption; not confirmed client targeting.",
+  "segments": [
+    {
+      "segment_id": "small-study-desk",
+      "name": "Students at compact study desks",
+      "goal": "Light a small reading and study area within a modest budget.",
+      "purchase_triggers": [
+        "New study setup",
+        "Existing lamp failed"
+      ],
+      "current_solutions": [
+        "Ceiling light",
+        "Working basic lamp",
+        "Borrowed desk lamp"
+      ],
+      "budget_maximum_range": [
+        10,
+        50
+      ],
+      "urgency_days_options": [
+        2,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "values": [
+            150,
+            250,
+            350,
+            450
+          ],
+          "unit": "lm",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "brightness_levels",
+          "operator": "gte",
+          "values": [
+            2,
+            3,
+            5
+          ],
+          "unit": null,
+          "hard_probability": 0.35
+        }
+      ],
+      "priority_pool": [
+        "price",
+        "brightness",
+        "desk_space",
+        "ease_of_use"
+      ],
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-lepro"
+      ],
+      "category_context": {
+        "desk_width_cm": [
+          60,
+          80,
+          100
+        ],
+        "sessions_hours": [
+          1,
+          2,
+          3
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "home-office",
+      "name": "Home-office task workers",
+      "goal": "Illuminate work and reading comfortably over longer desk sessions.",
+      "purchase_triggers": [
+        "New remote role",
+        "Desk lighting is uneven"
+      ],
+      "current_solutions": [
+        "Ceiling light",
+        "Basic desk lamp",
+        "Window daylight"
+      ],
+      "budget_maximum_range": [
+        25,
+        140
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "values": [
+            250,
+            400,
+            500,
+            700
+          ],
+          "unit": "lm",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "values": [
+            3000,
+            4000,
+            5000
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        }
+      ],
+      "priority_pool": [
+        "brightness",
+        "adjustability",
+        "price",
+        "color_flexibility"
+      ],
+      "source_ids": [
+        "lamp-ottlite",
+        "lamp-lepro"
+      ],
+      "category_context": {
+        "desk_width_cm": [
+          90,
+          120,
+          150
+        ],
+        "sessions_hours": [
+          2,
+          4,
+          6
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "evening-reading",
+      "name": "Evening readers",
+      "goal": "Read in a small personal space without harsh bright lighting.",
+      "purchase_triggers": [
+        "Evening reading habit",
+        "Moving reading chair"
+      ],
+      "current_solutions": [
+        "Bedside lamp",
+        "Ceiling light",
+        "Existing reading light"
+      ],
+      "budget_maximum_range": [
+        15,
+        70
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30,
+        60
+      ],
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "values": [
+            100,
+            150,
+            200,
+            300
+          ],
+          "unit": "lm",
+          "hard_probability": 0.4
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "values": [
+            2700,
+            3000
+          ],
+          "unit": null,
+          "hard_probability": 0.65
+        }
+      ],
+      "priority_pool": [
+        "warm_light",
+        "ease_of_use",
+        "price",
+        "portability"
+      ],
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-ottlite"
+      ],
+      "category_context": {
+        "reading_location": [
+          "Bedside",
+          "Chair",
+          "Desk"
+        ],
+        "sessions_hours": [
+          1,
+          2,
+          3
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "shared-workspaces",
+      "name": "People moving between small work areas",
+      "goal": "Use useful task lighting across more than one work area.",
+      "purchase_triggers": [
+        "Shared living arrangement",
+        "Working across rooms"
+      ],
+      "current_solutions": [
+        "Move an existing lamp",
+        "Ceiling lights",
+        "Desk lamp plus reading light"
+      ],
+      "budget_maximum_range": [
+        15,
+        85
+      ],
+      "urgency_days_options": [
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "values": [
+            150,
+            250,
+            350,
+            450
+          ],
+          "unit": "lm",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "cordless_runtime_hours",
+          "operator": "gte",
+          "values": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "unit": "hours",
+          "hard_probability": 0.3
+        }
+      ],
+      "priority_pool": [
+        "portability",
+        "setup_effort",
+        "brightness",
+        "price"
+      ],
+      "source_ids": [
+        "lamp-ikea",
+        "lamp-lepro"
+      ],
+      "category_context": {
+        "work_areas": [
+          2,
+          3
+        ],
+        "sessions_hours": [
+          1,
+          2,
+          3
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    },
+    {
+      "segment_id": "detail-tasks",
+      "name": "Hobbyists doing detailed desk work",
+      "goal": "See small work clearly while making or repairing items.",
+      "purchase_triggers": [
+        "New craft project",
+        "Current lamp casts shadows"
+      ],
+      "current_solutions": [
+        "Existing reading lamp",
+        "Ceiling light",
+        "Magnifier lamp"
+      ],
+      "budget_maximum_range": [
+        25,
+        160
+      ],
+      "urgency_days_options": [
+        3,
+        7,
+        14,
+        30
+      ],
+      "requirements": [
+        {
+          "attribute": "max_lumens",
+          "operator": "gte",
+          "values": [
+            350,
+            450,
+            600,
+            750
+          ],
+          "unit": "lm",
+          "hard_probability": 0.5
+        },
+        {
+          "attribute": "color_temperature_k",
+          "operator": "contains",
+          "values": [
+            4000,
+            5000,
+            6500
+          ],
+          "unit": null,
+          "hard_probability": 0.5
+        }
+      ],
+      "priority_pool": [
+        "brightness",
+        "adjustability",
+        "color_flexibility",
+        "price"
+      ],
+      "source_ids": [
+        "lamp-lepro",
+        "lamp-ottlite"
+      ],
+      "category_context": {
+        "task": [
+          "Drawing",
+          "Model making",
+          "Small repairs"
+        ],
+        "sessions_hours": [
+          1,
+          2,
+          4
+        ]
+      },
+      "rationale_basis": "assumption_informed_by_provider_use_cases",
+      "rationale": "A plausible primary purchasing situation, suggested by the category and cited offer attributes. Segment existence, range values, and counts have not been validated with customers.",
+      "sample_count": 10,
+      "market_share": null
+    }
+  ],
+  "allocation_basis": "Equal coverage, ten customers per segment; not measured market proportions.",
+  "limitations": [
+    "All segment allocations and numerical profile distributions are assumptions.",
+    "Official offer pages support attribute relevance; no representative customer study has been performed."
+  ]
+}

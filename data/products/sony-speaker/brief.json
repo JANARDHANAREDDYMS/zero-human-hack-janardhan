@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "hypothetical": true,
+  "id": "sony-speaker",
+  "name": "Sony portable speaker — hypothetical concept",
+  "type": "physical",
+  "price": {
+    "amount": 119,
+    "currency": "USD",
+    "billing_period": "one_time"
+  },
+  "baseline": {
+    "dimensions_cm": [
+      19,
+      7,
+      7
+    ],
+    "weight_g": 550,
+    "battery_hours_up_to": 14,
+    "protection_target": "IP67",
+    "connectivity": [
+      "Bluetooth",
+      "Pair two compatible units for stereo"
+    ],
+    "charging": "USB-C",
+    "controls": [
+      "Physical playback buttons",
+      "Basic app equalizer"
+    ],
+    "sound_positioning": "Everyday portable listening; no verified superiority claim",
+    "battery_included": 1,
+    "optional_spare_battery_usd": 29,
+    "replacement_condition": "Open only when dry; securely close before water exposure"
+  },
+  "standout": "Tool-free user-swappable battery, replaceable in under a minute.",
+  "selling_point": "Keep the speaker. Swap the battery.",
+  "negative_features": [],
+  "audience": [
+    "Travel",
+    "Outdoor activities",
+    "Home listening",
+    "Gatherings"
+  ],
+  "research_question": "How does preference compare with existing speakers and keeping a current device?",
+  "experiments": [
+    "Price",
+    "Feature combinations",
+    "Positioning"
+  ],
+  "design_notes": "Proposed specifications, not an actual Sony launch or measured market median. Battery, protection, and replacement time are engineering targets. No two deliberate disadvantages were agreed for this original concept.",
+  "status": "agreed_concept",
+  "source_refs": [
+    "earlier-product-discussion"
+  ],
+  "audience_status": "candidate_situations"
+}

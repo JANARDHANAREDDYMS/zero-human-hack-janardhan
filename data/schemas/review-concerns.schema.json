@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 150
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "why_human_review": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "suggested_expertise": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "review_question": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "proposed_test": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "success_criterion": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "helpfulness": {
+            "type": "string",
+            "enum": [
+              "plausible",
+              "uncertain",
+              "unlikely"
+            ]
+          },
+          "helpfulness_reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 700
+          },
+          "source_objection_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
+            },
+            "minItems": 1,
+            "maxItems": 2000
+          }
+        },
+        "required": [
+          "title",
+          "explanation",
+          "why_human_review",
+          "suggested_expertise",
+          "review_question",
+          "proposed_test",
+          "success_criterion",
+          "helpfulness",
+          "helpfulness_reason",
+          "source_objection_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 10
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 700
+      },
+      "minItems": 1,
+      "maxItems": 6
+    }
+  },
+  "required": [
+    "concerns",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

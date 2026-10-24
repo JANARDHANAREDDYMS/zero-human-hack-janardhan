@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "choose_product",
+        "choose_alternative",
+        "keep_current",
+        "defer"
+      ]
+    },
+    "selected_offer_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "headline": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 800
+          },
+          "profile_fields": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            },
+            "minItems": 1,
+            "maxItems": 5
+          },
+          "finding_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
+            },
+            "minItems": 0,
+            "maxItems": 8
+          }
+        },
+        "required": [
+          "explanation",
+          "profile_fields",
+          "finding_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "price",
+              "positioning",
+              "hardware",
+              "usability",
+              "service_delivery",
+              "missing_information"
+            ]
+          },
+          "concern": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 800
+          },
+          "suggested_change": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 800
+          },
+          "finding_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
+            },
+            "minItems": 0,
+            "maxItems": 8
+          }
+        },
+        "required": [
+          "category",
+          "concern",
+          "suggested_change",
+          "finding_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 3
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 400
+      },
+      "minItems": 0,
+      "maxItems": 3
+    },
+    "change_that_might_help": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 800
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 400
+      },
+      "minItems": 1,
+      "maxItems": 4
+    }
+  },
+  "required": [
+    "customer_id",
+    "decision",
+    "selected_offer_id",
+    "headline",
+    "reasons",
+    "objections",
+    "missing_information",
+    "change_that_might_help",
+    "limitations"
+  ],
+  "additionalProperties": false
+}

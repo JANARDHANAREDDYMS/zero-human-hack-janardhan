@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "version": "1.0",
+  "recorded_date": "2026-10-23",
+  "hypothetical": true,
+  "id": "resume-review",
+  "name": "Job-targeted résumé review",
+  "type": "professional service",
+  "baseline": {
+    "Scope": "Up to two pages per résumé; one target job posting per review",
+    "Checks": "Structure, clarity, bullet impact, formatting, and job-requirement coverage",
+    "Deliverable": "Prioritized feedback plus suggested before/after bullet edits in a downloadable report",
+    "Method": "AI-assisted analysis; no recruiter or human review promised",
+    "Boundary": "No fabricated accomplishments and no interview or hiring guarantee"
+  },
+  "standout": "Each suggested bullet rewrite includes the target-job requirement and the original résumé evidence it uses; missing evidence is flagged instead of filled in.",
+  "selling_point": "See what each rewrite supports—and where the evidence comes from.",
+  "negative_features": [
+    {
+      "feature": "Three completed reviews per month",
+      "comparison": "Rezi advertises unlimited resumes; Resume Worded advertises unlimited complete reviews.",
+      "reason": "Deliberate usage cap at a median subscription price."
+    },
+    {
+      "feature": "Delivery within 48 hours rather than instant feedback",
+      "comparison": "Resume Worded describes instant feedback: https://help.resumeworded.com/article/31-will-resume-worded-pro-help-me-improve-my-resumes-content",
+      "reason": "Deliberate service delay; urgent applicants may prefer an immediate tool."
+    }
+  ],
+  "design_notes": "$49 is the median of three selected monthly AI-software plans, not a per-review or human-service median. Page limit, deliverable format, cap, and delay are scenario design choices. Job tailoring already exists; traceable evidence is the proposed marketed emphasis, not proven exclusivity.",
+  "price_description": "$49/month, billed monthly; proposed from selected paid-software median",
+  "price": {
+    "amount": 49,
+    "currency": "USD",
+    "billing_period": "month"
+  },
+  "audience": [],
+  "research_question": "Which purchasing situations prefer this offer over alternatives, and does the marketed feature compensate for the deliberate tradeoffs?",
+  "experiments": [
+    "Same offer with versus without marketed standout",
+    "Address each disadvantage separately",
+    "Compare by segment without predetermining launch outcome"
+  ],
+  "status": "proposed_specification",
+  "source_refs": [
+    "competitor-baselines-snapshot"
+  ],
+  "audience_status": "not_defined"
+}
