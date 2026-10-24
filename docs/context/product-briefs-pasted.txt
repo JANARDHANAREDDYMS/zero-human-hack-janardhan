@@ -1,0 +1,103 @@
+Two products I am sure of, I am sony and I want to launch a new protable speaker.
+another one, I am a startup and I want to launch a prodcut service, 20/month helpes ypu prepare for intervieews like my project codesensei.
+Great—these are our first two demo scenarios. We’ll treat both as prelaunch concepts.
+
+Portable speaker	Interview-preparation service
+Client scenario	Sony exploring a new portable speaker—hypothetical demo	Startup launching a CodeSensei-like service
+Price	To be decided	$20/month
+What we evaluate	Preference against existing speakers and keeping a current device	Preference against existing preparation tools and free resources
+Potential customer situations	Travel, outdoor activities, home listening, gatherings	Upcoming interviews, ongoing preparation, career switching
+Possible experiments	Price, feature combinations, positioning	Included features, positioning, trial/sample availability, price
+Before generating profiles, we need a concrete offer for each. Otherwise, customers will be evaluating different imagined versions of the product.
+
+For the speaker, we need the proposed price, weight, battery life, water resistance, size, connectivity, and intended differentiator. Sound-quality claims should be described as unverified unless we have supporting evidence.
+
+For the interview service, we need to establish what $20/month includes: coding practice, mock interviews, code execution, personalized feedback, company-specific preparation, behavioral preparation, and usage limits.
+
+Tell me the features you want for each—or we can define hypothetical specifications together. Then we’ll create the audience brief, research alternatives, and generate the segments and profiles.
+
+can u generate featues and keep them in median categrpry of same products, but make only one standout feature that can act as my selling point.
+Yes. Let’s give both products a credible midrange baseline and one clear differentiator. These are hypothetical demo specifications—not actual Sony announcements or statistically calculated market medians.
+
+For context, Sony’s ULT FIELD 1 advertises 12-hour battery life and IP67 protection; JBL’s Flip 7 weighs 560 g. Those provide useful reference points for our speaker concept. 
+
+1. Sony portable speaker — hypothetical concept
+
+Feature	Proposed specification
+Price	$119, one-time purchase
+Size	Approximately 19 × 7 × 7 cm
+Weight	550 g
+Battery	Up to 14 hours under stated test conditions
+Protection	IP67 water and dust resistance
+Connectivity	Bluetooth; pair two compatible units for stereo
+Charging	USB-C
+Controls	Physical playback buttons; basic app equalizer
+Sound positioning	Everyday portable listening; no unverified superiority claims
+Standout feature	User-swappable battery: replace it without tools in under a minute
+Selling point: “Keep the speaker. Swap the battery.”
+
+One battery is included; an optional spare costs $29. Battery replacement requires opening a dry speaker and securely closing the compartment before water exposure. Treat protection and battery performance as proposed engineering targets.
+
+This creates useful tradeoffs: travelers and long-term owners may value replaceability, while occasional users may prefer a cheaper or lighter alternative.
+
+2. CodeSensei — interview preparation
+
+Existing preparation platforms combine practice content, courses, and mock interviews, so those should form our baseline rather than all being presented as differentiators. 
+
+Feature	Proposed specification
+Price	$20/month, billed monthly
+Audience	Students and early-career software engineers
+Practice library	200 curated coding questions
+Languages	Python, C++, Java, JavaScript
+Coding environment	Browser editor with execution and test cases
+Mock interviews	Four 45-minute AI coding interviews per month
+Feedback	Correctness, complexity, communication, and hints used
+Progress	Topic completion and session history
+Preview	One free 15-minute sample interview
+Standout feature	A personalized follow-up drill generated from the candidate’s actual mistakes in each mock interview
+Selling point: “Your next practice session starts where your last interview went wrong.”
+
+For example, if someone repeatedly mishandles binary-search boundaries, the service generates a short drill targeting that mistake and checks it again later. This is more specific than generic “personalized AI feedback.”
+
+For simulation, we’ll keep these differentiators as hypotheses. We won’t tell customers to value replaceable batteries or mistake-based drills—we’ll see which purchasing situations make those features worth choosing over alternatives.
+
+Okay, now we need a palce t store all this data that we geenerating right? do you want to create a set of files, or do u want to me to give you access to some plugins ebcuase we are in work mode.
+Yes—let’s store this as structured files now, then import them into the application’s database tomorrow. You don’t need to connect another plugin for this preparation.
+
+I recommend JSON for application inputs and Markdown for readable design notes:
+
+saturday-hack/
+  architecture.md
+  schemas/
+    product.schema.json
+    population.schema.json
+    customer.schema.json
+  products/
+    sony-speaker/
+      brief.json
+      evidence.json
+      segments.json
+      sampling-rules.json
+      customers.json
+      population-review.md
+    codesensei/
+      brief.json
+      evidence.json
+      segments.json
+      sampling-rules.json
+      customers.json
+      population-review.md
+Each file has a distinct purpose:
+
+File	Stores
+brief.json	Product specifications, price, intended audience, research question
+evidence.json	Sources, extracted findings, and explicit assumptions
+segments.json	Customer segments and their rationale
+sampling-rules.json	Individual variation, relationships, and sampling counts
+customers.json	Generated customer profiles with stable IDs
+population-review.md	Validation findings and unresolved concerns
+Tomorrow, the database will additionally hold orders, simulation jobs, customer actions, choices, and experiment results. Keeping the inputs in JSON makes them easy to load into whichever backend we choose.
+
+We should also record a version and random seed for each population so we can reproduce it and reuse the same customers across experiments.
+
+I suggest starting with the folder structure, shared schemas, and the two product briefs we’ve already defined. Then we populate research and customer profiles progressively.

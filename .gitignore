@@ -21,3 +21,30 @@ node_modules/
 
 # Local payment ledger, order access hashes and webhook signing records
 backend/var/
+
+# Generated research journeys, simulations and local review state
+/data/runs/*
+!/data/runs/README.md
+/data/evaluations/*
+!/data/evaluations/README.md
+/data/journeys/
+/data/simulations/
+/data/repairs/
+/data/approvals/
+/data/terac/
+
+# Local screenshots, recovered chats, sponsor codes and downloaded sources
+/docs/test-artifacts/
+/docs/research/sources/
+/backend/workers/lovable-export-*/
+
+# Build outputs, logs and archives
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+*.log
+*.zip
+*.sqlite3
+*.sqlite3-*

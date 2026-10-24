@@ -1,0 +1,33 @@
+{
+  "product_id": "prod_N8FZ1UIcOJIxm",
+  "tiers": [
+    {
+      "variant_id": "plan_LAEApM6gDpAA7",
+      "customer_count": 10,
+      "price_usd": "10.00",
+      "title": "10 simulated customers",
+      "visibility": "hidden",
+      "stock": 0,
+      "unlimited_stock": false
+    },
+    {
+      "variant_id": "plan_5swhXX4j1SlHM",
+      "customer_count": 50,
+      "price_usd": "29.99",
+      "title": "50 simulated customers",
+      "visibility": "visible",
+      "stock": 0,
+      "unlimited_stock": true
+    },
+    {
+      "variant_id": "plan_KUAFeMVEpA9yp",
+      "customer_count": 100,
+      "price_usd": "49.99",
+      "title": "100 simulated customers",
+      "visibility": "visible",
+      "stock": 0,
+      "unlimited_stock": true
+    }
+  ],
+  "note": "Labels, prices and metadata verified; multi-tier fulfillment is not connected yet."
+}
